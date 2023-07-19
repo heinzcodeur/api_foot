@@ -5,6 +5,7 @@ import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Countries from './components/Countries';
+import Test from './components/Test';
 
 const App= () => {
   return (
@@ -15,6 +16,7 @@ const App= () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/pays" element={<Countries />} />
+        <Route path="/test" element={<Test />} />
         <Route path="*" element={<Home />} />
       </Routes>
       

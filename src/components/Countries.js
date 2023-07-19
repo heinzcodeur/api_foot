@@ -5,9 +5,10 @@ import Navigation from "./Navigation";
 const Countries = () => {
     const apikey_first = "7a3522b864msh458ad29cbfda53dp191cd6jsn8a9ecb8f7113";
     const tennis_live = "https://sports-live-scores.p.rapidapi.com/tennis/live";
+    const tennis_bis = "https://allsportsapi2.p.rapidapi.com/api/tennis/events/18/7/2023";
 
     const [donnees, setData] = useState([]);
-    const [list_matchs, setListMatchs] = useState([]);
+    // const [list_matchs, setListMatchs] = useState([]);
     const [limitRequestLeft, setLimitRequestLeft] = useState(0); // Utilisation de useState pour gérer limitRequestLeft
 
 
@@ -28,12 +29,6 @@ const Countries = () => {
                 console.log(error);
             });
     }, []); // Les crochets vides signifient que le useEffect s'exécute seulement une fois au montage du composant
-
-    //   useEffect(() => {
-    //     console.log(donnees.matches.length);
-    //     // Mettre à jour l'état 'list_matchs' lorsque 'donnees' change
-    //     setListMatchs(donnees.matches);
-    //   }, [donnees]); // Le useEffect se déclenche lorsque 'donnees' change
 
     return (
         <div>

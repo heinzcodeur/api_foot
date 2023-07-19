@@ -16,6 +16,9 @@ const Navigation = () => {
                 <NavLink to="/pays">
                     <li>matchs</li>
                 </NavLink>
+                <NavLink to="/test">
+                    <li>test</li>
+                </NavLink>
             </ul>
         </div>
     )
