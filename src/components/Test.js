@@ -4,7 +4,8 @@ import Navigation from "./Navigation";
 
 const Test = () => {
     const apikey_first = "50736dc75amsh7f9e578a03cb22ap1ea0e4jsn338832cda913";
-    // const tennis_live = "https://sports-live-scores.p.rapidapi.com/tennis/live";
+    const apikey_second = "7a3522b864msh458ad29cbfda53dp191cd6jsn8a9ecb8f7113";
+    const tennis_live = "https://sports-live-scores.p.rapidapi.com/tennis/live";
     const tennis_bis = "https://allsportsapi2.p.rapidapi.com/api/tennis/events/18/7/2023";
 
     const [donnees, setData] = useState([]);
