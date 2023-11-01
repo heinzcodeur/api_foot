@@ -1,27 +1,22 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
-import Home from './pages/Home';
-import About from './pages/About';
-import Countries from './components/Countries';
-import Test from './components/Test';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Countries from "./components/Countries";
+import Test from "./components/Test";
 
-const App= () => {
+const App = () => {
   return (
     <BrowserRouter>
-      
-      <h1 className="text-primary text-center">API FOOT</h1>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/pays" element={<Countries />} />
-        <Route path="/test" element={<Test />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
-      
-
-
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/pays" element={<Countries />} />
+          <Route path="/test" element={<Test />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
     </BrowserRouter>
     // <div className="App">
     //   <header className="App-header">
@@ -40,6 +35,6 @@ const App= () => {
     //   </header>
     // </div>
   );
-}
+};
 
 export default App;
