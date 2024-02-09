@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.centered-table {
+  margin: auto;
+}
+
+.large-width-td {
+  width: 40%; /* ou une valeur appropriée en pixels, pour ajuster la largeur selon vos besoins */
+}
+

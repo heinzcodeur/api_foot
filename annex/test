@@ -1,0 +1,54 @@
+useEffect(() => {
+    if(wtaRanking.length <= 0){
+      fetchWtaRanking();
+    }
+    fetchData();
+  });
+
+
+  // useEffect(() => {
+  //   let shouldFetchWtaRanking = true;
+
+  //   const fetchData = () => {
+  //     axios
+  //       .get(tennis_live, {
+  //         headers: { "X-RapidAPI-Key": currentApiKey },
+  //       })
+  //       .then((res) => {
+  //         console.log(limitRequestLeft);
+  //         setDanger("");
+  //         setData(res.data.matches);
+  //         console.log(donnees);
+  //         setLimitRequestLeft(res.headers["x-ratelimit-requests-remaining"]);
+  //         shouldFetchWtaRanking = false; // La requête fetchData s'est bien déroulée, on désactive le drapeau.
+  //       })
+  //       .catch((error) => {
+  //         console.log(error.config.headers["X-RapidAPI-Key"]);
+  //         if (error.response.headers["x-ratelimit-requests-remaining"] <= 0) {
+  //           const nextIndex = (apiKeyIndex + 1) % apikeys.length;
+  //           setApiKeyIndex(nextIndex);
+  //           const newApiKey = apikeys[nextIndex];
+  //           console.log(newApiKey);
+  //           setDanger(
+  //             error.response.data.message +
+  //               "<br> code HTTP: " +
+  //               error.request.status
+  //           );
+  //           shouldFetchWtaRanking = true; // Il y a eu une erreur, on active le drapeau pour autoriser la prochaine requête fetchWtaRanking.
+  //         }
+  //       });
+  //   };
+
+  //   const fetchDataAndWtaRanking = () => {
+  //     fetchData();
+  //     if (shouldFetchWtaRanking) {
+  //       fetchWtaRanking();
+  //     }
+  //   };
+
+  //   fetchDataAndWtaRanking(); // Appel initial
+
+  //   const intervalId = setInterval(fetchDataAndWtaRanking, delay);
+
+  //   return () => clearInterval(intervalId);
+  // }, [apiKeyIndex, delay]);
