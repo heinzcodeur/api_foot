@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Countries from "./components/Countries";
 import Test from "./components/Test";
+import Ranking from "./pages/Ranking";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/pays" element={<Countries />} />
+          <Route path="/ranking" element={<Ranking />} />
           <Route path="/test" element={<Test />} />
           <Route path="*" element={<Home />} />
         </Routes>

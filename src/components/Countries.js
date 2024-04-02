@@ -21,23 +21,31 @@ const Countries = () => {
     const regex = /\//; // Expression régulière pour rechercher le symbole "/"
     return regex.test(inputString); // Vérifie si la chaîne contient "/"
   };
+  const checkItf = (inputString) => {
+    const regex = /ITF/; // Expression régulière pour rechercher le symbole "/"
+    return regex.test(inputString); // Vérifie si la chaîne contient "/"
+  };
 
   const [donnees, setData] = useState([]);
+  const [active, setActive] = useState(null);
+  const [activeButton, setActiveButton] = useState(null);
   const [wtaRanking, setWtaRanking] = useState([]);
   const [limitRequestLeft, setLimitRequestLeft] = useState(0);
   const [limitRankWtaLeft, setLimitRankWtaLeft] = useState(0);
   const [intervalId, setIntervalId] = useState(1000);
   const [apiKeyIndex, setApiKeyIndex] = useState(0); // Ajout de l'index de la clé API
   const [danger, setDanger] = useState(null);
-  const [delay, setDelay] = useState(15000);
-
-  const currentApiKey = apikeys[0];
+  const [delay, setDelay] = useState(5000);
+  const [currentApiKey, setCurrentApiKey] = useState(apikeys[0]);
+  const [nextIndex, setNextIndex] = useState(
+    (apiKeyIndex + 1) % apikeys.length
+  );
 
   const fetchWtaRanking = () => {
     axios
       .get(rank_wta, {
         headers: {
-          "X-RapidAPI-Key": currentApiKey,
+          "X-RapidAPI-Key": apiKeyIndex,
         },
       })
       .then((res) => {
@@ -60,156 +68,183 @@ const Countries = () => {
       .then((res) => {
         setDanger("");
         setData(res.data.matches);
-        console.log(donnees.length);
         setLimitRequestLeft(res.headers["x-ratelimit-requests-remaining"]);
         console.log(limitRequestLeft);
       })
       .catch((error) => {
-        if (error.response.status === 429) {
+        if (error.response.status === 429 || 403 === error.response.status) {
           const nextIndex = (apiKeyIndex + 1) % apikeys.length;
-          setApiKeyIndex(nextIndex);
-          // alert(apiKeyIndex)
-          const newApiKey = apikeys[nextIndex];
-          //alert(newApiKey);
+          setCurrentApiKey(apikeys[nextIndex]);
           setDanger(
-            error.response.data.message +
-              "<br> code HTTP: " +
-              error.request.status
+            nextIndex + " " + currentApiKey
           );
         }
       });
   };
 
+  const handleButtonClick = (delay) => {
+    setDelay(delay); // Mettre à jour le délai
+    setActiveButton(delay); // Mettre à jour le bouton actif
+    console.log(delay);
+  };
+
   useEffect(() => {
-    if (wtaRanking.length === 0) {
-    fetchWtaRanking();
-    }
-
-    fetchData();
     const intervalId = setInterval(fetchData, delay);
-
+  
     return () => clearInterval(intervalId);
   }, [apiKeyIndex, delay, currentApiKey]);
+  
 
   return (
     <div>
-    <Navigation />
-    <div className="container border border-primary mx-auto">
-      <div className="row">
-        <div className="col-10 mx-auto">
-          <div>
-            {danger ? (
-              <div className="col-10 alert alert-danger mx-auto">
-                {danger}
-              </div>
-            ) : null}
-          </div>
-          <h3 className="text-center text-success">
-            Il te reste {limitRequestLeft} appels{" "}
-          </h3>
-          <p className="text-center">
-            <button
-              className="btn btn-primary"
-              onClick={() => {
-                setDelay(300000);
-                console.log(delay);
-              }}
-            >
-              time
-            </button>
-          </p>
-          <div className="overflow-auto">
-            <table className="table table-striped">
-              <thead>
-                {/* <tr>
+      <Navigation />
+      <div className="container border border-primary mx-auto">
+        <div className="row">
+          <div className="col-10 mx-auto">
+            <div>
+              {danger ? (
+                <div className="col-10 alert alert-danger mx-auto">
+                  {danger}
+                </div>
+              ) : null}
+            </div>
+            <h3 className="text-center text-success">
+              Il te reste {limitRequestLeft} appels{" "}
+            </h3>
+
+            <p className="text-center">
+              <button onClick={() => handleButtonClick(360000000)} className={`btn ${ activeButton === 360000000 ? "btn-danger" : "btn-primary" }`}>
+                stop
+              </button>
+              &nbsp;
+              <button onClick={() => handleButtonClick(36000000)} className={`btn ${ activeButton === 36000000 ? "btn-danger" : "btn-primary" }`}>
+                1h
+              </button>
+              &nbsp;
+              <button onClick={() => handleButtonClick(60000)} className={`btn ${ activeButton === 60000 ? "btn-danger" : "btn-primary" }`}>
+                1 mn
+              </button>
+              &nbsp;
+              <button onClick={() => handleButtonClick(5000)} className={`btn ${ activeButton === 5000 ? "btn-danger" : "btn-primary" }`}>
+                5 s
+              </button>
+            </p>
+
+            <div className="overflow-auto">
+              <table className="table table-striped">
+                <thead>
+                  {/* <tr>
                   <th></th>
                   <th className="text-center">liste des matchs de ce jour</th>
                   <th>&nbsp;&nbsp;&nbsp;</th>
                 </tr> */}
-              </thead>
-  
-              <tbody>
-                {donnees.map((match, index) =>
-                  !checkBackSlash(match["Home Player"]) ? (
-                    <tr key={index} className="border-bottom">
-                      <td className="large-width-td">
-                        {match["Tournament"]} - {match["Surface"]}
-                      </td>
-                      <td>
-                        <tr>
-                          <td>{match["Home Player"]}</td>
+                </thead>
+
+                <tbody>
+                  {donnees.map((match, index) =>
+                    !checkBackSlash(match["Home Player"]) ? (
+                      !checkItf(match["Tournament"]) ? (
+                        <tr key={index} className="border-bottom">
+                          <td className="large-width-td">
+                            {match["Tournament"]} - {match["Surface"]}
+                          </td>
                           <td>
-                            <b>{match["Live Home Odd"]}</b>
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td>{match["Home Player"]}</td>
+                                  <td>
+                                    <b>{match["Live Home Odd"]}</b>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>{match["Away Player"]} &nbsp;</td>
+                                  <td>
+                                    <b>{match["Live Away Odd"]}</b>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </td>
-                          {/* <td><b>{match["Sets Player 1"]}</b></td> */}
-                        </tr>
-                        <tr>
-                          <td>{match["Away Player"]} &nbsp;</td>
                           <td>
-                            <b>{match["Live Away Odd"]}</b>
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td className="text-success">
+                                    {match["Sets Player 1"]}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="text-success">
+                                    {match["Sets Player 2"]}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </td>
-                          {/* <td><b>{match["Sets Player 2"]}</b></td> */}
-                        </tr>
-                      </td>
-                      <td>
-                        <tr>
-                          <td className="text-success">
-                            {match["Sets Player 1"]}
+                          <td>
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td>{match["Set1 Player 1"]}</td>
+                                </tr>
+                                <tr>
+                                  <td>{match["Set1 Player 2"]}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td>
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td>{match["Set2 Player 1"]}</td>
+                                </tr>
+                                <tr>
+                                  <td>{match["Set2 Player 2"]}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td>
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td>{match["Set3 Player 1"]}</td>
+                                </tr>
+                                <tr>
+                                  <td>{match["Set3 Player 2"]}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td>
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td className="text-success">
+                                    <b>{match["Player 1 Score"]}</b>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="text-success">
+                                    <b>{match["Player 2 Score"]}</b>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </td>
                         </tr>
-                        <tr>
-                          <td className="text-success">
-                            {match["Sets Player 2"]}
-                          </td>
-                        </tr>
-                      </td>
-                      <td>
-                        <tr>
-                          <td>{match["Set1 Player 1"]}</td>
-                        </tr>
-                        <tr>
-                          <td>{match["Set1 Player 2"]}</td>
-                        </tr>
-                      </td>
-                      <td>
-                        <tr>
-                          <td>{match["Set2 Player 1"]}</td>
-                        </tr>
-                        <tr>
-                          <td>{match["Set2 Player 2"]}</td>
-                        </tr>
-                      </td>
-                      <td>
-                        <tr>
-                          <td>{match["Set3 Player 1"]}</td>
-                        </tr>
-                        <tr>
-                          <td>{match["Set3 Player 2"]}</td>
-                        </tr>
-                      </td>
-                      <td>
-                        <tr>
-                          <td className="text-success">
-                            <b>{match["Player 1 Score"]}</b>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="text-success">
-                            <b>{match["Player 2 Score"]}</b>
-                          </td>
-                        </tr>
-                      </td>
-                    </tr>
-                  ) : null
-                )}
-              </tbody>
-            </table>
+                      ) : null
+                    ) : null
+                  )}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
   );
 };
 
