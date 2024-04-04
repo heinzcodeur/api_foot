@@ -17,6 +17,9 @@ const Countries = () => {
   const rank_wta =
     "https://sports-live-scores.p.rapidapi.com/tennis/rankings/wta/500";
 
+  const rank_atp =
+    "https://tennisapi1.p.rapidapi.com/api/tennis/rankings/atp/live";
+
   const checkBackSlash = (inputString) => {
     const regex = /\//; // Expression régulière pour rechercher le symbole "/"
     return regex.test(inputString); // Vérifie si la chaîne contient "/"
@@ -30,6 +33,7 @@ const Countries = () => {
   const [active, setActive] = useState(null);
   const [activeButton, setActiveButton] = useState(null);
   const [wtaRanking, setWtaRanking] = useState([]);
+  const [atpRanking, setAtpRanking] = useState([]);
   const [limitRequestLeft, setLimitRequestLeft] = useState(0);
   const [limitRankWtaLeft, setLimitRankWtaLeft] = useState(0);
   const [intervalId, setIntervalId] = useState(1000);
@@ -60,6 +64,30 @@ const Countries = () => {
       });
   };
 
+  const fetchAtpRanking = () => {
+    axios
+      .get(rank_atp, {
+        headers: {
+          // "X-RapidAPI-Key":
+            // "aa3e2fc2f5msh1fb9e7704ed333cp1c64e0jsn411370dcfebf",
+          "X-RapidAPI-Key": "b44f86de54mshed5740f3fd48de0p1773d7jsn574b9aea4a8b",
+        },
+      })
+      .then((res) => {
+        setAtpRanking(res.data.rankings);
+        console.log(atpRanking);
+      })
+      .catch((error) => {
+        console.log(error.response.message);
+        alert(error.response.data.message);
+      });
+  };
+
+  useEffect(() => {
+    // Appel de fetchDataOnce une seule fois
+    fetchAtpRanking();
+  }, []);
+
   const fetchData = () => {
     axios
       .get(tennis_live, {
@@ -69,17 +97,24 @@ const Countries = () => {
         setDanger("");
         setData(res.data.matches);
         setLimitRequestLeft(res.headers["x-ratelimit-requests-remaining"]);
-        console.log(limitRequestLeft);
+        // console.log(limitRequestLeft);
       })
       .catch((error) => {
-        if (error.response.status === 429 || 403 === error.response.status) {
+        if (error.response.status === 429) {
           const nextIndex = (apiKeyIndex + 1) % apikeys.length;
+          alert(nextIndex);
           setCurrentApiKey(apikeys[nextIndex]);
-          setDanger(
-            nextIndex + " " + currentApiKey
-          );
+          setApiKeyIndex(nextIndex); // Mise à jour de l'index ici
+          setDanger(nextIndex + " " + currentApiKey);
         }
       });
+  };
+
+  const getPlayerRanking = (playerName) => {
+    // Recherche du joueur dans l'array atpRanking
+    const player = atpRanking.find((item) => item.team.name === playerName);
+    // Si le joueur est trouvé, retourner son ranking, sinon retourner null
+    return player ? player.team.ranking : null;
   };
 
   const handleButtonClick = (delay) => {
@@ -88,19 +123,23 @@ const Countries = () => {
     console.log(delay);
   };
 
+  // useEffect(() => {
+  //   // Appel de fetchDataOnce une seule fois
+  //   fetchAtpRanking();
+  // }, []);
+
   useEffect(() => {
     const intervalId = setInterval(fetchData, delay);
-  
+
     return () => clearInterval(intervalId);
   }, [apiKeyIndex, delay, currentApiKey]);
-  
 
   return (
     <div>
       <Navigation />
       <div className="container border border-primary mx-auto">
         <div className="row">
-          <div className="col-10 mx-auto">
+          <div className="col-12 mx-auto">
             <div>
               {danger ? (
                 <div className="col-10 alert alert-danger mx-auto">
@@ -113,33 +152,46 @@ const Countries = () => {
             </h3>
 
             <p className="text-center">
-              <button onClick={() => handleButtonClick(360000000)} className={`btn ${ activeButton === 360000000 ? "btn-danger" : "btn-primary" }`}>
+              <button
+                onClick={() => handleButtonClick(360000000)}
+                className={`btn ${
+                  activeButton === 360000000 ? "btn-danger" : "btn-primary"
+                }`}
+              >
                 stop
               </button>
               &nbsp;
-              <button onClick={() => handleButtonClick(36000000)} className={`btn ${ activeButton === 36000000 ? "btn-danger" : "btn-primary" }`}>
+              <button
+                onClick={() => handleButtonClick(36000000)}
+                className={`btn ${
+                  activeButton === 36000000 ? "btn-danger" : "btn-primary"
+                }`}
+              >
                 1h
               </button>
               &nbsp;
-              <button onClick={() => handleButtonClick(60000)} className={`btn ${ activeButton === 60000 ? "btn-danger" : "btn-primary" }`}>
+              <button
+                onClick={() => handleButtonClick(60000)}
+                className={`btn ${
+                  activeButton === 60000 ? "btn-danger" : "btn-primary"
+                }`}
+              >
                 1 mn
               </button>
               &nbsp;
-              <button onClick={() => handleButtonClick(5000)} className={`btn ${ activeButton === 5000 ? "btn-danger" : "btn-primary" }`}>
+              <button
+                onClick={() => handleButtonClick(5000)}
+                className={`btn ${
+                  activeButton === 5000 ? "btn-danger" : "btn-primary"
+                }`}
+              >
                 5 s
               </button>
             </p>
 
             <div className="overflow-auto">
               <table className="table table-striped">
-                <thead>
-                  {/* <tr>
-                  <th></th>
-                  <th className="text-center">liste des matchs de ce jour</th>
-                  <th>&nbsp;&nbsp;&nbsp;</th>
-                </tr> */}
-                </thead>
-
+                <thead></thead>
                 <tbody>
                   {donnees.map((match, index) =>
                     !checkBackSlash(match["Home Player"]) ? (
@@ -152,15 +204,34 @@ const Countries = () => {
                             <table>
                               <tbody>
                                 <tr>
-                                  <td>{match["Home Player"]}</td>
-                                  <td>
-                                    <b>{match["Live Home Odd"]}</b>
-                                  </td>
+                                  <td>{match["Home Player"]} - </td>
+                                  <td>{getPlayerRanking(match["Home Player"]) ||  52}</td>
+                                  {/* <tr>
+                                    <td><b>{match["Live Home Odd"]}</b></td>
+                                  </tr> */}
+                                </tr>
+                                  
+                                <tr>
+                                  <td>{match["Away Player"]} - </td>
+                                  <td>{getPlayerRanking(match["Away Player"]) ||  52}</td>
+                                  {/* <tr><td>
+                                      <b>{match["Live Away Odd"]}</b>
+                                    </td>
+                                  </tr> */}
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td>
+                          <table>
+                              <tbody>
+                                <tr>
+                                  <td className="text-danger">
+                                  <b>{match["Live Home Odd"]}</b>                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>{match["Away Player"]} &nbsp;</td>
-                                  <td>
-                                    <b>{match["Live Away Odd"]}</b>
+                                  <td className="text-danger">
+                                  <b>{match["Live Away Odd"]}</b>
                                   </td>
                                 </tr>
                               </tbody>

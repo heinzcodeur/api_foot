@@ -35,7 +35,7 @@ const Ranking = () => {
         //    console.log(wtaRanking[2]);
       })
       .catch((error) => {
-        console.log(error.response);
+        console.log(error.response.data.message);
       });
   };
 
@@ -44,21 +44,54 @@ const Ranking = () => {
       .get(rank_atp, {
         headers: {
           //   "X-RapidAPI-Key": "aa3e2fc2f5msh1fb9e7704ed333cp1c64e0jsn411370dcfebf"
-          "X-RapidAPI-Key":
-            "b44f86de54mshed5740f3fd48de0p1773d7jsn574b9aea4a8b",
+          "X-RapidAPI-Key": "b44f86de54mshed5740f3fd48de0p1773d7jsn574b9aea4a8b",
         },
       })
       .then((res) => {
         setAtpRanking(res.data.rankings);
       })
       .catch((error) => {
-        console.log(error.response);
+        console.log(error.response.message);
+        alert(error.response.data.message);
       });
   };
 
+  // Exemple d'utilisation
+
+  const checkInternetConnection = () => {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => {
+        resolve(true);
+      };
+      img.onerror = () => {
+        reject(false);
+      };
+      img.src = "https://www.google.com/images/phd/px.gif"; // Utilisez une URL de test, comme l'image 1x1 pixel de Google
+    });
+  };
+
   useEffect(() => {
-    fetchWtaRanking();
-    fetchAtpRanking();
+    const fetchData = async () => {
+      try {
+        const connected = await checkInternetConnection();
+        if (connected) {
+          console.log("Connexion Internet établie.");
+          fetchWtaRanking();
+          fetchAtpRanking();
+        } else {
+          console.log("Pas de connexion Internet.");
+          // Gérer l'absence de connexion Internet ici si nécessaire
+        }
+      } catch (error) {
+        console.error(
+          "Erreur lors de la vérification de la connexion Internet :",
+          error
+        );
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (
@@ -66,12 +99,11 @@ const Ranking = () => {
       <Navigation />
       <div className="container">
         <div className="row mt-4">
-
           <div className="col-6">
             {/* <h1 className="text-primary text-center">Ranking</h1> */}
             {wtaRanking.map((match, index) => (
               <h3>
-                {match["team"]["ranking"]}&nbsp;{match["rowName"]}&nbsp; /{" "}
+                {match["team"]["ranking"]}&nbsp;{match["team"]['name']}&nbsp; /{" "}
                 {match["team"]["country"]["name"]}
               </h3>
             ))}
