@@ -1,0 +1,5006 @@
+{
+    "category": "wta",
+    "rankings": [
+      {
+        "ID": 326408,
+        "country": "POL",
+        "movement": 0,
+        "name": "Iga Swiatek",
+        "points": 9295,
+        "rankedAt": "2023-12-11",
+        "ranking": 1,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 320760,
+        "country": "BLR",
+        "movement": 0,
+        "name": "Aryna Sabalenka",
+        "points": 9050,
+        "rankedAt": "2023-12-11",
+        "ranking": 2,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 328560,
+        "country": "USA",
+        "movement": 0,
+        "name": "Coco Gauff",
+        "points": 6580,
+        "rankedAt": "2023-12-11",
+        "ranking": 3,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 324166,
+        "country": "KAZ",
+        "movement": 0,
+        "name": "Elena Rybakina",
+        "points": 6365,
+        "rankedAt": "2023-12-11",
+        "ranking": 4,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 316956,
+        "country": "USA",
+        "movement": 0,
+        "name": "Jessica Pegula",
+        "points": 5975,
+        "rankedAt": "2023-12-11",
+        "ranking": 5,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 316847,
+        "country": "TUN",
+        "movement": 0,
+        "name": "Ons Jabeur",
+        "points": 4195,
+        "rankedAt": "2023-12-11",
+        "ranking": 6,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 323027,
+        "country": "CZE",
+        "movement": 0,
+        "name": "Marketa Vondrousova",
+        "points": 4046,
+        "rankedAt": "2023-12-11",
+        "ranking": 7,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 322191,
+        "country": "CZE",
+        "movement": 0,
+        "name": "Karolina Muchova",
+        "points": 3650,
+        "rankedAt": "2023-12-11",
+        "ranking": 8,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 318312,
+        "country": "GRE",
+        "movement": 0,
+        "name": "Maria Sakkari",
+        "points": 3620,
+        "rankedAt": "2023-12-11",
+        "ranking": 9,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 318314,
+        "country": "CZE",
+        "movement": 0,
+        "name": "Barbora Krejcikova",
+        "points": 2880,
+        "rankedAt": "2023-12-11",
+        "ranking": 10,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 318176,
+        "country": "BRA",
+        "movement": 0,
+        "name": "Beatriz Haddad Maia",
+        "points": 2855,
+        "rankedAt": "2023-12-11",
+        "ranking": 11,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 316959,
+        "country": "USA",
+        "movement": 0,
+        "name": "Madison Keys",
+        "points": 2816,
+        "rankedAt": "2023-12-11",
+        "ranking": 12,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 319939,
+        "country": "LAT",
+        "movement": 0,
+        "name": "Jelena Ostapenko",
+        "points": 2720,
+        "rankedAt": "2023-12-11",
+        "ranking": 13,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 314206,
+        "country": "CZE",
+        "movement": 0,
+        "name": "Petra Kvitova",
+        "points": 2660,
+        "rankedAt": "2023-12-11",
+        "ranking": 14,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 328120,
+        "country": "CHN",
+        "movement": 0,
+        "name": "Qinwen Zheng",
+        "points": 2660,
+        "rankedAt": "2023-12-11",
+        "ranking": 15,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 322222,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Liudmila Samsonova",
+        "points": 2650,
+        "rankedAt": "2023-12-11",
+        "ranking": 16,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 319001,
+        "country": "SUI",
+        "movement": 0,
+        "name": "Belinda Bencic",
+        "points": 2571,
+        "rankedAt": "2023-12-11",
+        "ranking": 17,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 322082,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Daria Kasatkina",
+        "points": 2550,
+        "rankedAt": "2023-12-11",
+        "ranking": 18,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 319526,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Veronika Kudermetova",
+        "points": 2520,
+        "rankedAt": "2023-12-11",
+        "ranking": 19,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 315391,
+        "country": "FRA",
+        "movement": 0,
+        "name": "Caroline Garcia",
+        "points": 2095,
+        "rankedAt": "2023-12-11",
+        "ranking": 20,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 319007,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Ekaterina Alexandrova",
+        "points": 2035,
+        "rankedAt": "2023-12-11",
+        "ranking": 21,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 312001,
+        "country": "BLR",
+        "movement": 0,
+        "name": "Victoria Azarenka",
+        "points": 1905,
+        "rankedAt": "2023-12-11",
+        "ranking": 22,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 318516,
+        "country": "CRO",
+        "movement": 0,
+        "name": "Donna Vekic",
+        "points": 1865,
+        "rankedAt": "2023-12-11",
+        "ranking": 23,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 315130,
+        "country": "POL",
+        "movement": 0,
+        "name": "Magda Linette",
+        "points": 1861,
+        "rankedAt": "2023-12-11",
+        "ranking": 24,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 316738,
+        "country": "UKR",
+        "movement": 0,
+        "name": "Elina Svitolina",
+        "points": 1809,
+        "rankedAt": "2023-12-11",
+        "ranking": 25,
+        "tournamentsPlayed": 13
+      },
+      {
+        "ID": 312469,
+        "country": "ROU",
+        "movement": 0,
+        "name": "Sorana Cirstea",
+        "points": 1765,
+        "rankedAt": "2023-12-11",
+        "ranking": 26,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 320567,
+        "country": "UKR",
+        "movement": 0,
+        "name": "Anhelina Kalinina",
+        "points": 1675,
+        "rankedAt": "2023-12-11",
+        "ranking": 27,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 325601,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Anastasia Potapova",
+        "points": 1588,
+        "rankedAt": "2023-12-11",
+        "ranking": 28,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 317964,
+        "country": "BEL",
+        "movement": 0,
+        "name": "Elise Mertens",
+        "points": 1495,
+        "rankedAt": "2023-12-11",
+        "ranking": 29,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 319280,
+        "country": "ITA",
+        "movement": 0,
+        "name": "Jasmine Paolini",
+        "points": 1435,
+        "rankedAt": "2023-12-11",
+        "ranking": 30,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 315295,
+        "country": "UKR",
+        "movement": 0,
+        "name": "Lesia Tsurenko",
+        "points": 1432,
+        "rankedAt": "2023-12-11",
+        "ranking": 31,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 325410,
+        "country": "USA",
+        "movement": 0,
+        "name": "Emma Navarro",
+        "points": 1355,
+        "rankedAt": "2023-12-11",
+        "ranking": 32,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 320942,
+        "country": "USA",
+        "movement": 0,
+        "name": "Sofia Kenin",
+        "points": 1332,
+        "rankedAt": "2023-12-11",
+        "ranking": 33,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 320983,
+        "country": "CZE",
+        "movement": 0,
+        "name": "Marie Bouzkova",
+        "points": 1325,
+        "rankedAt": "2023-12-11",
+        "ranking": 34,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 326735,
+        "country": "CAN",
+        "movement": 0,
+        "name": "Leylah Fernandez",
+        "points": 1325,
+        "rankedAt": "2023-12-11",
+        "ranking": 35,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 326376,
+        "country": "CHN",
+        "movement": 0,
+        "name": "Xinyu Wang",
+        "points": 1320,
+        "rankedAt": "2023-12-11",
+        "ranking": 36,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 317306,
+        "country": "CHN",
+        "movement": 0,
+        "name": "Lin Zhu",
+        "points": 1292,
+        "rankedAt": "2023-12-11",
+        "ranking": 37,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 313974,
+        "country": "CZE",
+        "movement": 0,
+        "name": "Karolina Pliskova",
+        "points": 1285,
+        "rankedAt": "2023-12-11",
+        "ranking": 38,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 326482,
+        "country": "UKR",
+        "movement": 0,
+        "name": "Marta Kostyuk",
+        "points": 1260,
+        "rankedAt": "2023-12-11",
+        "ranking": 39,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 313711,
+        "country": "CRO",
+        "movement": 0,
+        "name": "Petra Martic",
+        "points": 1253,
+        "rankedAt": "2023-12-11",
+        "ranking": 40,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 329668,
+        "country": "CZE",
+        "movement": 0,
+        "name": "Linda Noskova",
+        "points": 1247,
+        "rankedAt": "2023-12-11",
+        "ranking": 41,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 316266,
+        "country": "ITA",
+        "movement": 0,
+        "name": "Martina Trevisan",
+        "points": 1187,
+        "rankedAt": "2023-12-11",
+        "ranking": 42,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 325836,
+        "country": "FRA",
+        "movement": 0,
+        "name": "Varvara Gracheva",
+        "points": 1186,
+        "rankedAt": "2023-12-11",
+        "ranking": 43,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 322052,
+        "country": "USA",
+        "movement": 0,
+        "name": "Caroline Dolehide",
+        "points": 1163,
+        "rankedAt": "2023-12-11",
+        "ranking": 44,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 320301,
+        "country": "CZE",
+        "movement": 0,
+        "name": "Katerina Siniakova",
+        "points": 1160,
+        "rankedAt": "2023-12-11",
+        "ranking": 45,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 327909,
+        "country": "ITA",
+        "movement": 2,
+        "name": "Elisabetta Cocciaretto",
+        "points": 1140,
+        "rankedAt": "2023-12-11",
+        "ranking": 46,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 315683,
+        "country": "USA",
+        "movement": -1,
+        "name": "Sloane Stephens",
+        "points": 1135,
+        "rankedAt": "2023-12-11",
+        "ranking": 47,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 318872,
+        "country": "ESP",
+        "movement": -1,
+        "name": "Sara Sorribes Tormo",
+        "points": 1126,
+        "rankedAt": "2023-12-11",
+        "ranking": 48,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 327573,
+        "country": "USA",
+        "movement": 0,
+        "name": "Peyton Stearns",
+        "points": 1119,
+        "rankedAt": "2023-12-11",
+        "ranking": 49,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 324267,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Anna Blinkova",
+        "points": 1110,
+        "rankedAt": "2023-12-11",
+        "ranking": 50,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 325320,
+        "country": "FRA",
+        "movement": 9,
+        "name": "Clara Burel",
+        "points": 1107,
+        "rankedAt": "2023-12-11",
+        "ranking": 51,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 313349,
+        "country": "NED",
+        "movement": -1,
+        "name": "Arantxa Rus",
+        "points": 1094,
+        "rankedAt": "2023-12-11",
+        "ranking": 52,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 316925,
+        "country": "USA",
+        "movement": -1,
+        "name": "Danielle Collins",
+        "points": 1088,
+        "rankedAt": "2023-12-11",
+        "ranking": 53,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 314610,
+        "country": "ITA",
+        "movement": -1,
+        "name": "Camila Giorgi",
+        "points": 1087,
+        "rankedAt": "2023-12-11",
+        "ranking": 54,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 310440,
+        "country": "GER",
+        "movement": -1,
+        "name": "Tatjana Maria",
+        "points": 1080,
+        "rankedAt": "2023-12-11",
+        "ranking": 55,
+        "tournamentsPlayed": 33
+      },
+      {
+        "ID": 319125,
+        "country": "GBR",
+        "movement": -1,
+        "name": "Katie Boulter",
+        "points": 1073,
+        "rankedAt": "2023-12-11",
+        "ranking": 56,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 331809,
+        "country": "RUS",
+        "movement": -1,
+        "name": "Mirra Andreeva",
+        "points": 1069,
+        "rankedAt": "2023-12-11",
+        "ranking": 57,
+        "tournamentsPlayed": 12
+      },
+      {
+        "ID": 313796,
+        "country": "RUS",
+        "movement": -1,
+        "name": "Anastasia Pavlyuchenkova",
+        "points": 1044,
+        "rankedAt": "2023-12-11",
+        "ranking": 58,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 318711,
+        "country": "EGY",
+        "movement": -1,
+        "name": "Mayar Sherif",
+        "points": 1005,
+        "rankedAt": "2023-12-11",
+        "ranking": 59,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 321454,
+        "country": "BEL",
+        "movement": -1,
+        "name": "Greet Minnen",
+        "points": 984,
+        "rankedAt": "2023-12-11",
+        "ranking": 60,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 322280,
+        "country": "ITA",
+        "movement": 0,
+        "name": "Lucia Bronzetti",
+        "points": 968,
+        "rankedAt": "2023-12-11",
+        "ranking": 61,
+        "tournamentsPlayed": 31
+      },
+      {
+        "ID": 322087,
+        "country": "ESP",
+        "movement": 2,
+        "name": "Rebeka Masarova",
+        "points": 962,
+        "rankedAt": "2023-12-11",
+        "ranking": 62,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 320124,
+        "country": "ESP",
+        "movement": 2,
+        "name": "Paula Badosa",
+        "points": 947,
+        "rankedAt": "2023-12-11",
+        "ranking": 63,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 315427,
+        "country": "ROU",
+        "movement": 2,
+        "name": "Ana Bogdan",
+        "points": 942,
+        "rankedAt": "2023-12-11",
+        "ranking": 64,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 317708,
+        "country": "USA",
+        "movement": 2,
+        "name": "Bernarda Pera",
+        "points": 941,
+        "rankedAt": "2023-12-11",
+        "ranking": 65,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 317683,
+        "country": "KAZ",
+        "movement": 2,
+        "name": "Yulia Putintseva",
+        "points": 937,
+        "rankedAt": "2023-12-11",
+        "ranking": 66,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 319112,
+        "country": "ARG",
+        "movement": 2,
+        "name": "Nadia Podoroska",
+        "points": 936,
+        "rankedAt": "2023-12-11",
+        "ranking": 67,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 317414,
+        "country": "USA",
+        "movement": 2,
+        "name": "Lauren Davis",
+        "points": 933,
+        "rankedAt": "2023-12-11",
+        "ranking": 68,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 326160,
+        "country": "CHN",
+        "movement": 2,
+        "name": "Xiyu Wang",
+        "points": 926,
+        "rankedAt": "2023-12-11",
+        "ranking": 69,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 312536,
+        "country": "BEL",
+        "movement": 2,
+        "name": "Yanina Wickmayer",
+        "points": 917,
+        "rankedAt": "2023-12-11",
+        "ranking": 70,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 318203,
+        "country": "SVK",
+        "movement": 2,
+        "name": "Anna Karolina Schmiedlova",
+        "points": 916,
+        "rankedAt": "2023-12-11",
+        "ranking": 71,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 327620,
+        "country": "RUS",
+        "movement": 2,
+        "name": "Elina Avanesyan",
+        "points": 915,
+        "rankedAt": "2023-12-11",
+        "ranking": 72,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 320277,
+        "country": "POL",
+        "movement": -10,
+        "name": "Magdalena Frech",
+        "points": 897,
+        "rankedAt": "2023-12-11",
+        "ranking": 73,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 313169,
+        "country": "ROU",
+        "movement": 1,
+        "name": "Irina-Camelia Begu",
+        "points": 888,
+        "rankedAt": "2023-12-11",
+        "ranking": 74,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 323942,
+        "country": "RUS",
+        "movement": 1,
+        "name": "Anna Kalinskaya",
+        "points": 885,
+        "rankedAt": "2023-12-11",
+        "ranking": 75,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 324325,
+        "country": "CHN",
+        "movement": 1,
+        "name": "Yue Yuan",
+        "points": 882,
+        "rankedAt": "2023-12-11",
+        "ranking": 76,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 325898,
+        "country": "COL",
+        "movement": 1,
+        "name": "Camila Osorio",
+        "points": 874,
+        "rankedAt": "2023-12-11",
+        "ranking": 77,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 327077,
+        "country": "FRA",
+        "movement": 16,
+        "name": "Diane Parry",
+        "points": 874,
+        "rankedAt": "2023-12-11",
+        "ranking": 78,
+        "tournamentsPlayed": 37
+      },
+      {
+        "ID": 317584,
+        "country": "BUL",
+        "movement": 0,
+        "name": "Viktoriya Tomova",
+        "points": 873,
+        "rankedAt": "2023-12-11",
+        "ranking": 79,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 318609,
+        "country": "USA",
+        "movement": 0,
+        "name": "Taylor Townsend",
+        "points": 868,
+        "rankedAt": "2023-12-11",
+        "ranking": 80,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 329409,
+        "country": "USA",
+        "movement": 0,
+        "name": "Ashlyn Krueger",
+        "points": 863,
+        "rankedAt": "2023-12-11",
+        "ranking": 81,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 321158,
+        "country": "ESP",
+        "movement": 8,
+        "name": "Cristina Bucsa",
+        "points": 843,
+        "rankedAt": "2023-12-11",
+        "ranking": 82,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 316296,
+        "country": "SUI",
+        "movement": 1,
+        "name": "Viktorija Golubic",
+        "points": 834,
+        "rankedAt": "2023-12-11",
+        "ranking": 83,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 319571,
+        "country": "GER",
+        "movement": -1,
+        "name": "Tamara Korpatsch",
+        "points": 833,
+        "rankedAt": "2023-12-11",
+        "ranking": 84,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 326007,
+        "country": "USA",
+        "movement": -23,
+        "name": "Alycia Parks",
+        "points": 818,
+        "rankedAt": "2023-12-11",
+        "ranking": 85,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 327196,
+        "country": "CHN",
+        "movement": -1,
+        "name": "Zhuoxuan Bai",
+        "points": 816,
+        "rankedAt": "2023-12-11",
+        "ranking": 86,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 310926,
+        "country": "GER",
+        "movement": -1,
+        "name": "Laura Siegemund",
+        "points": 814,
+        "rankedAt": "2023-12-11",
+        "ranking": 87,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 322534,
+        "country": "USA",
+        "movement": 1,
+        "name": "Kayla Day",
+        "points": 807,
+        "rankedAt": "2023-12-11",
+        "ranking": 88,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 320319,
+        "country": "ROU",
+        "movement": 2,
+        "name": "Jaqueline  Cristian",
+        "points": 805,
+        "rankedAt": "2023-12-11",
+        "ranking": 89,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 317790,
+        "country": "BLR",
+        "movement": 2,
+        "name": "Aliaksandra Sasnovich",
+        "points": 803,
+        "rankedAt": "2023-12-11",
+        "ranking": 90,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 316464,
+        "country": "USA",
+        "movement": -4,
+        "name": "Emina Bektas",
+        "points": 802,
+        "rankedAt": "2023-12-11",
+        "ranking": 91,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 329627,
+        "country": "CZE",
+        "movement": 1,
+        "name": "Linda Fruhvirtova",
+        "points": 800,
+        "rankedAt": "2023-12-11",
+        "ranking": 92,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 327793,
+        "country": "DEN",
+        "movement": -11,
+        "name": "Clara Tauson",
+        "points": 786,
+        "rankedAt": "2023-12-11",
+        "ranking": 93,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 330482,
+        "country": "RUS",
+        "movement": -6,
+        "name": "Diana Shnaider",
+        "points": 783,
+        "rankedAt": "2023-12-11",
+        "ranking": 94,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 320238,
+        "country": "JPN",
+        "movement": 0,
+        "name": "Nao Hibino",
+        "points": 774,
+        "rankedAt": "2023-12-11",
+        "ranking": 95,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 325088,
+        "country": "CAN",
+        "movement": 0,
+        "name": "Bianca Andreescu",
+        "points": 764,
+        "rankedAt": "2023-12-11",
+        "ranking": 96,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 319436,
+        "country": "FRA",
+        "movement": 0,
+        "name": "Oceane Dodin",
+        "points": 763,
+        "rankedAt": "2023-12-11",
+        "ranking": 97,
+        "tournamentsPlayed": 31
+      },
+      {
+        "ID": 323802,
+        "country": "GBR",
+        "movement": 0,
+        "name": "Jodie Burrage",
+        "points": 762,
+        "rankedAt": "2023-12-11",
+        "ranking": 98,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 323966,
+        "country": "USA",
+        "movement": 0,
+        "name": "Claire Liu",
+        "points": 759,
+        "rankedAt": "2023-12-11",
+        "ranking": 99,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 325936,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Kamilla Rakhimova",
+        "points": 758,
+        "rankedAt": "2023-12-11",
+        "ranking": 100,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 317510,
+        "country": "CHN",
+        "movement": 0,
+        "name": "Yafan Wang",
+        "points": 755,
+        "rankedAt": "2023-12-11",
+        "ranking": 101,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 320316,
+        "country": "AUT",
+        "movement": 0,
+        "name": "Julia Grabher",
+        "points": 744,
+        "rankedAt": "2023-12-11",
+        "ranking": 102,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 324261,
+        "country": "UKR",
+        "movement": 3,
+        "name": "Dayana Yastremska",
+        "points": 734,
+        "rankedAt": "2023-12-11",
+        "ranking": 103,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 323079,
+        "country": "SLO",
+        "movement": -1,
+        "name": "Tamara Zidansek",
+        "points": 725,
+        "rankedAt": "2023-12-11",
+        "ranking": 104,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 320716,
+        "country": "MEX",
+        "movement": 23,
+        "name": "Renata Zarazua",
+        "points": 720,
+        "rankedAt": "2023-12-11",
+        "ranking": 105,
+        "tournamentsPlayed": 32
+      },
+      {
+        "ID": 310761,
+        "country": "ITA",
+        "movement": -2,
+        "name": "Sara Errani",
+        "points": 713,
+        "rankedAt": "2023-12-11",
+        "ranking": 106,
+        "tournamentsPlayed": 32
+      },
+      {
+        "ID": 324702,
+        "country": "SLO",
+        "movement": -2,
+        "name": "Kaja Juvan",
+        "points": 705,
+        "rankedAt": "2023-12-11",
+        "ranking": 107,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 327391,
+        "country": "USA",
+        "movement": -1,
+        "name": "Katie Volynets",
+        "points": 673,
+        "rankedAt": "2023-12-11",
+        "ranking": 108,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 324128,
+        "country": "ESP",
+        "movement": -1,
+        "name": "Marina Bassols Ribera",
+        "points": 664,
+        "rankedAt": "2023-12-11",
+        "ranking": 109,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 317155,
+        "country": "BRA",
+        "movement": -1,
+        "name": "Laura Pigossi",
+        "points": 662,
+        "rankedAt": "2023-12-11",
+        "ranking": 110,
+        "tournamentsPlayed": 33
+      },
+      {
+        "ID": 331545,
+        "country": "CZE",
+        "movement": -1,
+        "name": "Brenda Fruhvirtova",
+        "points": 657,
+        "rankedAt": "2023-12-11",
+        "ranking": 111,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 326379,
+        "country": "USA",
+        "movement": -1,
+        "name": "Elizabeth Mandlik",
+        "points": 648,
+        "rankedAt": "2023-12-11",
+        "ranking": 112,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 312413,
+        "country": "AUS",
+        "movement": -1,
+        "name": "Arina Rodionova",
+        "points": 647,
+        "rankedAt": "2023-12-11",
+        "ranking": 113,
+        "tournamentsPlayed": 33
+      },
+      {
+        "ID": 320728,
+        "country": "AUS",
+        "movement": -1,
+        "name": "Kimberly Birrell",
+        "points": 641,
+        "rankedAt": "2023-12-11",
+        "ranking": 114,
+        "tournamentsPlayed": 33
+      },
+      {
+        "ID": 324789,
+        "country": "COL",
+        "movement": -1,
+        "name": "Emiliana Arango",
+        "points": 635,
+        "rankedAt": "2023-12-11",
+        "ranking": 115,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 312121,
+        "country": "FRA",
+        "movement": 0,
+        "name": "Aliz\u00e9 Cornet",
+        "points": 631,
+        "rankedAt": "2023-12-11",
+        "ranking": 116,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 322942,
+        "country": "HUN",
+        "movement": 0,
+        "name": "Anna Bondar",
+        "points": 630,
+        "rankedAt": "2023-12-11",
+        "ranking": 117,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 324934,
+        "country": "SRB",
+        "movement": 0,
+        "name": "Olga Danilovic",
+        "points": 626,
+        "rankedAt": "2023-12-11",
+        "ranking": 118,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 324750,
+        "country": "JPN",
+        "movement": 0,
+        "name": "Mai Hontama",
+        "points": 626,
+        "rankedAt": "2023-12-11",
+        "ranking": 119,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 330151,
+        "country": "RUS",
+        "movement": 2,
+        "name": "Erika Andreeva",
+        "points": 614,
+        "rankedAt": "2023-12-11",
+        "ranking": 120,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 319489,
+        "country": "GBR",
+        "movement": -1,
+        "name": "Harriet Dart",
+        "points": 602,
+        "rankedAt": "2023-12-11",
+        "ranking": 121,
+        "tournamentsPlayed": 31
+      },
+      {
+        "ID": 323149,
+        "country": "ITA",
+        "movement": 1,
+        "name": "Lucrezia Stefanini",
+        "points": 591,
+        "rankedAt": "2023-12-11",
+        "ranking": 122,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 319696,
+        "country": "AUS",
+        "movement": 2,
+        "name": "Astra Sharma",
+        "points": 590,
+        "rankedAt": "2023-12-11",
+        "ranking": 123,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 314359,
+        "country": "ESP",
+        "movement": 2,
+        "name": "Nuria Parrizas Diaz",
+        "points": 585,
+        "rankedAt": "2023-12-11",
+        "ranking": 124,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 326653,
+        "country": "AUS",
+        "movement": 2,
+        "name": "Olivia Gadecki",
+        "points": 585,
+        "rankedAt": "2023-12-11",
+        "ranking": 125,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 322638,
+        "country": "ARG",
+        "movement": 14,
+        "name": "Maria Lourdes Carle",
+        "points": 574,
+        "rankedAt": "2023-12-11",
+        "ranking": 126,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 320408,
+        "country": "ROU",
+        "movement": 3,
+        "name": "Elena-Gabriela Ruse",
+        "points": 573,
+        "rankedAt": "2023-12-11",
+        "ranking": 127,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 330375,
+        "country": "CZE",
+        "movement": 3,
+        "name": "Sara Bejlek",
+        "points": 573,
+        "rankedAt": "2023-12-11",
+        "ranking": 128,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 320228,
+        "country": "SVK",
+        "movement": 0,
+        "name": "Rebecca Sramkova",
+        "points": 571,
+        "rankedAt": "2023-12-11",
+        "ranking": 129,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 317771,
+        "country": "SWE",
+        "movement": 2,
+        "name": "Rebecca Peterson",
+        "points": 568,
+        "rankedAt": "2023-12-11",
+        "ranking": 130,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 327101,
+        "country": "USA",
+        "movement": 2,
+        "name": "Hailey Baptiste",
+        "points": 567,
+        "rankedAt": "2023-12-11",
+        "ranking": 131,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 316739,
+        "country": "UKR",
+        "movement": 2,
+        "name": "Kateryna Baindl",
+        "points": 566,
+        "rankedAt": "2023-12-11",
+        "ranking": 132,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 319421,
+        "country": "FRA",
+        "movement": -12,
+        "name": "Jessika Ponchet",
+        "points": 560,
+        "rankedAt": "2023-12-11",
+        "ranking": 133,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 327845,
+        "country": "UKR",
+        "movement": 2,
+        "name": "Daria Snigur",
+        "points": 559,
+        "rankedAt": "2023-12-11",
+        "ranking": 134,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 319091,
+        "country": "GER",
+        "movement": -20,
+        "name": "Anna-Lena Friedsam",
+        "points": 557,
+        "rankedAt": "2023-12-11",
+        "ranking": 135,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 325826,
+        "country": "GER",
+        "movement": -1,
+        "name": "Eva Lys",
+        "points": 555,
+        "rankedAt": "2023-12-11",
+        "ranking": 136,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 316981,
+        "country": "GBR",
+        "movement": 12,
+        "name": "Heather Watson",
+        "points": 551,
+        "rankedAt": "2023-12-11",
+        "ranking": 137,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 322277,
+        "country": "SVK",
+        "movement": -14,
+        "name": "Viktoria Hruncakova",
+        "points": 549,
+        "rankedAt": "2023-12-11",
+        "ranking": 138,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 328896,
+        "country": "RUS",
+        "movement": -2,
+        "name": "Maria Timofeeva",
+        "points": 535,
+        "rankedAt": "2023-12-11",
+        "ranking": 139,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 330581,
+        "country": "SUI",
+        "movement": -1,
+        "name": "Celine Naef",
+        "points": 533,
+        "rankedAt": "2023-12-11",
+        "ranking": 140,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 321106,
+        "country": "HUN",
+        "movement": -3,
+        "name": "Dalma Galfi",
+        "points": 532,
+        "rankedAt": "2023-12-11",
+        "ranking": 141,
+        "tournamentsPlayed": 31
+      },
+      {
+        "ID": 327287,
+        "country": "ARG",
+        "movement": 6,
+        "name": "Julia Riera",
+        "points": 526,
+        "rankedAt": "2023-12-11",
+        "ranking": 142,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 315428,
+        "country": "RUS",
+        "movement": -2,
+        "name": "Valeria Savinykh",
+        "points": 523,
+        "rankedAt": "2023-12-11",
+        "ranking": 143,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 329457,
+        "country": "LAT",
+        "movement": -2,
+        "name": "Darja Semenistaja",
+        "points": 521,
+        "rankedAt": "2023-12-11",
+        "ranking": 144,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 322214,
+        "country": "CAN",
+        "movement": -2,
+        "name": "Katherine Sebov",
+        "points": 520,
+        "rankedAt": "2023-12-11",
+        "ranking": 145,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 317443,
+        "country": "USA",
+        "movement": -2,
+        "name": "Sachia Vickery",
+        "points": 519,
+        "rankedAt": "2023-12-11",
+        "ranking": 146,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 320926,
+        "country": "SUI",
+        "movement": -2,
+        "name": "Jil Teichmann",
+        "points": 517,
+        "rankedAt": "2023-12-11",
+        "ranking": 147,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 325725,
+        "country": "USA",
+        "movement": -2,
+        "name": "Caty Mcnally",
+        "points": 517,
+        "rankedAt": "2023-12-11",
+        "ranking": 148,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 317421,
+        "country": "USA",
+        "movement": -2,
+        "name": "Shelby Rogers",
+        "points": 514,
+        "rankedAt": "2023-12-11",
+        "ranking": 149,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 317684,
+        "country": "MNE",
+        "movement": 0,
+        "name": "Danka Kovinic",
+        "points": 501,
+        "rankedAt": "2023-12-11",
+        "ranking": 150,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 312328,
+        "country": "USA",
+        "movement": 0,
+        "name": "Madison Brengle",
+        "points": 497,
+        "rankedAt": "2023-12-11",
+        "ranking": 151,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 323451,
+        "country": "NED",
+        "movement": 26,
+        "name": "Arianne Hartono",
+        "points": 496,
+        "rankedAt": "2023-12-11",
+        "ranking": 152,
+        "tournamentsPlayed": 33
+      },
+      {
+        "ID": 320313,
+        "country": "FRA",
+        "movement": -1,
+        "name": "Leolia Jeanjean",
+        "points": 493,
+        "rankedAt": "2023-12-11",
+        "ranking": 153,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 318060,
+        "country": "CZE",
+        "movement": -1,
+        "name": "Tereza Martincova",
+        "points": 491,
+        "rankedAt": "2023-12-11",
+        "ranking": 154,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 325338,
+        "country": "UKR",
+        "movement": -1,
+        "name": "Yuliia Starodubtseva",
+        "points": 490,
+        "rankedAt": "2023-12-11",
+        "ranking": 155,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 318839,
+        "country": "FRA",
+        "movement": 30,
+        "name": "Chloe Paquet",
+        "points": 488,
+        "rankedAt": "2023-12-11",
+        "ranking": 156,
+        "tournamentsPlayed": 38
+      },
+      {
+        "ID": 320545,
+        "country": "ARG",
+        "movement": 0,
+        "name": "Martina Capurro Taborda",
+        "points": 485,
+        "rankedAt": "2023-12-11",
+        "ranking": 157,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 326961,
+        "country": "RUS",
+        "movement": 58,
+        "name": "Anastasia Tikhonova",
+        "points": 482,
+        "rankedAt": "2023-12-11",
+        "ranking": 158,
+        "tournamentsPlayed": 31
+      },
+      {
+        "ID": 328139,
+        "country": "ESP",
+        "movement": -4,
+        "name": "Jessica Bouzas Maneiro",
+        "points": 480,
+        "rankedAt": "2023-12-11",
+        "ranking": 159,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 325956,
+        "country": "HUN",
+        "movement": -4,
+        "name": "Panna Udvardy",
+        "points": 475,
+        "rankedAt": "2023-12-11",
+        "ranking": 160,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 319969,
+        "country": "FRA",
+        "movement": -3,
+        "name": "Fiona Ferro",
+        "points": 474,
+        "rankedAt": "2023-12-11",
+        "ranking": 161,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 317065,
+        "country": "KOR",
+        "movement": -3,
+        "name": "Su Jeong Jang",
+        "points": 468,
+        "rankedAt": "2023-12-11",
+        "ranking": 162,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 321367,
+        "country": "CZE",
+        "movement": -3,
+        "name": "Gabriela Knutson",
+        "points": 465,
+        "rankedAt": "2023-12-11",
+        "ranking": 163,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 326907,
+        "country": "TUR",
+        "movement": -3,
+        "name": "Zeynep Sonmez",
+        "points": 462,
+        "rankedAt": "2023-12-11",
+        "ranking": 164,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 325940,
+        "country": "GER",
+        "movement": -3,
+        "name": "Jule Niemeier",
+        "points": 458,
+        "rankedAt": "2023-12-11",
+        "ranking": 165,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 323007,
+        "country": "SWE",
+        "movement": -3,
+        "name": "Mirjam Bjorklund",
+        "points": 458,
+        "rankedAt": "2023-12-11",
+        "ranking": 166,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 325771,
+        "country": "SUI",
+        "movement": -2,
+        "name": "Simona Waltert",
+        "points": 455,
+        "rankedAt": "2023-12-11",
+        "ranking": 167,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 110536,
+        "country": "EST",
+        "movement": -1,
+        "name": "Kaia Kanepi",
+        "points": 449,
+        "rankedAt": "2023-12-11",
+        "ranking": 168,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 326096,
+        "country": "USA",
+        "movement": -1,
+        "name": "Ann Li",
+        "points": 444,
+        "rankedAt": "2023-12-11",
+        "ranking": 169,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 321495,
+        "country": "GBR",
+        "movement": -1,
+        "name": "Yuriko Lily Miyazaki",
+        "points": 443,
+        "rankedAt": "2023-12-11",
+        "ranking": 170,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 320735,
+        "country": "ESP",
+        "movement": -1,
+        "name": "Aliona Bolsova",
+        "points": 441,
+        "rankedAt": "2023-12-11",
+        "ranking": 171,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 317810,
+        "country": "AUS",
+        "movement": -1,
+        "name": "Storm Hunter",
+        "points": 440,
+        "rankedAt": "2023-12-11",
+        "ranking": 172,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 324584,
+        "country": "UKR",
+        "movement": -1,
+        "name": "Katarina Zavatska",
+        "points": 438,
+        "rankedAt": "2023-12-11",
+        "ranking": 173,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 320945,
+        "country": "CRO",
+        "movement": -8,
+        "name": "Jana Fett",
+        "points": 429,
+        "rankedAt": "2023-12-11",
+        "ranking": 174,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 330799,
+        "country": "CRO",
+        "movement": -1,
+        "name": "Petra Marcinko",
+        "points": 427,
+        "rankedAt": "2023-12-11",
+        "ranking": 175,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 331330,
+        "country": "RUS",
+        "movement": -1,
+        "name": "Alina Korneeva",
+        "points": 427,
+        "rankedAt": "2023-12-11",
+        "ranking": 176,
+        "tournamentsPlayed": 10
+      },
+      {
+        "ID": 313485,
+        "country": "CAN",
+        "movement": -1,
+        "name": "Rebecca Marino",
+        "points": 422,
+        "rankedAt": "2023-12-11",
+        "ranking": 177,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 328631,
+        "country": "GER",
+        "movement": -1,
+        "name": "Noma Noha Akugue",
+        "points": 419,
+        "rankedAt": "2023-12-11",
+        "ranking": 178,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 321280,
+        "country": "CYP",
+        "movement": 6,
+        "name": "Raluka Serban",
+        "points": 417,
+        "rankedAt": "2023-12-11",
+        "ranking": 179,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 330548,
+        "country": "GER",
+        "movement": -1,
+        "name": "Ella Seidel",
+        "points": 417,
+        "rankedAt": "2023-12-11",
+        "ranking": 180,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 317349,
+        "country": "SRB",
+        "movement": 0,
+        "name": "Natalija Stevanovic",
+        "points": 414,
+        "rankedAt": "2023-12-11",
+        "ranking": 181,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 329081,
+        "country": "ARG",
+        "movement": 11,
+        "name": "Solana Sierra",
+        "points": 414,
+        "rankedAt": "2023-12-11",
+        "ranking": 182,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 326568,
+        "country": "JPN",
+        "movement": -1,
+        "name": "Himeno Sakatsume",
+        "points": 412,
+        "rankedAt": "2023-12-11",
+        "ranking": 183,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 328897,
+        "country": "RUS",
+        "movement": -1,
+        "name": "Polina Kudermetova",
+        "points": 410,
+        "rankedAt": "2023-12-11",
+        "ranking": 184,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 318352,
+        "country": "ROU",
+        "movement": -1,
+        "name": "Irina Bara",
+        "points": 410,
+        "rankedAt": "2023-12-11",
+        "ranking": 185,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 328308,
+        "country": "RUS",
+        "movement": 2,
+        "name": "Ekaterina Makarova",
+        "points": 407,
+        "rankedAt": "2023-12-11",
+        "ranking": 186,
+        "tournamentsPlayed": 34
+      },
+      {
+        "ID": 317070,
+        "country": "HUN",
+        "movement": -7,
+        "name": "Timea Babos",
+        "points": 402,
+        "rankedAt": "2023-12-11",
+        "ranking": 187,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 317317,
+        "country": "BEL",
+        "movement": 1,
+        "name": "Ysaline Bonaventure",
+        "points": 401,
+        "rankedAt": "2023-12-11",
+        "ranking": 188,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 330332,
+        "country": "PHI",
+        "movement": 1,
+        "name": "Alexandra Eala",
+        "points": 399,
+        "rankedAt": "2023-12-11",
+        "ranking": 189,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 329408,
+        "country": "USA",
+        "movement": 28,
+        "name": "Robin Montgomery",
+        "points": 396,
+        "rankedAt": "2023-12-11",
+        "ranking": 190,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 327367,
+        "country": "RUS",
+        "movement": -4,
+        "name": "Anastasia Zakharova",
+        "points": 395,
+        "rankedAt": "2023-12-11",
+        "ranking": 191,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 327655,
+        "country": "SLO",
+        "movement": 0,
+        "name": "Veronika Erjavec",
+        "points": 392,
+        "rankedAt": "2023-12-11",
+        "ranking": 192,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 323119,
+        "country": "ROU",
+        "movement": 6,
+        "name": "Miriam Bulgaru",
+        "points": 390,
+        "rankedAt": "2023-12-11",
+        "ranking": 193,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 325991,
+        "country": "FRA",
+        "movement": -21,
+        "name": "Carole Monnet",
+        "points": 386,
+        "rankedAt": "2023-12-11",
+        "ranking": 194,
+        "tournamentsPlayed": 37
+      },
+      {
+        "ID": 327061,
+        "country": "AUT",
+        "movement": -1,
+        "name": "Sinja Kraus",
+        "points": 385,
+        "rankedAt": "2023-12-11",
+        "ranking": 195,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 315806,
+        "country": "POL",
+        "movement": -5,
+        "name": "Katarzyna Kawa",
+        "points": 385,
+        "rankedAt": "2023-12-11",
+        "ranking": 196,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 327834,
+        "country": "USA",
+        "movement": -2,
+        "name": "Elvina Kalieva",
+        "points": 380,
+        "rankedAt": "2023-12-11",
+        "ranking": 197,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 327241,
+        "country": "JPN",
+        "movement": -2,
+        "name": "Moyuka Uchijima",
+        "points": 376,
+        "rankedAt": "2023-12-11",
+        "ranking": 198,
+        "tournamentsPlayed": 31
+      },
+      {
+        "ID": 317805,
+        "country": "CAN",
+        "movement": -2,
+        "name": "Carol Zhao",
+        "points": 374,
+        "rankedAt": "2023-12-11",
+        "ranking": 199,
+        "tournamentsPlayed": 31
+      },
+      {
+        "ID": 320759,
+        "country": "BLR",
+        "movement": -2,
+        "name": "Iryna Shymanovich",
+        "points": 369,
+        "rankedAt": "2023-12-11",
+        "ranking": 200,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 326481,
+        "country": "RUS",
+        "movement": -1,
+        "name": "Sofya Lansere",
+        "points": 368,
+        "rankedAt": "2023-12-11",
+        "ranking": 201,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 328578,
+        "country": "RUS",
+        "movement": -1,
+        "name": "Darya Astakhova",
+        "points": 367,
+        "rankedAt": "2023-12-11",
+        "ranking": 202,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 330291,
+        "country": "AUS",
+        "movement": -1,
+        "name": "Taylah Preston",
+        "points": 367,
+        "rankedAt": "2023-12-11",
+        "ranking": 203,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 315997,
+        "country": "AUS",
+        "movement": -1,
+        "name": "Daria Saville",
+        "points": 366,
+        "rankedAt": "2023-12-11",
+        "ranking": 204,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 320543,
+        "country": "AUS",
+        "movement": -1,
+        "name": "Priscilla Hon",
+        "points": 366,
+        "rankedAt": "2023-12-11",
+        "ranking": 205,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 324056,
+        "country": "FRA",
+        "movement": -1,
+        "name": "Alice Robbe",
+        "points": 366,
+        "rankedAt": "2023-12-11",
+        "ranking": 206,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 317164,
+        "country": "IND",
+        "movement": -1,
+        "name": "Ankita Raina",
+        "points": 364,
+        "rankedAt": "2023-12-11",
+        "ranking": 207,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 325433,
+        "country": "ITA",
+        "movement": -1,
+        "name": "Nuria Brancaccio",
+        "points": 362,
+        "rankedAt": "2023-12-11",
+        "ranking": 208,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 324782,
+        "country": "BLR",
+        "movement": 14,
+        "name": "Yuliya Hatouka",
+        "points": 361,
+        "rankedAt": "2023-12-11",
+        "ranking": 209,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 323171,
+        "country": "CRO",
+        "movement": 4,
+        "name": "Lea Boskovic",
+        "points": 361,
+        "rankedAt": "2023-12-11",
+        "ranking": 210,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 324219,
+        "country": "AUS",
+        "movement": -3,
+        "name": "Destanee Aiava",
+        "points": 359,
+        "rankedAt": "2023-12-11",
+        "ranking": 211,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 329248,
+        "country": "TPE",
+        "movement": -3,
+        "name": "Ya Yi Yang",
+        "points": 359,
+        "rankedAt": "2023-12-11",
+        "ranking": 212,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 324898,
+        "country": "NED",
+        "movement": -3,
+        "name": "Suzan Lamens",
+        "points": 358,
+        "rankedAt": "2023-12-11",
+        "ranking": 213,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 322822,
+        "country": "AUS",
+        "movement": -3,
+        "name": "Jaimee Fourlis",
+        "points": 357,
+        "rankedAt": "2023-12-11",
+        "ranking": 214,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 319311,
+        "country": "MKD",
+        "movement": -3,
+        "name": "Lina Gjorcheska",
+        "points": 357,
+        "rankedAt": "2023-12-11",
+        "ranking": 215,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 324576,
+        "country": "SUI",
+        "movement": -3,
+        "name": "Lulu Sun",
+        "points": 356,
+        "rankedAt": "2023-12-11",
+        "ranking": 216,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 314050,
+        "country": "ROU",
+        "movement": 8,
+        "name": "Andreea Mitu",
+        "points": 352,
+        "rankedAt": "2023-12-11",
+        "ranking": 217,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 322417,
+        "country": "CHN",
+        "movement": -3,
+        "name": "Ye-Xin Ma",
+        "points": 351,
+        "rankedAt": "2023-12-11",
+        "ranking": 218,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 319250,
+        "country": "GRE",
+        "movement": -2,
+        "name": "Valentini Grammatikopoulou",
+        "points": 346,
+        "rankedAt": "2023-12-11",
+        "ranking": 219,
+        "tournamentsPlayed": 34
+      },
+      {
+        "ID": 316009,
+        "country": "GRE",
+        "movement": 1,
+        "name": "Despina Papamichail",
+        "points": 344,
+        "rankedAt": "2023-12-11",
+        "ranking": 220,
+        "tournamentsPlayed": 36
+      },
+      {
+        "ID": 316664,
+        "country": "UZB",
+        "movement": 24,
+        "name": "Nigina Abduraimova",
+        "points": 343,
+        "rankedAt": "2023-12-11",
+        "ranking": 221,
+        "tournamentsPlayed": 35
+      },
+      {
+        "ID": 330149,
+        "country": "CZE",
+        "movement": -3,
+        "name": "Dominika Salkova",
+        "points": 340,
+        "rankedAt": "2023-12-11",
+        "ranking": 222,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 328614,
+        "country": "BLR",
+        "movement": -3,
+        "name": "Jana Kolodynska",
+        "points": 339,
+        "rankedAt": "2023-12-11",
+        "ranking": 223,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 326678,
+        "country": "USA",
+        "movement": 11,
+        "name": "Mccartney Kessler",
+        "points": 338,
+        "rankedAt": "2023-12-11",
+        "ranking": 224,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 322451,
+        "country": "CHN",
+        "movement": -3,
+        "name": "Xiaodi You",
+        "points": 337,
+        "rankedAt": "2023-12-11",
+        "ranking": 225,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 318559,
+        "country": "CRO",
+        "movement": 1,
+        "name": "Tena Lukas",
+        "points": 337,
+        "rankedAt": "2023-12-11",
+        "ranking": 226,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 311779,
+        "country": "CHN",
+        "movement": -3,
+        "name": "Shuai Zhang",
+        "points": 336,
+        "rankedAt": "2023-12-11",
+        "ranking": 227,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 330723,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Tatiana Prozorova",
+        "points": 327,
+        "rankedAt": "2023-12-11",
+        "ranking": 228,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 328426,
+        "country": "CHN",
+        "movement": 0,
+        "name": "Sijia Wei",
+        "points": 327,
+        "rankedAt": "2023-12-11",
+        "ranking": 229,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 318358,
+        "country": "USA",
+        "movement": 0,
+        "name": "Jennifer Brady",
+        "points": 324,
+        "rankedAt": "2023-12-11",
+        "ranking": 230,
+        "tournamentsPlayed": 7
+      },
+      {
+        "ID": 316537,
+        "country": "NED",
+        "movement": 0,
+        "name": "Lesley Pattinama Kerkhove",
+        "points": 322,
+        "rankedAt": "2023-12-11",
+        "ranking": 231,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 327127,
+        "country": "FRA",
+        "movement": 28,
+        "name": "Margaux Rouvroy",
+        "points": 322,
+        "rankedAt": "2023-12-11",
+        "ranking": 232,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 326911,
+        "country": "ESP",
+        "movement": -1,
+        "name": "Carlota Martinez Cirez",
+        "points": 321,
+        "rankedAt": "2023-12-11",
+        "ranking": 233,
+        "tournamentsPlayed": 32
+      },
+      {
+        "ID": 329651,
+        "country": "THA",
+        "movement": -1,
+        "name": "Lanlana Tararudee",
+        "points": 321,
+        "rankedAt": "2023-12-11",
+        "ranking": 234,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 328142,
+        "country": "FRA",
+        "movement": -71,
+        "name": "Elsa Jacquemot",
+        "points": 320,
+        "rankedAt": "2023-12-11",
+        "ranking": 235,
+        "tournamentsPlayed": 33
+      },
+      {
+        "ID": 320465,
+        "country": "CAN",
+        "movement": -2,
+        "name": "Stacey Fung",
+        "points": 319,
+        "rankedAt": "2023-12-11",
+        "ranking": 236,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 315616,
+        "country": "FRA",
+        "movement": -11,
+        "name": "Kristina Mladenovic",
+        "points": 316,
+        "rankedAt": "2023-12-11",
+        "ranking": 237,
+        "tournamentsPlayed": 34
+      },
+      {
+        "ID": 315294,
+        "country": "SLO",
+        "movement": -2,
+        "name": "Dalila Jakupovic",
+        "points": 315,
+        "rankedAt": "2023-12-11",
+        "ranking": 238,
+        "tournamentsPlayed": 38
+      },
+      {
+        "ID": 321834,
+        "country": "TUR",
+        "movement": 2,
+        "name": "Ipek Oz",
+        "points": 312,
+        "rankedAt": "2023-12-11",
+        "ranking": 239,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 322351,
+        "country": "AUS",
+        "movement": -2,
+        "name": "Seone Mendez",
+        "points": 309,
+        "rankedAt": "2023-12-11",
+        "ranking": 240,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 330442,
+        "country": "ROU",
+        "movement": -4,
+        "name": "Anca Todoni",
+        "points": 309,
+        "rankedAt": "2023-12-11",
+        "ranking": 241,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 329578,
+        "country": "ITA",
+        "movement": 15,
+        "name": "Silvia Ambrosio",
+        "points": 307,
+        "rankedAt": "2023-12-11",
+        "ranking": 242,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 315365,
+        "country": "GER",
+        "movement": 12,
+        "name": "Mona Barthel",
+        "points": 304,
+        "rankedAt": "2023-12-11",
+        "ranking": 243,
+        "tournamentsPlayed": 33
+      },
+      {
+        "ID": 329918,
+        "country": "GBR",
+        "movement": -5,
+        "name": "Sonay Kartal",
+        "points": 303,
+        "rankedAt": "2023-12-11",
+        "ranking": 244,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 320016,
+        "country": "FRA",
+        "movement": -5,
+        "name": "Harmony Tan",
+        "points": 303,
+        "rankedAt": "2023-12-11",
+        "ranking": 245,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 313402,
+        "country": "DEN",
+        "movement": -4,
+        "name": "Caroline Wozniacki",
+        "points": 301,
+        "rankedAt": "2023-12-11",
+        "ranking": 246,
+        "tournamentsPlayed": 3
+      },
+      {
+        "ID": 325374,
+        "country": "BUL",
+        "movement": -4,
+        "name": "Gergana Topalova",
+        "points": 301,
+        "rankedAt": "2023-12-11",
+        "ranking": 247,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 317094,
+        "country": "BEL",
+        "movement": -4,
+        "name": "Maryna Zanevska",
+        "points": 300,
+        "rankedAt": "2023-12-11",
+        "ranking": 248,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 326929,
+        "country": "THA",
+        "movement": -2,
+        "name": "Mananchaya Sawangkaew",
+        "points": 297,
+        "rankedAt": "2023-12-11",
+        "ranking": 249,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 330451,
+        "country": "BEL",
+        "movement": 34,
+        "name": "Sofia Costoulas",
+        "points": 297,
+        "rankedAt": "2023-12-11",
+        "ranking": 250,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 326512,
+        "country": "TPE",
+        "movement": -5,
+        "name": "Joanna Garland",
+        "points": 296,
+        "rankedAt": "2023-12-11",
+        "ranking": 251,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 323071,
+        "country": "USA",
+        "movement": -4,
+        "name": "Makenna Jones",
+        "points": 295,
+        "rankedAt": "2023-12-11",
+        "ranking": 252,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 319706,
+        "country": "SRB",
+        "movement": -4,
+        "name": "Dejana Radanovic",
+        "points": 295,
+        "rankedAt": "2023-12-11",
+        "ranking": 253,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 321743,
+        "country": "USA",
+        "movement": -4,
+        "name": "Hanna Chang",
+        "points": 295,
+        "rankedAt": "2023-12-11",
+        "ranking": 254,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 330102,
+        "country": "RUS",
+        "movement": -4,
+        "name": "Julia Avdeeva",
+        "points": 292,
+        "rankedAt": "2023-12-11",
+        "ranking": 255,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 330147,
+        "country": "CZE",
+        "movement": -4,
+        "name": "Lucie Havlickova",
+        "points": 288,
+        "rankedAt": "2023-12-11",
+        "ranking": 256,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 321397,
+        "country": "SUI",
+        "movement": 18,
+        "name": "Ylena In-Albon",
+        "points": 286,
+        "rankedAt": "2023-12-11",
+        "ranking": 257,
+        "tournamentsPlayed": 34
+      },
+      {
+        "ID": 323231,
+        "country": "HUN",
+        "movement": 3,
+        "name": "Fanny Stollar",
+        "points": 286,
+        "rankedAt": "2023-12-11",
+        "ranking": 258,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 329250,
+        "country": "BLR",
+        "movement": -6,
+        "name": "Aliona Falei",
+        "points": 286,
+        "rankedAt": "2023-12-11",
+        "ranking": 259,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 322450,
+        "country": "TUR",
+        "movement": -6,
+        "name": "Berfu Cengiz",
+        "points": 285,
+        "rankedAt": "2023-12-11",
+        "ranking": 260,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 319433,
+        "country": "BEL",
+        "movement": -5,
+        "name": "Marie Benoit",
+        "points": 284,
+        "rankedAt": "2023-12-11",
+        "ranking": 261,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 320218,
+        "country": "USA",
+        "movement": -4,
+        "name": "Louisa Chirico",
+        "points": 281,
+        "rankedAt": "2023-12-11",
+        "ranking": 262,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 323677,
+        "country": "LTU",
+        "movement": -4,
+        "name": "Justina Mikulskyte",
+        "points": 281,
+        "rankedAt": "2023-12-11",
+        "ranking": 263,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 330894,
+        "country": "CRO",
+        "movement": 12,
+        "name": "Lucija Ciric Bagaric",
+        "points": 278,
+        "rankedAt": "2023-12-11",
+        "ranking": 264,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 313968,
+        "country": "SLO",
+        "movement": 7,
+        "name": "Polona Hercog",
+        "points": 277,
+        "rankedAt": "2023-12-11",
+        "ranking": 265,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 322925,
+        "country": "CHN",
+        "movement": -4,
+        "name": "Xinyu Gao",
+        "points": 277,
+        "rankedAt": "2023-12-11",
+        "ranking": 266,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 321157,
+        "country": "ESP",
+        "movement": -4,
+        "name": "Irene Burillo Escorihuela",
+        "points": 276,
+        "rankedAt": "2023-12-11",
+        "ranking": 267,
+        "tournamentsPlayed": 31
+      },
+      {
+        "ID": 329393,
+        "country": "AUS",
+        "movement": -4,
+        "name": "Talia Gibson",
+        "points": 276,
+        "rankedAt": "2023-12-11",
+        "ranking": 268,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 318857,
+        "country": "JPN",
+        "movement": -4,
+        "name": "Haruka Kaji",
+        "points": 275,
+        "rankedAt": "2023-12-11",
+        "ranking": 269,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 260142,
+        "country": "RUS",
+        "movement": -3,
+        "name": "Vera Zvonareva",
+        "points": 273,
+        "rankedAt": "2023-12-11",
+        "ranking": 270,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 324948,
+        "country": "POR",
+        "movement": -5,
+        "name": "Francisca Jorge",
+        "points": 273,
+        "rankedAt": "2023-12-11",
+        "ranking": 271,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 329614,
+        "country": "CAN",
+        "movement": -4,
+        "name": "Marina Stakusic",
+        "points": 270,
+        "rankedAt": "2023-12-11",
+        "ranking": 272,
+        "tournamentsPlayed": 9
+      },
+      {
+        "ID": 316588,
+        "country": "BUL",
+        "movement": 17,
+        "name": "Isabella Shinikova",
+        "points": 270,
+        "rankedAt": "2023-12-11",
+        "ranking": 273,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 20702,
+        "country": "UKR",
+        "movement": -5,
+        "name": "Kateryna Volodko",
+        "points": 268,
+        "rankedAt": "2023-12-11",
+        "ranking": 274,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 329505,
+        "country": "CRO",
+        "movement": -5,
+        "name": "Antonia Ruzic",
+        "points": 266,
+        "rankedAt": "2023-12-11",
+        "ranking": 275,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 324830,
+        "country": "TPE",
+        "movement": -5,
+        "name": "En-Shuo Liang",
+        "points": 266,
+        "rankedAt": "2023-12-11",
+        "ranking": 276,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 327398,
+        "country": "JPN",
+        "movement": -4,
+        "name": "Sakura Hosogi",
+        "points": 262,
+        "rankedAt": "2023-12-11",
+        "ranking": 277,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 323145,
+        "country": "GBR",
+        "movement": 0,
+        "name": "Katie Swan",
+        "points": 261,
+        "rankedAt": "2023-12-11",
+        "ranking": 278,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 315288,
+        "country": "ROU",
+        "movement": -2,
+        "name": "Cristina Dinu",
+        "points": 258,
+        "rankedAt": "2023-12-11",
+        "ranking": 279,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 319438,
+        "country": "HKG",
+        "movement": -1,
+        "name": "Eudice Chong",
+        "points": 255,
+        "rankedAt": "2023-12-11",
+        "ranking": 280,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 316157,
+        "country": "USA",
+        "movement": -1,
+        "name": "Grace Min",
+        "points": 254,
+        "rankedAt": "2023-12-11",
+        "ranking": 281,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 319133,
+        "country": "UKR",
+        "movement": -1,
+        "name": "Valeriya Strakhova",
+        "points": 254,
+        "rankedAt": "2023-12-11",
+        "ranking": 282,
+        "tournamentsPlayed": 34
+      },
+      {
+        "ID": 327193,
+        "country": "GRE",
+        "movement": -1,
+        "name": "Sapfo Sakellaridi",
+        "points": 254,
+        "rankedAt": "2023-12-11",
+        "ranking": 283,
+        "tournamentsPlayed": 39
+      },
+      {
+        "ID": 321179,
+        "country": "AUS",
+        "movement": -1,
+        "name": "Maddison Inglis",
+        "points": 252,
+        "rankedAt": "2023-12-11",
+        "ranking": 284,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 313215,
+        "country": "ROU",
+        "movement": 0,
+        "name": "Alexandra Cadantu-Ignatik",
+        "points": 250,
+        "rankedAt": "2023-12-11",
+        "ranking": 285,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 316161,
+        "country": "CAN",
+        "movement": 0,
+        "name": "Eugenie Bouchard",
+        "points": 249,
+        "rankedAt": "2023-12-11",
+        "ranking": 286,
+        "tournamentsPlayed": 12
+      },
+      {
+        "ID": 329090,
+        "country": "FRA",
+        "movement": 0,
+        "name": "Selena Janicijevic",
+        "points": 249,
+        "rankedAt": "2023-12-11",
+        "ranking": 287,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 330751,
+        "country": "SRB",
+        "movement": 0,
+        "name": "Lola Radivojevic",
+        "points": 247,
+        "rankedAt": "2023-12-11",
+        "ranking": 288,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 323608,
+        "country": "FIN",
+        "movement": -15,
+        "name": "Anastasia Kulikova",
+        "points": 247,
+        "rankedAt": "2023-12-11",
+        "ranking": 289,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 315232,
+        "country": "AUS",
+        "movement": -1,
+        "name": "Ajla Tomljanovic",
+        "points": 246,
+        "rankedAt": "2023-12-11",
+        "ranking": 290,
+        "tournamentsPlayed": 7
+      },
+      {
+        "ID": 120420,
+        "country": "USA",
+        "movement": 0,
+        "name": "Varvara Lepchenko",
+        "points": 245,
+        "rankedAt": "2023-12-11",
+        "ranking": 291,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 317286,
+        "country": "LIE",
+        "movement": 7,
+        "name": "Kathinka Von Deichmann",
+        "points": 241,
+        "rankedAt": "2023-12-11",
+        "ranking": 292,
+        "tournamentsPlayed": 33
+      },
+      {
+        "ID": 319411,
+        "country": "USA",
+        "movement": -1,
+        "name": "Jamie Loeb",
+        "points": 239,
+        "rankedAt": "2023-12-11",
+        "ranking": 293,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 330364,
+        "country": "CZE",
+        "movement": -1,
+        "name": "Nikola Bartunkova",
+        "points": 239,
+        "rankedAt": "2023-12-11",
+        "ranking": 294,
+        "tournamentsPlayed": 13
+      },
+      {
+        "ID": 330951,
+        "country": "CZE",
+        "movement": 39,
+        "name": "Julie Struplova",
+        "points": 236,
+        "rankedAt": "2023-12-11",
+        "ranking": 295,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 324479,
+        "country": "GBR",
+        "movement": -2,
+        "name": "Francesca Jones",
+        "points": 235,
+        "rankedAt": "2023-12-11",
+        "ranking": 296,
+        "tournamentsPlayed": 11
+      },
+      {
+        "ID": 324236,
+        "country": "ESP",
+        "movement": -2,
+        "name": "Rosa Vicens Mas",
+        "points": 232,
+        "rankedAt": "2023-12-11",
+        "ranking": 297,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 328366,
+        "country": "GBR",
+        "movement": -2,
+        "name": "Emma Raducanu",
+        "points": 231,
+        "rankedAt": "2023-12-11",
+        "ranking": 298,
+        "tournamentsPlayed": 7
+      },
+      {
+        "ID": 324360,
+        "country": "USA",
+        "movement": -2,
+        "name": "Maria Mateas",
+        "points": 231,
+        "rankedAt": "2023-12-11",
+        "ranking": 299,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 327219,
+        "country": "SUI",
+        "movement": -2,
+        "name": "Valentina Ryser",
+        "points": 230,
+        "rankedAt": "2023-12-11",
+        "ranking": 300,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 330372,
+        "country": "ITA",
+        "movement": -1,
+        "name": "Giorgia Pedone",
+        "points": 226,
+        "rankedAt": "2023-12-11",
+        "ranking": 301,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 331102,
+        "country": "BEL",
+        "movement": 0,
+        "name": "Hanne Vandewinkel",
+        "points": 226,
+        "rankedAt": "2023-12-11",
+        "ranking": 302,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 326891,
+        "country": "ESP",
+        "movement": -2,
+        "name": "Leyre Romero Gormaz",
+        "points": 224,
+        "rankedAt": "2023-12-11",
+        "ranking": 303,
+        "tournamentsPlayed": 31
+      },
+      {
+        "ID": 329919,
+        "country": "GBR",
+        "movement": 5,
+        "name": "Amarni Banks",
+        "points": 223,
+        "rankedAt": "2023-12-11",
+        "ranking": 304,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 319183,
+        "country": "JPN",
+        "movement": -2,
+        "name": "Kyoka Okamura",
+        "points": 221,
+        "rankedAt": "2023-12-11",
+        "ranking": 305,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 326561,
+        "country": "KOR",
+        "movement": -2,
+        "name": "Sohyun Park",
+        "points": 219,
+        "rankedAt": "2023-12-11",
+        "ranking": 306,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 319305,
+        "country": "BRA",
+        "movement": -2,
+        "name": "Carolina Alves",
+        "points": 217,
+        "rankedAt": "2023-12-11",
+        "ranking": 307,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 312520,
+        "country": "GER",
+        "movement": -2,
+        "name": "Sabine Lisicki",
+        "points": 217,
+        "rankedAt": "2023-12-11",
+        "ranking": 308,
+        "tournamentsPlayed": 13
+      },
+      {
+        "ID": 330280,
+        "country": "RUS",
+        "movement": -2,
+        "name": "Maria Bondarenko",
+        "points": 216,
+        "rankedAt": "2023-12-11",
+        "ranking": 309,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 330352,
+        "country": "AND",
+        "movement": -2,
+        "name": "Victoria Jimenez Kasintseva",
+        "points": 214,
+        "rankedAt": "2023-12-11",
+        "ranking": 310,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 315148,
+        "country": "FRA",
+        "movement": -1,
+        "name": "Amandine Hesse",
+        "points": 213,
+        "rankedAt": "2023-12-11",
+        "ranking": 311,
+        "tournamentsPlayed": 31
+      },
+      {
+        "ID": 323426,
+        "country": "SRB",
+        "movement": -1,
+        "name": "Katarina Kozarov",
+        "points": 213,
+        "rankedAt": "2023-12-11",
+        "ranking": 312,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 316694,
+        "country": "MEX",
+        "movement": -1,
+        "name": "Ana Sofia S\u00e1nchez",
+        "points": 212,
+        "rankedAt": "2023-12-11",
+        "ranking": 313,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 322334,
+        "country": "RUS",
+        "movement": -1,
+        "name": "Veronika Miroshnichenko",
+        "points": 210,
+        "rankedAt": "2023-12-11",
+        "ranking": 314,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 328160,
+        "country": "MLT",
+        "movement": 15,
+        "name": "Francesca Curmi",
+        "points": 210,
+        "rankedAt": "2023-12-11",
+        "ranking": 315,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 324394,
+        "country": "JPN",
+        "movement": -2,
+        "name": "Ayano Shimizu",
+        "points": 210,
+        "rankedAt": "2023-12-11",
+        "ranking": 316,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 320013,
+        "country": "AUS",
+        "movement": -2,
+        "name": "Lizette Cabrera",
+        "points": 209,
+        "rankedAt": "2023-12-11",
+        "ranking": 317,
+        "tournamentsPlayed": 13
+      },
+      {
+        "ID": 321132,
+        "country": "GRE",
+        "movement": 0,
+        "name": "Martha Matoula",
+        "points": 209,
+        "rankedAt": "2023-12-11",
+        "ranking": 318,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 330642,
+        "country": "USA",
+        "movement": -3,
+        "name": "Liv Hovde",
+        "points": 208,
+        "rankedAt": "2023-12-11",
+        "ranking": 319,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 315159,
+        "country": "KOR",
+        "movement": -3,
+        "name": "Na Lae Han",
+        "points": 207,
+        "rankedAt": "2023-12-11",
+        "ranking": 320,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 317108,
+        "country": "FRA",
+        "movement": 28,
+        "name": "Audrey Albie",
+        "points": 207,
+        "rankedAt": "2023-12-11",
+        "ranking": 321,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 318201,
+        "country": "ITA",
+        "movement": -3,
+        "name": "Camilla Rosatello",
+        "points": 206,
+        "rankedAt": "2023-12-11",
+        "ranking": 322,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 329061,
+        "country": "CZE",
+        "movement": -3,
+        "name": "Linda Klimovicova",
+        "points": 206,
+        "rankedAt": "2023-12-11",
+        "ranking": 323,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 312292,
+        "country": "TUR",
+        "movement": -3,
+        "name": "Cagla Buyukakcay",
+        "points": 205,
+        "rankedAt": "2023-12-11",
+        "ranking": 324,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 328034,
+        "country": "BLR",
+        "movement": -3,
+        "name": "Kristina Dmitruk",
+        "points": 204,
+        "rankedAt": "2023-12-11",
+        "ranking": 325,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 324786,
+        "country": "ESP",
+        "movement": 16,
+        "name": "Guiomar Maristany Zuleta De Reales",
+        "points": 202,
+        "rankedAt": "2023-12-11",
+        "ranking": 326,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 329858,
+        "country": "UKR",
+        "movement": -3,
+        "name": "Anastasiya Soboleva",
+        "points": 202,
+        "rankedAt": "2023-12-11",
+        "ranking": 327,
+        "tournamentsPlayed": 28
+      },
+      {
+        "ID": 323593,
+        "country": "IND",
+        "movement": -5,
+        "name": "Karman Thandi",
+        "points": 201,
+        "rankedAt": "2023-12-11",
+        "ranking": 328,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 314660,
+        "country": "GEO",
+        "movement": 12,
+        "name": "Ekaterine Gorgodze",
+        "points": 200,
+        "rankedAt": "2023-12-11",
+        "ranking": 329,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 322043,
+        "country": "USA",
+        "movement": -5,
+        "name": "Raveena Kingsley",
+        "points": 199,
+        "rankedAt": "2023-12-11",
+        "ranking": 330,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 331006,
+        "country": "CAN",
+        "movement": -5,
+        "name": "Victoria Mboko",
+        "points": 199,
+        "rankedAt": "2023-12-11",
+        "ranking": 331,
+        "tournamentsPlayed": 12
+      },
+      {
+        "ID": 330926,
+        "country": "SRB",
+        "movement": -5,
+        "name": "Mia Ristic",
+        "points": 198,
+        "rankedAt": "2023-12-11",
+        "ranking": 332,
+        "tournamentsPlayed": 12
+      },
+      {
+        "ID": 318907,
+        "country": "IND",
+        "movement": -5,
+        "name": "Rutuja Bhosale",
+        "points": 195,
+        "rankedAt": "2023-12-11",
+        "ranking": 333,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 321032,
+        "country": "SUI",
+        "movement": -3,
+        "name": "Susan Bandecchi",
+        "points": 192,
+        "rankedAt": "2023-12-11",
+        "ranking": 334,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 327100,
+        "country": "USA",
+        "movement": -3,
+        "name": "Victoria Hu",
+        "points": 191,
+        "rankedAt": "2023-12-11",
+        "ranking": 335,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 322510,
+        "country": "ITA",
+        "movement": -1,
+        "name": "Dalila Spiteri",
+        "points": 190,
+        "rankedAt": "2023-12-11",
+        "ranking": 336,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 332175,
+        "country": "JPN",
+        "movement": -1,
+        "name": "Sara Saito",
+        "points": 190,
+        "rankedAt": "2023-12-11",
+        "ranking": 337,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 328193,
+        "country": "ITA",
+        "movement": 6,
+        "name": "Lisa Pigato",
+        "points": 188,
+        "rankedAt": "2023-12-11",
+        "ranking": 338,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 325614,
+        "country": "BDI",
+        "movement": -2,
+        "name": "Sada Nahimana",
+        "points": 188,
+        "rankedAt": "2023-12-11",
+        "ranking": 339,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 316606,
+        "country": "HUN",
+        "movement": -2,
+        "name": "Reka Luca Jani",
+        "points": 187,
+        "rankedAt": "2023-12-11",
+        "ranking": 340,
+        "tournamentsPlayed": 35
+      },
+      {
+        "ID": 328884,
+        "country": "FRA",
+        "movement": -1,
+        "name": "Lois Boisson",
+        "points": 187,
+        "rankedAt": "2023-12-11",
+        "ranking": 341,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 330466,
+        "country": "RUS",
+        "movement": 13,
+        "name": "Polina Iatcenko",
+        "points": 187,
+        "rankedAt": "2023-12-11",
+        "ranking": 342,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 317819,
+        "country": "BEL",
+        "movement": -4,
+        "name": "Alison Van Uytvanck",
+        "points": 186,
+        "rankedAt": "2023-12-11",
+        "ranking": 343,
+        "tournamentsPlayed": 9
+      },
+      {
+        "ID": 328281,
+        "country": "USA",
+        "movement": 1,
+        "name": "Madison Sieg",
+        "points": 184,
+        "rankedAt": "2023-12-11",
+        "ranking": 344,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 316481,
+        "country": "LAT",
+        "movement": -2,
+        "name": "Diana Marcinkevica",
+        "points": 184,
+        "rankedAt": "2023-12-11",
+        "ranking": 345,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 323373,
+        "country": "ROU",
+        "movement": 4,
+        "name": "Andreea Prisacariu",
+        "points": 183,
+        "rankedAt": "2023-12-11",
+        "ranking": 346,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 330363,
+        "country": "CZE",
+        "movement": 6,
+        "name": "Barbora Palicova",
+        "points": 182,
+        "rankedAt": "2023-12-11",
+        "ranking": 347,
+        "tournamentsPlayed": 29
+      },
+      {
+        "ID": 323582,
+        "country": "MEX",
+        "movement": -1,
+        "name": "Fernanda Contreras",
+        "points": 182,
+        "rankedAt": "2023-12-11",
+        "ranking": 348,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 315265,
+        "country": "SUI",
+        "movement": -1,
+        "name": "Conny Perrin",
+        "points": 182,
+        "rankedAt": "2023-12-11",
+        "ranking": 349,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 320481,
+        "country": "RUS",
+        "movement": 14,
+        "name": "Daria Lodikova",
+        "points": 182,
+        "rankedAt": "2023-12-11",
+        "ranking": 350,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 325114,
+        "country": "EST",
+        "movement": 0,
+        "name": "Elena Malygina",
+        "points": 180,
+        "rankedAt": "2023-12-11",
+        "ranking": 351,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 324995,
+        "country": "CZE",
+        "movement": 0,
+        "name": "Anna Siskova",
+        "points": 179,
+        "rankedAt": "2023-12-11",
+        "ranking": 352,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 323091,
+        "country": "ISR",
+        "movement": -20,
+        "name": "Lina Glushko",
+        "points": 178,
+        "rankedAt": "2023-12-11",
+        "ranking": 353,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 319042,
+        "country": "USA",
+        "movement": 0,
+        "name": "Allie Kiick",
+        "points": 178,
+        "rankedAt": "2023-12-11",
+        "ranking": 354,
+        "tournamentsPlayed": 8
+      },
+      {
+        "ID": 325011,
+        "country": "NED",
+        "movement": 20,
+        "name": "Eva Vedder",
+        "points": 177,
+        "rankedAt": "2023-12-11",
+        "ranking": 355,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 321658,
+        "country": "GER",
+        "movement": 13,
+        "name": "Katharina Hobgarski",
+        "points": 176,
+        "rankedAt": "2023-12-11",
+        "ranking": 356,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 328919,
+        "country": "JPN",
+        "movement": -1,
+        "name": "Natsumi Kawaguchi",
+        "points": 176,
+        "rankedAt": "2023-12-11",
+        "ranking": 357,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 331259,
+        "country": "CHN",
+        "movement": -1,
+        "name": "Zongyu Li",
+        "points": 176,
+        "rankedAt": "2023-12-11",
+        "ranking": 358,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 327490,
+        "country": "ROU",
+        "movement": -1,
+        "name": "Ilinca Amariei",
+        "points": 175,
+        "rankedAt": "2023-12-11",
+        "ranking": 359,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 320501,
+        "country": "BEL",
+        "movement": -31,
+        "name": "Magali Kempen",
+        "points": 174,
+        "rankedAt": "2023-12-11",
+        "ranking": 360,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 328907,
+        "country": "POL",
+        "movement": 46,
+        "name": "Martyna Kubka",
+        "points": 173,
+        "rankedAt": "2023-12-11",
+        "ranking": 361,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 324543,
+        "country": "BIH",
+        "movement": -3,
+        "name": "Nefisa Berberovic",
+        "points": 173,
+        "rankedAt": "2023-12-11",
+        "ranking": 362,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 319016,
+        "country": "GBR",
+        "movement": -3,
+        "name": "Katy Dunne",
+        "points": 173,
+        "rankedAt": "2023-12-11",
+        "ranking": 363,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 325639,
+        "country": "POL",
+        "movement": -3,
+        "name": "Maja Chwalinska",
+        "points": 172,
+        "rankedAt": "2023-12-11",
+        "ranking": 364,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 313919,
+        "country": "USA",
+        "movement": -3,
+        "name": "Asia Muhammad",
+        "points": 171,
+        "rankedAt": "2023-12-11",
+        "ranking": 365,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 319753,
+        "country": "GBR",
+        "movement": -3,
+        "name": "Anna Brogan",
+        "points": 171,
+        "rankedAt": "2023-12-11",
+        "ranking": 366,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 331039,
+        "country": "RUS",
+        "movement": 43,
+        "name": "Ksenia Zaytseva",
+        "points": 171,
+        "rankedAt": "2023-12-11",
+        "ranking": 367,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 313225,
+        "country": "CHN",
+        "movement": -3,
+        "name": "Jia-Jing Lu",
+        "points": 171,
+        "rankedAt": "2023-12-11",
+        "ranking": 368,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 319465,
+        "country": "GBR",
+        "movement": -3,
+        "name": "Eden Silva",
+        "points": 170,
+        "rankedAt": "2023-12-11",
+        "ranking": 369,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 326384,
+        "country": "USA",
+        "movement": -3,
+        "name": "Amanda Anisimova",
+        "points": 169,
+        "rankedAt": "2023-12-11",
+        "ranking": 370,
+        "tournamentsPlayed": 9
+      },
+      {
+        "ID": 321146,
+        "country": "USA",
+        "movement": -25,
+        "name": "Sophie Chang",
+        "points": 169,
+        "rankedAt": "2023-12-11",
+        "ranking": 371,
+        "tournamentsPlayed": 26
+      },
+      {
+        "ID": 315815,
+        "country": "ESP",
+        "movement": -4,
+        "name": "Georgina Garcia Perez",
+        "points": 169,
+        "rankedAt": "2023-12-11",
+        "ranking": 372,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 320512,
+        "country": "MEX",
+        "movement": -3,
+        "name": "Victoria Rodriguez",
+        "points": 167,
+        "rankedAt": "2023-12-11",
+        "ranking": 373,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 324595,
+        "country": "LAT",
+        "movement": -3,
+        "name": "Daniela Vismane",
+        "points": 167,
+        "rankedAt": "2023-12-11",
+        "ranking": 374,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 322382,
+        "country": "ESP",
+        "movement": -3,
+        "name": "Eva Guerrero Alvarez",
+        "points": 166,
+        "rankedAt": "2023-12-11",
+        "ranking": 375,
+        "tournamentsPlayed": 13
+      },
+      {
+        "ID": 323440,
+        "country": "ROU",
+        "movement": -3,
+        "name": "Ilona-Georgiana Ghioroaie",
+        "points": 165,
+        "rankedAt": "2023-12-11",
+        "ranking": 376,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 321837,
+        "country": "USA",
+        "movement": -3,
+        "name": "Vivian Wolff",
+        "points": 165,
+        "rankedAt": "2023-12-11",
+        "ranking": 377,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 328401,
+        "country": "GER",
+        "movement": -2,
+        "name": "Julia Middendorf",
+        "points": 163,
+        "rankedAt": "2023-12-11",
+        "ranking": 378,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 325794,
+        "country": "FRA",
+        "movement": -2,
+        "name": "Manon Leonard",
+        "points": 163,
+        "rankedAt": "2023-12-11",
+        "ranking": 379,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 326049,
+        "country": "JPN",
+        "movement": -2,
+        "name": "Rina Saigo",
+        "points": 161,
+        "rankedAt": "2023-12-11",
+        "ranking": 380,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 329009,
+        "country": "JPN",
+        "movement": -2,
+        "name": "Aoi Ito",
+        "points": 160,
+        "rankedAt": "2023-12-11",
+        "ranking": 381,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 316674,
+        "country": "BRA",
+        "movement": -1,
+        "name": "Gabriela Ce",
+        "points": 159,
+        "rankedAt": "2023-12-11",
+        "ranking": 382,
+        "tournamentsPlayed": 27
+      },
+      {
+        "ID": 320178,
+        "country": "ARG",
+        "movement": -3,
+        "name": "Guillermina Naya",
+        "points": 159,
+        "rankedAt": "2023-12-11",
+        "ranking": 383,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 325073,
+        "country": "ESP",
+        "movement": -2,
+        "name": "Lucia Cortez Llorca",
+        "points": 159,
+        "rankedAt": "2023-12-11",
+        "ranking": 384,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 313035,
+        "country": "AUT",
+        "movement": -2,
+        "name": "Tamira Paszek",
+        "points": 159,
+        "rankedAt": "2023-12-11",
+        "ranking": 385,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 330905,
+        "country": "RUS",
+        "movement": 2,
+        "name": "Elena Pridankina",
+        "points": 159,
+        "rankedAt": "2023-12-11",
+        "ranking": 386,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 320369,
+        "country": "ITA",
+        "movement": -3,
+        "name": "Martina Colmegna",
+        "points": 158,
+        "rankedAt": "2023-12-11",
+        "ranking": 387,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 325423,
+        "country": "USA",
+        "movement": -3,
+        "name": "Chloe Beck",
+        "points": 158,
+        "rankedAt": "2023-12-11",
+        "ranking": 388,
+        "tournamentsPlayed": 12
+      },
+      {
+        "ID": 325750,
+        "country": "POL",
+        "movement": -3,
+        "name": "Weronika Falkowska",
+        "points": 158,
+        "rankedAt": "2023-12-11",
+        "ranking": 389,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 327182,
+        "country": "UKR",
+        "movement": -3,
+        "name": "Oleksandra Oliynykova",
+        "points": 157,
+        "rankedAt": "2023-12-11",
+        "ranking": 390,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 319454,
+        "country": "ROU",
+        "movement": 33,
+        "name": "Gabriela Lee",
+        "points": 156,
+        "rankedAt": "2023-12-11",
+        "ranking": 391,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 317175,
+        "country": "USA",
+        "movement": 24,
+        "name": "Robin Anderson",
+        "points": 156,
+        "rankedAt": "2023-12-11",
+        "ranking": 392,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 316607,
+        "country": "MEX",
+        "movement": -4,
+        "name": "Marcela Zacarias",
+        "points": 154,
+        "rankedAt": "2023-12-11",
+        "ranking": 393,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 329198,
+        "country": "RUS",
+        "movement": -4,
+        "name": "Alina Charaeva",
+        "points": 153,
+        "rankedAt": "2023-12-11",
+        "ranking": 394,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 322716,
+        "country": "USA",
+        "movement": 2,
+        "name": "Jessie Aney",
+        "points": 152,
+        "rankedAt": "2023-12-11",
+        "ranking": 395,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 325781,
+        "country": "USA",
+        "movement": 0,
+        "name": "Ashley Lahey",
+        "points": 152,
+        "rankedAt": "2023-12-11",
+        "ranking": 396,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 326101,
+        "country": "USA",
+        "movement": -6,
+        "name": "Whitney Osuigwe",
+        "points": 151,
+        "rankedAt": "2023-12-11",
+        "ranking": 397,
+        "tournamentsPlayed": 30
+      },
+      {
+        "ID": 327918,
+        "country": "SLO",
+        "movement": -6,
+        "name": "Nika Radisic",
+        "points": 151,
+        "rankedAt": "2023-12-11",
+        "ranking": 398,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 315083,
+        "country": "ARG",
+        "movement": -6,
+        "name": "Paula Ormaechea",
+        "points": 150,
+        "rankedAt": "2023-12-11",
+        "ranking": 399,
+        "tournamentsPlayed": 11
+      },
+      {
+        "ID": 325404,
+        "country": "ITA",
+        "movement": -6,
+        "name": "Aurora Zantedeschi",
+        "points": 149,
+        "rankedAt": "2023-12-11",
+        "ranking": 400,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 320190,
+        "country": "SWE",
+        "movement": -6,
+        "name": "Kajsa Rinaldo Persson",
+        "points": 149,
+        "rankedAt": "2023-12-11",
+        "ranking": 401,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 324681,
+        "country": "GER",
+        "movement": -3,
+        "name": "Kathleen Kanev",
+        "points": 147,
+        "rankedAt": "2023-12-11",
+        "ranking": 402,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 331153,
+        "country": "JPN",
+        "movement": -3,
+        "name": "Miho Kuramochi",
+        "points": 147,
+        "rankedAt": "2023-12-11",
+        "ranking": 403,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 320682,
+        "country": "CRO",
+        "movement": -3,
+        "name": "Ana Konjuh",
+        "points": 146,
+        "rankedAt": "2023-12-11",
+        "ranking": 404,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 326235,
+        "country": "JPN",
+        "movement": -3,
+        "name": "Yuki Naito",
+        "points": 146,
+        "rankedAt": "2023-12-11",
+        "ranking": 405,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 326908,
+        "country": "AUS",
+        "movement": -3,
+        "name": "Tina Smith",
+        "points": 146,
+        "rankedAt": "2023-12-11",
+        "ranking": 406,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 328797,
+        "country": "INA",
+        "movement": -3,
+        "name": "Priska Nugroho",
+        "points": 145,
+        "rankedAt": "2023-12-11",
+        "ranking": 407,
+        "tournamentsPlayed": 10
+      },
+      {
+        "ID": 318776,
+        "country": "TPE",
+        "movement": -3,
+        "name": "Ya-Hsuan Lee",
+        "points": 145,
+        "rankedAt": "2023-12-11",
+        "ranking": 408,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 317541,
+        "country": "ITA",
+        "movement": -3,
+        "name": "Miriana Tona",
+        "points": 145,
+        "rankedAt": "2023-12-11",
+        "ranking": 409,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 331152,
+        "country": "IND",
+        "movement": -2,
+        "name": "Sahaja  Yamalapalli",
+        "points": 144,
+        "rankedAt": "2023-12-11",
+        "ranking": 410,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 319641,
+        "country": "TUR",
+        "movement": -13,
+        "name": "Ayla Aksu",
+        "points": 143,
+        "rankedAt": "2023-12-11",
+        "ranking": 411,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 230220,
+        "country": "USA",
+        "movement": -3,
+        "name": "Venus Williams",
+        "points": 142,
+        "rankedAt": "2023-12-11",
+        "ranking": 412,
+        "tournamentsPlayed": 7
+      },
+      {
+        "ID": 329567,
+        "country": "GRE",
+        "movement": -2,
+        "name": "Dimitra Pavlou",
+        "points": 142,
+        "rankedAt": "2023-12-11",
+        "ranking": 413,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 324656,
+        "country": "CZE",
+        "movement": -2,
+        "name": "Aneta Kucmova",
+        "points": 141,
+        "rankedAt": "2023-12-11",
+        "ranking": 414,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 321965,
+        "country": "RUS",
+        "movement": -2,
+        "name": "Amina Anshba",
+        "points": 140,
+        "rankedAt": "2023-12-11",
+        "ranking": 415,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 323087,
+        "country": "CHN",
+        "movement": -2,
+        "name": "Hanyu Guo",
+        "points": 140,
+        "rankedAt": "2023-12-11",
+        "ranking": 416,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 327633,
+        "country": "THA",
+        "movement": -2,
+        "name": "Thasaporn Naklo",
+        "points": 140,
+        "rankedAt": "2023-12-11",
+        "ranking": 417,
+        "tournamentsPlayed": 8
+      },
+      {
+        "ID": 328988,
+        "country": "NED",
+        "movement": 11,
+        "name": "Anouk Koevermans",
+        "points": 139,
+        "rankedAt": "2023-12-11",
+        "ranking": 418,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 325295,
+        "country": "JPN",
+        "movement": -2,
+        "name": "Eri Shimizu",
+        "points": 139,
+        "rankedAt": "2023-12-11",
+        "ranking": 419,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 323182,
+        "country": "JPN",
+        "movement": -2,
+        "name": "Haruna Arakawa",
+        "points": 139,
+        "rankedAt": "2023-12-11",
+        "ranking": 420,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 314464,
+        "country": "USA",
+        "movement": -2,
+        "name": "Coco Vandeweghe",
+        "points": 138,
+        "rankedAt": "2023-12-11",
+        "ranking": 421,
+        "tournamentsPlayed": 13
+      },
+      {
+        "ID": 311832,
+        "country": "JPN",
+        "movement": -2,
+        "name": "Erika Sema",
+        "points": 138,
+        "rankedAt": "2023-12-11",
+        "ranking": 422,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 326723,
+        "country": "HKG",
+        "movement": -1,
+        "name": "Hong Yi Cody Wong",
+        "points": 137,
+        "rankedAt": "2023-12-11",
+        "ranking": 423,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 324028,
+        "country": "SUI",
+        "movement": 23,
+        "name": "Leonie Kung",
+        "points": 137,
+        "rankedAt": "2023-12-11",
+        "ranking": 424,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 330236,
+        "country": "CRO",
+        "movement": -2,
+        "name": "Tara Wurth",
+        "points": 136,
+        "rankedAt": "2023-12-11",
+        "ranking": 425,
+        "tournamentsPlayed": 9
+      },
+      {
+        "ID": 321984,
+        "country": "FRA",
+        "movement": -1,
+        "name": "Tessah Andrianjafitrimo",
+        "points": 136,
+        "rankedAt": "2023-12-11",
+        "ranking": 426,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 319432,
+        "country": "BIH",
+        "movement": -1,
+        "name": "Dea Herdzelas",
+        "points": 136,
+        "rankedAt": "2023-12-11",
+        "ranking": 427,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 324970,
+        "country": "FRA",
+        "movement": 0,
+        "name": "Emma Lene",
+        "points": 135,
+        "rankedAt": "2023-12-11",
+        "ranking": 428,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 328659,
+        "country": "SLO",
+        "movement": -2,
+        "name": "Ziva Falkner",
+        "points": 135,
+        "rankedAt": "2023-12-11",
+        "ranking": 429,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 329438,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Ekaterina Maklakova",
+        "points": 135,
+        "rankedAt": "2023-12-11",
+        "ranking": 430,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 329199,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Oksana Selekhmeteva",
+        "points": 134,
+        "rankedAt": "2023-12-11",
+        "ranking": 431,
+        "tournamentsPlayed": 8
+      },
+      {
+        "ID": 318924,
+        "country": "GBR",
+        "movement": 7,
+        "name": "Sarah Beth Grey",
+        "points": 134,
+        "rankedAt": "2023-12-11",
+        "ranking": 432,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 322579,
+        "country": "AUS",
+        "movement": -1,
+        "name": "Petra Hule",
+        "points": 133,
+        "rankedAt": "2023-12-11",
+        "ranking": 433,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 325700,
+        "country": "GER",
+        "movement": -1,
+        "name": "Alexandra Vecic",
+        "points": 133,
+        "rankedAt": "2023-12-11",
+        "ranking": 434,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 318488,
+        "country": "CZE",
+        "movement": 0,
+        "name": "Jesika Maleckova",
+        "points": 132,
+        "rankedAt": "2023-12-11",
+        "ranking": 435,
+        "tournamentsPlayed": 13
+      },
+      {
+        "ID": 331074,
+        "country": "DEN",
+        "movement": 0,
+        "name": "Johanne Svendsen",
+        "points": 132,
+        "rankedAt": "2023-12-11",
+        "ranking": 436,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 317171,
+        "country": "ROU",
+        "movement": 3,
+        "name": "Patricia Maria Tig",
+        "points": 131,
+        "rankedAt": "2023-12-11",
+        "ranking": 437,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 327781,
+        "country": "USA",
+        "movement": -1,
+        "name": "Fiona Crawley",
+        "points": 131,
+        "rankedAt": "2023-12-11",
+        "ranking": 438,
+        "tournamentsPlayed": 6
+      },
+      {
+        "ID": 321906,
+        "country": "AUS",
+        "movement": -1,
+        "name": "Kaylah Mcphee",
+        "points": 131,
+        "rankedAt": "2023-12-11",
+        "ranking": 439,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 323694,
+        "country": "GBR",
+        "movement": 28,
+        "name": "Emily Appleton",
+        "points": 130,
+        "rankedAt": "2023-12-11",
+        "ranking": 440,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 322909,
+        "country": "GER",
+        "movement": 0,
+        "name": "Anna Gabric",
+        "points": 130,
+        "rankedAt": "2023-12-11",
+        "ranking": 441,
+        "tournamentsPlayed": 11
+      },
+      {
+        "ID": 312584,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Evgeniya Rodina",
+        "points": 129,
+        "rankedAt": "2023-12-11",
+        "ranking": 442,
+        "tournamentsPlayed": 9
+      },
+      {
+        "ID": 322355,
+        "country": "ESP",
+        "movement": 0,
+        "name": "Angela Fita Boluda",
+        "points": 129,
+        "rankedAt": "2023-12-11",
+        "ranking": 443,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 322631,
+        "country": "USA",
+        "movement": 0,
+        "name": "Alana Smith",
+        "points": 129,
+        "rankedAt": "2023-12-11",
+        "ranking": 444,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 329575,
+        "country": "FRA",
+        "movement": -11,
+        "name": "Nahia Berecoechea",
+        "points": 128,
+        "rankedAt": "2023-12-11",
+        "ranking": 445,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 324411,
+        "country": "SUI",
+        "movement": -1,
+        "name": "Joanne Zuger",
+        "points": 127,
+        "rankedAt": "2023-12-11",
+        "ranking": 446,
+        "tournamentsPlayed": 12
+      },
+      {
+        "ID": 316554,
+        "country": "THA",
+        "movement": -1,
+        "name": "Peangtarn Plipuech",
+        "points": 127,
+        "rankedAt": "2023-12-11",
+        "ranking": 447,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 321139,
+        "country": "SWE",
+        "movement": 1,
+        "name": "Fanny Ostlund",
+        "points": 127,
+        "rankedAt": "2023-12-11",
+        "ranking": 448,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 330547,
+        "country": "GER",
+        "movement": 15,
+        "name": "Carolina Kuhl",
+        "points": 126,
+        "rankedAt": "2023-12-11",
+        "ranking": 449,
+        "tournamentsPlayed": 12
+      },
+      {
+        "ID": 319606,
+        "country": "CHN",
+        "movement": 0,
+        "name": "Fangzhou Liu",
+        "points": 126,
+        "rankedAt": "2023-12-11",
+        "ranking": 450,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 329115,
+        "country": "USA",
+        "movement": 0,
+        "name": "Katrina Scott",
+        "points": 125,
+        "rankedAt": "2023-12-11",
+        "ranking": 451,
+        "tournamentsPlayed": 24
+      },
+      {
+        "ID": 327144,
+        "country": "GBR",
+        "movement": 0,
+        "name": "Emilie Lindh Gallagher",
+        "points": 125,
+        "rankedAt": "2023-12-11",
+        "ranking": 452,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 329181,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Anastasia Kovaleva",
+        "points": 125,
+        "rankedAt": "2023-12-11",
+        "ranking": 453,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 319962,
+        "country": "GBR",
+        "movement": 0,
+        "name": "Naiktha Bains",
+        "points": 124,
+        "rankedAt": "2023-12-11",
+        "ranking": 454,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 322333,
+        "country": "RUS",
+        "movement": 0,
+        "name": "Anastasia Gasanova",
+        "points": 124,
+        "rankedAt": "2023-12-11",
+        "ranking": 455,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 328686,
+        "country": "SUI",
+        "movement": -8,
+        "name": "Nadine Keller",
+        "points": 124,
+        "rankedAt": "2023-12-11",
+        "ranking": 456,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 328237,
+        "country": "RUS",
+        "movement": -1,
+        "name": "Ekaterina Reyngold",
+        "points": 123,
+        "rankedAt": "2023-12-11",
+        "ranking": 457,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 327351,
+        "country": "KOR",
+        "movement": -1,
+        "name": "Dayeon Back",
+        "points": 122,
+        "rankedAt": "2023-12-11",
+        "ranking": 458,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 325048,
+        "country": "USA",
+        "movement": -1,
+        "name": "Dalayna Hewitt",
+        "points": 122,
+        "rankedAt": "2023-12-11",
+        "ranking": 459,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 325592,
+        "country": "CZE",
+        "movement": -1,
+        "name": "Michaela Bayerlova",
+        "points": 122,
+        "rankedAt": "2023-12-11",
+        "ranking": 460,
+        "tournamentsPlayed": 22
+      },
+      {
+        "ID": 325758,
+        "country": "USA",
+        "movement": 6,
+        "name": "Haley Giavara",
+        "points": 121,
+        "rankedAt": "2023-12-11",
+        "ranking": 461,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 332575,
+        "country": "RUS",
+        "movement": 3,
+        "name": "Alevtina Ibragimova",
+        "points": 121,
+        "rankedAt": "2023-12-11",
+        "ranking": 462,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 318080,
+        "country": "ESP",
+        "movement": -3,
+        "name": "Andrea Lazaro Garcia",
+        "points": 119,
+        "rankedAt": "2023-12-11",
+        "ranking": 463,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 323557,
+        "country": "ITA",
+        "movement": -3,
+        "name": "Federica Bilardo",
+        "points": 119,
+        "rankedAt": "2023-12-11",
+        "ranking": 464,
+        "tournamentsPlayed": 13
+      },
+      {
+        "ID": 313131,
+        "country": "POL",
+        "movement": -2,
+        "name": "Urszula Radwanska",
+        "points": 117,
+        "rankedAt": "2023-12-11",
+        "ranking": 465,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 330432,
+        "country": "CAN",
+        "movement": 0,
+        "name": "Cadence Brace",
+        "points": 116,
+        "rankedAt": "2023-12-11",
+        "ranking": 466,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 319937,
+        "country": "SWE",
+        "movement": 2,
+        "name": "Jacqueline Cabaj Awad",
+        "points": 115,
+        "rankedAt": "2023-12-11",
+        "ranking": 467,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 322752,
+        "country": "FRA",
+        "movement": 2,
+        "name": "Sara Cakarevic",
+        "points": 115,
+        "rankedAt": "2023-12-11",
+        "ranking": 468,
+        "tournamentsPlayed": 13
+      },
+      {
+        "ID": 327191,
+        "country": "JPN",
+        "movement": 2,
+        "name": "Naho Sato",
+        "points": 115,
+        "rankedAt": "2023-12-11",
+        "ranking": 469,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 331963,
+        "country": "JPN",
+        "movement": 3,
+        "name": "Sayaka Ishii",
+        "points": 113,
+        "rankedAt": "2023-12-11",
+        "ranking": 470,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 324203,
+        "country": "KAZ",
+        "movement": 3,
+        "name": "Zhibek Kulambayeva",
+        "points": 112,
+        "rankedAt": "2023-12-11",
+        "ranking": 471,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 328320,
+        "country": "USA",
+        "movement": 0,
+        "name": "Hina Inoue",
+        "points": 112,
+        "rankedAt": "2023-12-11",
+        "ranking": 472,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 329759,
+        "country": "FIN",
+        "movement": 2,
+        "name": "Laura Hietaranta",
+        "points": 112,
+        "rankedAt": "2023-12-11",
+        "ranking": 473,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 329307,
+        "country": "ITA",
+        "movement": 2,
+        "name": "Sofia Rocchetti",
+        "points": 112,
+        "rankedAt": "2023-12-11",
+        "ranking": 474,
+        "tournamentsPlayed": 20
+      },
+      {
+        "ID": 329217,
+        "country": "ITA",
+        "movement": 2,
+        "name": "Jennifer Ruggeri",
+        "points": 111,
+        "rankedAt": "2023-12-11",
+        "ranking": 475,
+        "tournamentsPlayed": 10
+      },
+      {
+        "ID": 330527,
+        "country": "BEL",
+        "movement": 2,
+        "name": "Amelie Van Impe",
+        "points": 111,
+        "rankedAt": "2023-12-11",
+        "ranking": 476,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 325835,
+        "country": "EST",
+        "movement": 2,
+        "name": "Maileen Nuudi",
+        "points": 111,
+        "rankedAt": "2023-12-11",
+        "ranking": 477,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 317711,
+        "country": "UKR",
+        "movement": 2,
+        "name": "Ganna Poznikhirenko",
+        "points": 110,
+        "rankedAt": "2023-12-11",
+        "ranking": 478,
+        "tournamentsPlayed": 13
+      },
+      {
+        "ID": 329415,
+        "country": "USA",
+        "movement": -17,
+        "name": "Jenna Defalco",
+        "points": 109,
+        "rankedAt": "2023-12-11",
+        "ranking": 479,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 330443,
+        "country": "GRE",
+        "movement": 1,
+        "name": "Michaela Laki",
+        "points": 109,
+        "rankedAt": "2023-12-11",
+        "ranking": 480,
+        "tournamentsPlayed": 21
+      },
+      {
+        "ID": 324308,
+        "country": "FRA",
+        "movement": -60,
+        "name": "Emeline Dartron",
+        "points": 108,
+        "rankedAt": "2023-12-11",
+        "ranking": 481,
+        "tournamentsPlayed": 19
+      },
+      {
+        "ID": 331361,
+        "country": "CHN",
+        "movement": 0,
+        "name": "Xinxin Yao",
+        "points": 108,
+        "rankedAt": "2023-12-11",
+        "ranking": 482,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 325188,
+        "country": "FRA",
+        "movement": 1,
+        "name": "Yasmine Mansouri",
+        "points": 108,
+        "rankedAt": "2023-12-11",
+        "ranking": 483,
+        "tournamentsPlayed": 25
+      },
+      {
+        "ID": 329397,
+        "country": "CHN",
+        "movement": 1,
+        "name": "Fangran Tian",
+        "points": 107,
+        "rankedAt": "2023-12-11",
+        "ranking": 484,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 332162,
+        "country": "RUS",
+        "movement": 3,
+        "name": "Anastasiia Gureva",
+        "points": 107,
+        "rankedAt": "2023-12-11",
+        "ranking": 485,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 327517,
+        "country": "THA",
+        "movement": 0,
+        "name": "Aunchisa Chanta",
+        "points": 106,
+        "rankedAt": "2023-12-11",
+        "ranking": 486,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 322990,
+        "country": "IND",
+        "movement": 6,
+        "name": "Vaidehi Chaudhari",
+        "points": 106,
+        "rankedAt": "2023-12-11",
+        "ranking": 487,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 330788,
+        "country": "USA",
+        "movement": 1,
+        "name": "Clervie Ngounoue",
+        "points": 105,
+        "rankedAt": "2023-12-11",
+        "ranking": 488,
+        "tournamentsPlayed": 10
+      },
+      {
+        "ID": 324188,
+        "country": "USA",
+        "movement": 1,
+        "name": "Francesca Di Lorenzo",
+        "points": 105,
+        "rankedAt": "2023-12-11",
+        "ranking": 489,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 322627,
+        "country": "SUI",
+        "movement": 1,
+        "name": "Jenny Duerst",
+        "points": 105,
+        "rankedAt": "2023-12-11",
+        "ranking": 490,
+        "tournamentsPlayed": 23
+      },
+      {
+        "ID": 326780,
+        "country": "JPN",
+        "movement": 1,
+        "name": "Misaki Matsuda",
+        "points": 105,
+        "rankedAt": "2023-12-11",
+        "ranking": 491,
+        "tournamentsPlayed": 10
+      },
+      {
+        "ID": 319515,
+        "country": "CRO",
+        "movement": -5,
+        "name": "Iva Primorac",
+        "points": 105,
+        "rankedAt": "2023-12-11",
+        "ranking": 492,
+        "tournamentsPlayed": 11
+      },
+      {
+        "ID": 327773,
+        "country": "BUL",
+        "movement": -10,
+        "name": "Lia Karatancheva",
+        "points": 105,
+        "rankedAt": "2023-12-11",
+        "ranking": 493,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 312582,
+        "country": "ITA",
+        "movement": 17,
+        "name": "Federica Di Sarra",
+        "points": 105,
+        "rankedAt": "2023-12-11",
+        "ranking": 494,
+        "tournamentsPlayed": 17
+      },
+      {
+        "ID": 325632,
+        "country": "RUS",
+        "movement": -1,
+        "name": "Maria Kozyreva",
+        "points": 104,
+        "rankedAt": "2023-12-11",
+        "ranking": 495,
+        "tournamentsPlayed": 14
+      },
+      {
+        "ID": 322478,
+        "country": "FRA",
+        "movement": -1,
+        "name": "Alice Rame",
+        "points": 104,
+        "rankedAt": "2023-12-11",
+        "ranking": 496,
+        "tournamentsPlayed": 16
+      },
+      {
+        "ID": 322704,
+        "country": "AUS",
+        "movement": -1,
+        "name": "Alexandra Bozovic",
+        "points": 103,
+        "rankedAt": "2023-12-11",
+        "ranking": 497,
+        "tournamentsPlayed": 18
+      },
+      {
+        "ID": 320901,
+        "country": "USA",
+        "movement": -1,
+        "name": "Jessica Failla",
+        "points": 103,
+        "rankedAt": "2023-12-11",
+        "ranking": 498,
+        "tournamentsPlayed": 15
+      },
+      {
+        "ID": 320090,
+        "country": "ARG",
+        "movement": -1,
+        "name": "Julieta Estable",
+        "points": 103,
+        "rankedAt": "2023-12-11",
+        "ranking": 499,
+        "tournamentsPlayed": 11
+      },
+      {
+        "ID": 327378,
+        "country": "HKG",
+        "movement": 1,
+        "name": "Adithya Karunaratne",
+        "points": 103,
+        "rankedAt": "2023-12-11",
+        "ranking": 500,
+        "tournamentsPlayed": 12
+      }
+    ]
+  }
+  
