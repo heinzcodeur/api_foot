@@ -21,6 +21,9 @@ const Navigation = () => {
             <NavLink to="/ranking">
               <li>ranking</li>
             </NavLink>
+            <NavLink to="/tennis">
+              <li>tennis</li>
+            </NavLink>
             <NavLink to="/test">
               <li>tester</li>
             </NavLink>

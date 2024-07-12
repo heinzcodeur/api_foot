@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/winamax-stade.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Ajout de la propriété pour empêcher le fond de se répéter */
+  height: 100vh;
+  width: 100vw;
+}
+
+.background-component {
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/tennnis.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Ajout de la propriété pour empêcher le fond de se répéter */
+  background-attachment: fixed;
+  /* Le fond reste fixe malgré le scroll */
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.wizard{
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/fond-winamax.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Ajout de la propriété pour empêcher le fond de se répéter */
+  background-attachment: fixed;
+  /* Le fond reste fixe malgré le scroll */
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+.opak{
+  opacity: 0.6;
+}
+.spinner-container {
+          display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Adjust as needed */
+        }
+        .spinner {
+            border: 8px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #09f;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        } 

@@ -120,7 +120,7 @@ const Countries = () => {
   const handleButtonClick = (delay) => {
     setDelay(delay); // Mettre à jour le délai
     setActiveButton(delay); // Mettre à jour le bouton actif
-    console.log(delay);
+    //console.log(delay);
   };
 
   // useEffect(() => {
@@ -135,7 +135,7 @@ const Countries = () => {
   }, [apiKeyIndex, delay, currentApiKey]);
 
   return (
-    <div>
+    <div className="wizard">
       <Navigation />
       <div className="container border border-primary mx-auto">
         <div className="row">
@@ -171,12 +171,12 @@ const Countries = () => {
               </button>
               &nbsp;
               <button
-                onClick={() => handleButtonClick(60000)}
+                onClick={() => handleButtonClick(30000)}
                 className={`btn ${
                   activeButton === 60000 ? "btn-danger" : "btn-primary"
                 }`}
               >
-                1 mn
+                30s
               </button>
               &nbsp;
               <button
@@ -196,8 +196,8 @@ const Countries = () => {
                   {donnees.map((match, index) =>
                     !checkBackSlash(match["Home Player"]) ? (
                       !checkItf(match["Tournament"]) ? (
-                        <tr key={index} className="border-bottom">
-                          <td className="large-width-td">
+                        <tr key={index} className="border-bottom text-light">
+                          <td className="large-width-td ">
                             {match["Tournament"]} - {match["Surface"]}
                           </td>
                           <td>

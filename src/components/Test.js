@@ -1,42 +1,122 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navigation from "./Navigation";
+import '../assets/css/app.css'; // Assurez-vous que le CSS global est importé si nécessaire
+
 
 const Test = () => {
-    const apikey_first = "50736dc75amsh7f9e578a03cb22ap1ea0e4jsn338832cda913";
-    const apikey_second = "7a3522b864msh458ad29cbfda53dp191cd6jsn8a9ecb8f7113";
-    const api_foot_first = "https://footapi7.p.rapidapi.com/api/matches/top/20/7/2023";
-    const tennis_live = "https://sports-live-scores.p.rapidapi.com/tennis/live";
-    const tennis_bis = "https://allsportsapi2.p.rapidapi.com/api/tennis/events/18/7/2023";
 
-    const [donnees, setData] = useState([]);
-    // const [list_matchs, setListMatchs] = useState([]);
-    const [limitRequestLeft, setLimitRequestLeft] = useState(0); // Utilisation de useState pour gérer limitRequestLeft
+    const componentStyle = {
+        backgroundImage: 'url(../assets/images/tennnis.jpeg)',
+        backgroundSize: 'cover', // Optionnel: pour couvrir tout le composant
+        backgroundPosition: 'center', // Optionnel: pour centrer l'image
+        height: '100vh', // Ajustez selon les besoins
+        width: '100%' // Ajustez selon les besoins
+      };
 
+  return (
+    <div className="background-component">
+                            <Navigation />
 
-    useEffect(() => {
-        axios.get(tennis_bis, {
-            headers: { "X-RapidAPI-Key": apikey_first },
-        })
-            .then((res) => {
-                // Mise à jour de la variable limit_request_left avec le nombre d'appels restants
-                console.log(limitRequestLeft);
+      <h1 className="text-center">Bienvenue dans mon composant avec un fond personnalisé</h1>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+      <p>lorem Bienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnaliséBienvenue dans mon composant avec un fond personnalisé</p>
+    </div>
+  );
+};
 
-                // Mise à jour de l'état 'donnees' avec la réponse de l'API
-                setData(res);
-                setLimitRequestLeft(res.headers['x-ratelimit-requests-remaining']);                
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }, []); // Les crochets vides signifient que le useEffect s'exécute seulement une fois au montage du composant
-
-    return (
-        <div>
-            <Navigation />
-
-        </div>
-    );
-}
 
 export default Test;

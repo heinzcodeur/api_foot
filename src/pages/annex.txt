@@ -1,0 +1,52 @@
+// <style jsx>{`
+            //     .spinner-container {
+            //         display: flex;
+            //         justify-content: center;
+            //         align-items: center;
+            //         height: 100vh; /* Adjust as needed */
+            //     }
+            //     .spinner {
+            //         border: 8px solid rgba(0, 0, 0, 0.1);
+            //         border-left-color: #09f;
+            //         border-radius: 50%;
+            //         width: 64px;
+            //         height: 64px;
+            //         animation: spin 1s linear infinite;
+            //     }
+            //     @keyframes spin {
+            //         0% {
+            //             transform: rotate(0deg);
+            //         }
+            //         100% {
+            //             transform: rotate(360deg);
+            //         }
+            //     }
+            //     `}</style>
+                 
+            
+            export default Tennis;
+        
+
+            {/* {error && <p>Erreur : {error.message}</p>}
+                    {data ? (
+                        <pre>
+                            {JSON.stringify(
+                                data.events.map(event => ({
+                                    tournament: event.tournament.name,
+                                    slug: event.slug,
+                                    awayScore: event.awayScore ? event.awayScore.point : null,
+                                    awayPeriod1: event.awayScore.period1 ? event.awayScore.period1 : null,
+                                    awayPeriod2: event.awayScore.period2 ? event.awayScore.period2 : null,
+                                    homeScore: event.homeScore ? event.homeScore.point : null,
+                                    homePeriod1: event.homeScore.period1 ? event.homeScore.period1 : null,
+                                    homePeriod2: event.homeScore.period2 ? event.homeScore.period2 : null,
+                                })),
+                                null,
+                                2
+                            )}
+                        </pre>
+                    ) : (
+                        <div className="spinner-container">
+                            <div className="spinner"></div>
+                        </div>
+                    )} */}

@@ -27,7 +27,7 @@ const Ranking = () => {
         headers: {
           //   "X-RapidAPI-Key": "aa3e2fc2f5msh1fb9e7704ed333cp1c64e0jsn411370dcfebf"
           "X-RapidAPI-Key":
-            "b44f86de54mshed5740f3fd48de0p1773d7jsn574b9aea4a8b",
+            "be38a0a2c6msh898d50a07d5c391p1e7213jsne241f1052e89",
         },
       })
       .then((res) => {
@@ -43,18 +43,21 @@ const Ranking = () => {
     axios
       .get(rank_atp, {
         headers: {
-          //   "X-RapidAPI-Key": "aa3e2fc2f5msh1fb9e7704ed333cp1c64e0jsn411370dcfebf"
+          // "X-RapidAPI-Key": "aa3e2fc2f5msh1fb9e7704ed333cp1c64e0jsn411370dcfebf"
           "X-RapidAPI-Key": "b44f86de54mshed5740f3fd48de0p1773d7jsn574b9aea4a8b",
         },
       })
       .then((res) => {
-        setAtpRanking(res.data.rankings);
+        // Trier les données par la propriété 'ranking' en ordre croissant
+        const sortedRankings = res.data.rankings.sort((a, b) => a.ranking - b.ranking);
+        setAtpRanking(sortedRankings);
       })
       .catch((error) => {
         console.log(error.response.message);
         alert(error.response.data.message);
       });
   };
+  
 
   // Exemple d'utilisation
 
@@ -95,14 +98,14 @@ const Ranking = () => {
   }, []);
 
   return (
-    <div>
+    <div  className="background-component">
       <Navigation />
       <div className="container">
         <div className="row mt-4">
           <div className="col-6">
             {/* <h1 className="text-primary text-center">Ranking</h1> */}
             {wtaRanking.map((match, index) => (
-              <h3>
+              <h3 style={{ color: '#7814ff' }}>
                 {match["team"]["ranking"]}&nbsp;{match["team"]['name']}&nbsp; /{" "}
                 {match["team"]["country"]["name"]}
               </h3>
@@ -111,7 +114,7 @@ const Ranking = () => {
           <div className="col-6">
             {atpRanking.map((match, index) => (
               <h3 className="text-secondary">
-                {match["team"]["ranking"]}&nbsp;{match["rowName"]}&nbsp; /{" "}
+                {match["ranking"]}&nbsp;{match["rowName"]}&nbsp; /{" "}
                 {match["team"]["country"]["name"]}
               </h3>
             ))}
