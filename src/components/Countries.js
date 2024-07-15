@@ -52,6 +52,7 @@ const Countries = () => {
   } = useCustomHook(apikeys);
 
   const fetchData = () => {
+   console.log(currentApiKey)
     axios
       .get(tennis_live, {
         headers: { "X-RapidAPI-Key": currentApiKey },
@@ -63,13 +64,14 @@ const Countries = () => {
       })
       .catch((error) => {
         console.log(error)
-        // if (error.response.status === 429) {
-        //   const nextIndex = (apiKeyIndex + 1) % apikeys.length;
-        //   // alert(nextIndex);
-        //   setCurrentApiKey(apikeys[nextIndex]);
-        //   setApiKeyIndex(nextIndex); // Mise à jour de l'index ici
-        //   setDanger(nextIndex + " " + currentApiKey);
-        // }
+        if (error.response.status === 429) {
+          const nextIndex = (apiKeyIndex + 1);
+           alert(nextIndex);
+          setCurrentApiKey(apikeys[nextIndex]);
+          alert(currentApiKey)
+          setApiKeyIndex(nextIndex); // Mise à jour de l'index ici
+          setDanger(nextIndex + " " + currentApiKey);
+        }
       });
   };
 
@@ -97,7 +99,8 @@ const getMatchs = async () => {
   
 
   useEffect(() => {
-    const intervalId = setInterval(getMatchs, delay);
+    console.log(delay)
+    const intervalId = setInterval(fetchData, delay);
     return () => clearInterval(intervalId);
   }, []);
 

@@ -18,7 +18,7 @@ const PlayerRanking = ({ playerName }) => {
     fetchRanking();
   }, [playerName]);
 
-  return <span>{rank}</span>;
+  return <b className={rank < 10 ? "text-danger" : "text-dark"}>{rank}</b>;
 };
 
 export default PlayerRanking;

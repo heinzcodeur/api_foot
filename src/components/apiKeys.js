@@ -1,4 +1,4 @@
-const apikeys = [
+const apiKeys = [
   "61cb8bddf7msh35df4200e00b592p143755jsnf183cbe708b5",
   "be38a0a2c6msh898d50a07d5c391p1e7213jsne241f1052e89",
   "aa3e2fc2f5msh1fb9e7704ed333cp1c64e0jsn411370dcfebf",
@@ -9,4 +9,4 @@ const apikeys = [
   "a9c7d9e94bmsh097d70e0f001d91p13328cjsn85ae17988b0b",
 ];
 
-export default apikeys;
+export default apiKeys;

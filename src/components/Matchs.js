@@ -35,7 +35,7 @@ const Matchs = ({ donnees }) => (
                         <tr>
                           <td>{match["Away Player"] || "N/A"} - </td>
                           <td>
-                            <PlayerRanking
+                            <PlayerRanking 
                               playerName={match["Away Player"]}
                             ></PlayerRanking>
                           </td>
