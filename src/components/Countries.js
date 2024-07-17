@@ -48,30 +48,34 @@ const Countries = () => {
     setTennisLive,
     roi,
     setRoi,
-    
+
   } = useCustomHook(apikeys);
 
-  const fetchData = () => {
-    axios
-    .get(tennis_live, {
-      headers: { "X-RapidAPI-Key": currentApiKey },
-    })
-    .then((res) => {
+  const fetchData = async () => {
+    try {
+      const res = await axios.get(tennis_limve, {
+        headers: { "X-RapidAPI-Key": currentApiKey },
+      });
       setDanger("");
       setData(res.data.matches);
       setLimitRequestLeft(res.headers["x-ratelimit-requests-remaining"]);
-    })
-    .catch(error => {
-        console.log(error.message)
-        // if (error.response.status === 429) {
-        //   const nextIndex = (apiKeyIndex + 1) % apikeys.length;
-        //   // alert(nextIndex);
-        //   setCurrentApiKey(apikeys[nextIndex]);
-        //   setApiKeyIndex(nextIndex); // Mise à jour de l'index ici
-        //   setDanger(nextIndex + " " + currentApiKey);
-        // }
-      });
+    } catch (error) {
+      // Capturer toutes les erreurs
+      // alert('Type d\'erreur: ' + error.name + '\nMessage d\'erreur: ' + error.message);
+      setDanger("une erreur s\'est produite");
+    }
   };
+
+
+  // if (error.response.status === 429) {
+  //   const nextIndex = (apiKeyIndex + 1) % apikeys.length;
+  //   // alert(nextIndex);
+  //   setCurrentApiKey(apikeys[nextIndex]);
+  //   setApiKeyIndex(nextIndex); // Mise à jour de l'index ici
+  //   setDanger(nextIndex + " " + currentApiKey);
+  // }
+  //     });
+  // };
 
   const handleButtonClick = (delay) => {
     setDelay(delay); // Mettre à jour le délai
@@ -85,16 +89,16 @@ const Countries = () => {
   // }, []);
 
 
-const getMatchs = async () => {
-  try {
-    const res = await fetchMatches('matches.json');
-    setData(res);
-  } catch (error) {
-    console.error('Erreur lors de la récupération des classements:', error);
-  }
-};
+  const getMatchs = async () => {
+    try {
+      const res = await fetchMatches('matches.json');
+      setData(res);
+    } catch (error) {
+      console.error('Erreur lors de la récupération des classements:', error);
+    }
+  };
 
-  
+
 
   useEffect(() => {
     const intervalId = setInterval(fetchData, delay);
@@ -112,7 +116,7 @@ const getMatchs = async () => {
           handleButtonClick={handleButtonClick}
         />
         <Matchs donnees={donnees} />
-        <Main players={atpRanking}/>
+        <Main players={atpRanking} />
       </div>
     </div>
   );
