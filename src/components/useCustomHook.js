@@ -50,7 +50,9 @@ const useCustomHook = (apikeys) => {
     roi,
     setRoi,
     matchs, 
-    setMatchs
+    setMatchs,
+    tennis_live,
+    setTennisLive
   };
 };
 

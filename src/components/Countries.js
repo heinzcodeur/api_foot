@@ -16,6 +16,7 @@ import Matchs from "./Matchs";
 import Main from "./Main";
 
 const Countries = () => {
+
   const {
     donnees,
     setData,
@@ -47,22 +48,21 @@ const Countries = () => {
     setTennisLive,
     roi,
     setRoi,
-    matchs, 
-    setMatchs
+    
   } = useCustomHook(apikeys);
 
   const fetchData = () => {
     axios
-      .get(tennis_live, {
-        headers: { "X-RapidAPI-Key": currentApiKey },
-      })
-      .then((res) => {
-        setDanger("");
-        setData(res.data.matches);
-        setLimitRequestLeft(res.headers["x-ratelimit-requests-remaining"]);
-      })
-      .catch((error) => {
-        console.log(error)
+    .get(tennis_live, {
+      headers: { "X-RapidAPI-Key": currentApiKey },
+    })
+    .then((res) => {
+      setDanger("");
+      setData(res.data.matches);
+      setLimitRequestLeft(res.headers["x-ratelimit-requests-remaining"]);
+    })
+    .catch(error => {
+        console.log(error.message)
         // if (error.response.status === 429) {
         //   const nextIndex = (apiKeyIndex + 1) % apikeys.length;
         //   // alert(nextIndex);
@@ -97,7 +97,7 @@ const getMatchs = async () => {
   
 
   useEffect(() => {
-    const intervalId = setInterval(getMatchs, delay);
+    const intervalId = setInterval(fetchData, delay);
     return () => clearInterval(intervalId);
   }, []);
 
