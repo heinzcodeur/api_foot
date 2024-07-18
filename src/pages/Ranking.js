@@ -27,7 +27,7 @@ const Ranking = () => {
         headers: {
           //   "X-RapidAPI-Key": "aa3e2fc2f5msh1fb9e7704ed333cp1c64e0jsn411370dcfebf"
           "X-RapidAPI-Key":
-            "be38a0a2c6msh898d50a07d5c391p1e7213jsne241f1052e89",
+            "b44f86de54mshed5740f3fd48de0p1773d7jsn574b9aea4a8b",
         },
       })
       .then((res) => {
