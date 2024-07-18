@@ -12,7 +12,7 @@ const Countries = () => {
     "102585ac4fmsh2631463ec6a8969p1ccd25jsn4b73c4307617",
   ];
   const tennis_live = "https://sports-live-scores.p.rapidapi.com/tennis/live";
-  //const tennis_bis = "https://allsportsapi2.p.rapidapi.com/api/tennis/events/18/7/2023";
+  const tennis_bis = "https://allsportsapi2.p.rapidapi.com/api/tennis/events/18/7/2023";
 
   const rank_wta =
     "https://sports-live-scores.p.rapidapi.com/tennis/rankings/wta/500";
