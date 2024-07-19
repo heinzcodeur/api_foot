@@ -3,16 +3,16 @@ import axios from "axios";
 import Navigation from "./Navigation";
 
 const Countries = () => {
-  const apikeys = [
-    "61cb8bddf7msh35df4200e00b592p143755jsnf183cbe708b5",
-    "be38a0a2c6msh898d50a07d5c391p1e7213jsne241f1052e89",
-    "aa3e2fc2f5msh1fb9e7704ed333cp1c64e0jsn411370dcfebf",
-    "7a3522b864msh458ad29cbfda53dp191cd6jsn8a9ecb8f7113",
-    "50736dc75amsh7f9e578a03cb22ap1ea0e4jsn338832cda913",
-    "102585ac4fmsh2631463ec6a8969p1ccd25jsn4b73c4307617",
-  ];
+  const apiKeysString = process.env.REACT_APP_API_KEYS;
+
+  // Convertir la chaîne en tableau
+  const apiKeysArray = apiKeysString.split(',');
+
+  // Utilisation des clés API
+  console.log('API Keys:', apiKeysArray.length);
+
   const tennis_live = "https://sports-live-scores.p.rapidapi.com/tennis/live";
-  const tennis_bis = "https://allsportsapi2.p.rapidapi.com/api/tennis/events/18/7/2023";
+  // const tennis_bis = "https://allsportsapi2.p.rapidapi.com/api/tennis/events/18/7/2023";
 
   const rank_wta =
     "https://sports-live-scores.p.rapidapi.com/tennis/rankings/wta/500";
@@ -40,9 +40,9 @@ const Countries = () => {
   const [apiKeyIndex, setApiKeyIndex] = useState(0); // Ajout de l'index de la clé API
   const [danger, setDanger] = useState(null);
   const [delay, setDelay] = useState(5000);
-  const [currentApiKey, setCurrentApiKey] = useState(apikeys[0]);
+  const [currentApiKey, setCurrentApiKey] = useState(apiKeysArray[5]);
   const [nextIndex, setNextIndex] = useState(
-    (apiKeyIndex + 1) % apikeys.length
+    (apiKeyIndex + 1) % apiKeysArray.length
   );
 
   const fetchWtaRanking = () => {
@@ -101,9 +101,10 @@ const Countries = () => {
       })
       .catch((error) => {
         if (error.response.status === 429) {
-          const nextIndex = (apiKeyIndex + 1) % apikeys.length;
+          console.log(currentApiKey)
+          const nextIndex = (apiKeyIndex + 1) % apiKeysArray.length;
           alert(nextIndex);
-          setCurrentApiKey(apikeys[nextIndex]);
+          setCurrentApiKey(apiKeysArray[nextIndex]);
           setApiKeyIndex(nextIndex); // Mise à jour de l'index ici
           setDanger(nextIndex + " " + currentApiKey);
         }
@@ -176,7 +177,7 @@ const Countries = () => {
                   activeButton === 60000 ? "btn-danger" : "btn-primary"
                 }`}
               >
-                30s
+                3000s
               </button>
               &nbsp;
               <button
