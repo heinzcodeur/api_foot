@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('../images/winamax-stade.jpeg');
+  /* background-image: url('../images/winamax-stade.jpeg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,6 +42,25 @@ body {
 .opak{
   opacity: 0.6;
 }
+
+.min-height {
+  min-height: 200px; /* Vous pouvez ajuster la hauteur minimale selon vos besoins */
+}
+
+.m-l-3 {
+  margin-left: 3px;
+}
+.m-r-3 {
+  margin-right: 3px;
+}
+
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .spinner-container {
           display: flex;
             justify-content: center;

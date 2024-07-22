@@ -8,6 +8,7 @@ import Countries from "./components/Countries";
 import Test from "./components/Test";
 import Ranking from "./pages/Ranking";
 import Tennis from "./pages/Tennis";
+import ApiTennis from "./components/ApiTennis";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
           <Route path="/pays" element={<Countries />} />
           <Route path="/ranking" element={<Ranking />} />
           <Route path="/tennis" element={<Tennis />} />
-          <Route path="/test" element={<Test />} />
+          <Route path="/api/tennis" element={<ApiTennis />} />
           <Route path="*" element={<Home />} />
         </Routes>
     </BrowserRouter>

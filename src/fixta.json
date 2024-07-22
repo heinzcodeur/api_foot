@@ -1,0 +1,131 @@
+{"result": [
+        {
+            "event_key": 11967775,
+            "event_date": "2024-07-21",
+            "event_time": "16:00",
+            "event_first_player": "A. Walton",
+            "first_player_key": 10070,
+            "event_second_player": "S. Mochizuki",
+            "second_player_key": 1880,
+            "event_final_result": "-",
+            "event_game_result": "-",
+            "event_serve": null,
+            "event_winner": null,
+            "event_status": "1",
+            "event_type_type": "Atp Singles",
+            "tournament_name": "Atlanta",
+            "tournament_key": 1526,
+            "tournament_round": null,
+            "tournament_season": "2022",
+            "event_live": "0",
+            "event_first_player_logo": null,
+            "event_second_player_logo": "https://api.api-tennis.com/logo-tennis/1880_s-mochizuki.jpg",
+            "event_qualification": null,
+            "pointbypoint": [],
+            "scores": [
+                {
+                    "score_first": "0",
+                    "score_second": "0",
+                    "score_set": "1"
+                }
+            ],
+            "statistics": []
+        },
+        {
+            "event_key": 11967776,
+            "event_date": "2024-07-21",
+            "event_time": "16:00",
+            "event_first_player": "D. Yevseyev",
+            "first_player_key": 569,
+            "event_second_player": "M. Bellucci",
+            "second_player_key": 2112,
+            "event_final_result": "-",
+            "event_game_result": "-",
+            "event_serve": null,
+            "event_winner": null,
+            "event_status": "1",
+            "event_type_type": "Atp Singles",
+            "tournament_name": "Atlanta",
+            "tournament_key": 1526,
+            "tournament_round": null,
+            "tournament_season": "2022",
+            "event_live": "0",
+            "event_first_player_logo": "https://api.api-tennis.com/logo-tennis/569_d-yevseyev.jpg",
+            "event_second_player_logo": null,
+            "event_qualification": null,
+            "pointbypoint": [],
+            "scores": [
+                {
+                    "score_first": "0",
+                    "score_second": "0",
+                    "score_set": "1"
+                }
+            ],
+            "statistics": []
+        },
+        {
+            "event_key": 11967777,
+            "event_date": "2024-07-21",
+            "event_time": "17:30",
+            "event_first_player": "K. King",
+            "first_player_key": 5069,
+            "event_second_player": "J.J. Wolf",
+            "second_player_key": 2853,
+            "event_final_result": "-",
+            "event_game_result": "-",
+            "event_serve": null,
+            "event_winner": null,
+            "event_status": "1",
+            "event_type_type": "Atp Singles",
+            "tournament_name": "Atlanta",
+            "tournament_key": 1526,
+            "tournament_round": null,
+            "tournament_season": "2022",
+            "event_live": "0",
+            "event_first_player_logo": "https://api.api-tennis.com/logo-tennis/5069_k-king.jpg",
+            "event_second_player_logo": "https://api.api-tennis.com/logo-tennis/2853_j-wolf.jpg",
+            "event_qualification": null,
+            "pointbypoint": [],
+            "scores": [
+                {
+                    "score_first": "0",
+                    "score_second": "0",
+                    "score_set": "1"
+                }
+            ],
+            "statistics": []
+        },
+        {
+            "event_key": 11967778,
+            "event_date": "2024-07-21",
+            "event_time": "17:30",
+            "event_first_player": "J. Shang",
+            "first_player_key": 2413,
+            "event_second_player": "L. Broady",
+            "second_player_key": 410,
+            "event_final_result": "-",
+            "event_game_result": "-",
+            "event_serve": null,
+            "event_winner": null,
+            "event_status": "1",
+            "event_type_type": "Atp Singles",
+            "tournament_name": "Atlanta",
+            "tournament_key": 1526,
+            "tournament_round": null,
+            "tournament_season": "2022",
+            "event_live": "0",
+            "event_first_player_logo": null,
+            "event_second_player_logo": "https://api.api-tennis.com/logo-tennis/410_l-broady.jpg",
+            "event_qualification": null,
+            "pointbypoint": [],
+            "scores": [
+                {
+                    "score_first": "0",
+                    "score_second": "0",
+                    "score_set": "1"
+                }
+            ],
+            "statistics": []
+        }
+    ]
+}
