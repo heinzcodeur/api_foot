@@ -1,5 +1,5 @@
 const Timer = ({activeButton, handleButtonClick }) => (
-    <div className="row">
+    <div className="row mt-4">
       <div className="col-12 mx-auto">
         
         <p className="text-center">
