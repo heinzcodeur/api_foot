@@ -29,7 +29,7 @@ const ApiTennis = () => {
 
     const fetchData = () => {
         axios
-            .get('https://api.api-tennis.com/tennis/?method=get_fixtures&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a&date_start=2024-07-21&date_stop=2024-07-22')
+            .get('https://api.api-tennis.com/tennis/?method=get_fixtures&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a&date_start=2024-07-23&date_stop=2024-07-24')
             .then((res) => {
                 //setDanger("");
                 setData(res.data.result);
