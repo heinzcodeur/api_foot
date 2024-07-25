@@ -83,7 +83,7 @@ const Filter = ({ data }) => {
         preview
       </label>
       &nbsp;
-      <label className="ms-2">
+      <label className="ms-3">
         <input
           type="checkbox"
           name="atp"
