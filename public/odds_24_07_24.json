@@ -1,0 +1,281 @@
+{
+    "success": 1,
+    "result": {
+        "11968769": {
+            "Home/Away": {
+                "Home": {
+                    "NordicBet": "2.21",
+                    "WilliamHill": "2.25",
+                    "bet365": "2.25",
+                    "Marathon": "2.25",
+                    "Betsson": "2.21",
+                    "Fonbet": "2.25",
+                    "1xbet": "2.24",
+                    "Betano": "2.20",
+                    "Betway": "2.10",
+                    "Tipico": "2.20",
+                    "Betcris": "2.21"
+                },
+                "Away": {
+                    "NordicBet": "1.57",
+                    "WilliamHill": "1.57",
+                    "bet365": "1.57",
+                    "Marathon": "1.58",
+                    "Betsson": "1.57",
+                    "Fonbet": "1.57",
+                    "1xbet": "1.60",
+                    "Betano": "1.60",
+                    "Betway": "1.55",
+                    "Tipico": "1.57",
+                    "Betcris": "1.57"
+                }
+            },
+            "Correct Score 1st Half": {
+                "6:0": {
+                    "bet365": "26.00",
+                    "1xbet": "26.00",
+                    "Betano": "45.00"
+                },
+                "6:1": {
+                    "bet365": "15.00",
+                    "1xbet": "15.00",
+                    "Betano": "17.00"
+                },
+                "6:2": {
+                    "bet365": "11.00",
+                    "1xbet": "11.00",
+                    "Betano": "11.00"
+                },
+                "0:6": {
+                    "bet365": "15.00",
+                    "1xbet": "15.00",
+                    "Betano": "23.00"
+                },
+                "1:6": {
+                    "bet365": "9.00",
+                    "1xbet": "9.00",
+                    "Betano": "10.00"
+                },
+                "2:6": {
+                    "bet365": "7.00",
+                    "1xbet": "7.00",
+                    "Betano": "7.30"
+                },
+                "4:6": {
+                    "bet365": "7.00",
+                    "1xbet": "7.00",
+                    "Betano": "6.90"
+                },
+                "3:6": {
+                    "bet365": "7.00",
+                    "1xbet": "7.00",
+                    "Betano": "6.60"
+                },
+                "6:3": {
+                    "bet365": "9.00",
+                    "1xbet": "9.00",
+                    "Betano": "8.75"
+                },
+                "6:4": {
+                    "bet365": "9.00",
+                    "1xbet": "9.00",
+                    "Betano": "8.25"
+                },
+                "7:5": {
+                    "bet365": "17.00",
+                    "1xbet": "17.00",
+                    "Betano": "16.00"
+                },
+                "7:6": {
+                    "bet365": "17.00",
+                    "1xbet": "17.00",
+                    "Betano": "15.00"
+                },
+                "5:7": {
+                    "bet365": "15.00",
+                    "1xbet": "15.00",
+                    "Betano": "14.00"
+                },
+                "6:7": {
+                    "bet365": "15.00",
+                    "1xbet": "15.00",
+                    "Betano": "14.00"
+                }
+            },
+            "Correct Score 2nd Half": {
+                "6:0": {
+                    "Betano": "45.00"
+                },
+                "6:1": {
+                    "Betano": "17.00"
+                },
+                "6:2": {
+                    "Betano": "11.00"
+                },
+                "0:6": {
+                    "Betano": "23.00"
+                },
+                "1:6": {
+                    "Betano": "10.25"
+                },
+                "2:6": {
+                    "Betano": "7.30"
+                },
+                "4:6": {
+                    "Betano": "6.80"
+                },
+                "3:6": {
+                    "Betano": "6.60"
+                },
+                "6:3": {
+                    "Betano": "8.75"
+                },
+                "6:4": {
+                    "Betano": "8.25"
+                },
+                "7:5": {
+                    "Betano": "16.00"
+                },
+                "7:6": {
+                    "Betano": "15.00"
+                },
+                "5:7": {
+                    "Betano": "14.00"
+                },
+                "6:7": {
+                    "Betano": "14.00"
+                }
+            },
+            "Odd/Even": {
+                "Odd": {
+                    "Marathon": "1.87",
+                    "1xbet": "1.87"
+                },
+                "Even": {
+                    "Marathon": "1.85",
+                    "1xbet": "1.85"
+                }
+            },
+            "Odd/Even (1st Set)": {
+                "Odd": {
+                    "Marathon": "2.01",
+                    "1xbet": "2.01",
+                    "Betano": "2.00"
+                },
+                "Even": {
+                    "Marathon": "1.73",
+                    "1xbet": "1.73",
+                    "Betano": "1.70"
+                }
+            },
+            "Home/Away (1st Set)": {
+                "Home": {
+                    "bet365": "2.20",
+                    "Marathon": "2.11",
+                    "Fonbet": "2.20",
+                    "1xbet": "2.10",
+                    "Betano": "2.15"
+                },
+                "Away": {
+                    "bet365": "1.61",
+                    "Marathon": "1.66",
+                    "Fonbet": "1.60",
+                    "1xbet": "1.68",
+                    "Betano": "1.62"
+                }
+            },
+            "Set Betting": {
+                "2:0": {
+                    "Marathon": "3.60",
+                    "1xbet": "3.60",
+                    "Betcris": "3.30"
+                },
+                "2:1": {
+                    "Marathon": "4.90",
+                    "1xbet": "4.90",
+                    "Betcris": "5.20"
+                },
+                "0:2": {
+                    "Marathon": "2.36",
+                    "1xbet": "2.36",
+                    "Betcris": "2.14"
+                },
+                "1:2": {
+                    "Marathon": "3.90",
+                    "1xbet": "3.90",
+                    "Betcris": "4.30"
+                }
+            },
+            "Set / Match": {
+                "1/1": {
+                    "Marathon": "2.86"
+                },
+                "1/2": {
+                    "Marathon": "6.20"
+                },
+                "2/1": {
+                    "Marathon": "7.90"
+                },
+                "2/2": {
+                    "Marathon": "1.92"
+                }
+            },
+            "Home/Away (2nd Set)": {
+                "Home": {
+                    "Betano": "2.15"
+                },
+                "Away": {
+                    "Betano": "1.62"
+                }
+            },
+            "Odd/Even (2nd Set)": {
+                "Odd": {
+                    "Betano": "2.00"
+                },
+                "Even": {
+                    "Betano": "1.70"
+                }
+            },
+            "Number of sets": {
+                "Away": {
+                    "Marathon": "1.51"
+                },
+                "3": {
+                    "Marathon": "2.41"
+                }
+            },
+            "Away Team Total (1st Set)": {
+                "Over": {
+                    "Betano": "1.50"
+                },
+                "Under": {
+                    "Betano": "2.42"
+                }
+            },
+            "Home Team Total (1st Set)": {
+                "Over": {
+                    "Betano": "1.93"
+                },
+                "Under": {
+                    "Betano": "1.78"
+                }
+            },
+            "Win From behind (Player 1)": {
+                "Yes": {
+                    "Betano": "7.20"
+                },
+                "No": {
+                    "Betano": "1.07"
+                }
+            },
+            "Win From behind (Player 2)": {
+                "Yes": {
+                    "Betano": "6.80"
+                },
+                "No": {
+                    "Betano": "1.08"
+                }
+            }
+        }
+    }
+}

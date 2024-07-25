@@ -31,12 +31,21 @@ const Timer = ({activeButton, handleButtonClick }) => (
           </button>
           &nbsp;
           <button
-            onClick={() => handleButtonClick(5000)}
+            onClick={() => handleButtonClick(30000)}
             className={`btn ${
-              activeButton === 5000 ? "btn-danger" : "btn-primary"
+              activeButton === 30000 ? "btn-danger" : "btn-primary"
             }`}
           >
-            5 s
+            30 S
+          </button>
+          &nbsp;
+          <button
+            onClick={() => handleButtonClick(10000)}
+            className={`btn ${
+              activeButton === 10000 ? "btn-danger" : "btn-primary"
+            }`}
+          >
+            10 s
           </button>
         </p>
       </div>
