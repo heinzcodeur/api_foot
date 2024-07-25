@@ -62,6 +62,39 @@ import axios from 'axios';
         return regex.test(inputString); // Vérifie si la chaîne contient "/"
     };
 
+    const createDateFromString = (dateString, timeString) => {
+        // Séparer les parties de la date
+        const [year, month, day] = dateString.split('-').map(Number);
+        // Séparer les parties de l'heure
+        const [hour, minute] = timeString.split(':').map(Number);
+      
+        // Créer l'objet Date (le mois est indexé à partir de 0 en JavaScript)
+        const date = new Date(year, month - 1, day, hour, minute);
+      
+        return date;
+      }
+
+      const handleFilterChange = (e,setFilterLive, setFilterAtp, setFilterWta, setPreview) => {
+        const { name, checked } = e.target;
+
+        switch (name) {
+            case 'live':
+                setFilterLive(checked);
+                break;
+            case 'preview':
+                setPreview(checked);
+                break;
+            case 'atp':
+                setFilterAtp(checked);
+                break;
+            case 'wta':
+                setFilterWta(checked);
+                break;
+            default:
+                break;
+        }
+    };
+
 export {
     fetchTournois,
     checkBackSlash,
@@ -70,5 +103,7 @@ export {
     checkGirlsBoys,
     checkAtp,
     checkWta,
-    today
+    today,
+    createDateFromString,
+    handleFilterChange
 }
