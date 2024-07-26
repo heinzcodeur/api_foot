@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Navigation from "./Navigation";
+import Navigation from "./atoms/Navigation";
 
 const Countries = () => {
   const apiKeysString = process.env.REACT_APP_API_KEYS;

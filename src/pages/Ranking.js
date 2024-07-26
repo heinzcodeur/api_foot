@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Navigation from "../components/Navigation";
+import Navigation from "../components/atoms/Navigation";
 
 const Ranking = () => {
   const apikeys = [

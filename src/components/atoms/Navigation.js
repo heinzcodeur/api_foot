@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./navigation.css";
-
+import '../../assets/css/navigation.css'
 const Navigation = () => {
   return (
     <div className="container">
@@ -11,6 +10,9 @@ const Navigation = () => {
           <ul className="list-inline text-center">
             <NavLink to="/">
               <li>home</li>
+            </NavLink>
+            <NavLink to="/checkbox">
+              <li>checkbox</li>
             </NavLink>
             <NavLink to="/about">
               <li>about</li>

@@ -9,12 +9,14 @@ import Test from "./components/Test";
 import Ranking from "./pages/Ranking";
 import Tennis from "./pages/Tennis";
 import ApiTennis from "./components/ApiTennis";
+import FormTest from "./components/atoms/formTest";
 
 const App = () => {
   return (
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/checkbox" element={<FormTest/>} />
           <Route path="/about" element={<About />} />
           <Route path="/pays" element={<Countries />} />
           <Route path="/ranking" element={<Ranking />} />

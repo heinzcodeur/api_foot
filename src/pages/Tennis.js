@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import '../assets/css/app.css'; // Import correct
-import Navigation from "../components/Navigation";
+import Navigation from "../components/atoms/Navigation";
 
 const Tennis = () => {
     const componentStyle = {

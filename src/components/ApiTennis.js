@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Navigation from "./Navigation";
+import Navigation from "./atoms/Navigation";
 import '../assets/css/app.css'; // Import correct
 import Timer from "./Timer";
 import PlayerImg from "./PlayerImg";
@@ -15,20 +15,13 @@ const ApiTennis = () => {
     const [nombre, setNombre] = useState(null);
     const [duty, setDuty] = useState([]);
     const [error, setError] = useState(null);
-    // const [filterLive, setFilterLive] = useState(false);
-    // const [preview, setPreview] = useState(false);
-    // const [filterAtp, setFilterAtp] = useState(false);
-    // const [filterWta, setFilterWta] = useState(false);
     const [filteredData, setFilteredData] = useState([]);
     const [wta, setWta] = useState(false); // État pour le filtre 'event_live'
-    const [delay, setDelay] = useState(5000); // État pour le filtre 'event_live'
+    const [delay, setDelay] = useState(250000); // État pour le filtre 'event_live'
     const [activeButton, setActiveButton] = useState(false); // État pour le filtre 'event_live'
     const [tournois, setTournois] = useState([]);
 
     
-
-     
-      // Appel de la fonction pour générer l'URL
     const fetchData = () => {
         const url = GenerateApiUrl();
         axios
@@ -42,12 +35,6 @@ const ApiTennis = () => {
             });
     };
 
-    // Fonction pour gérer le changement du filtre 'event_live'
-    
-
-   
-
-    
     const handleButtonClick = (delay) => {
         console.log(delay + today())
         setDelay(delay); // Mettre à jour le délai

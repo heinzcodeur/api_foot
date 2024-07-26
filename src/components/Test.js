@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Navigation from "./Navigation";
+import Navigation from "./atoms/Navigation";
 import '../assets/css/app.css'; // Assurez-vous que le CSS global est importé si nécessaire
 
 
