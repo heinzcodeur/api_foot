@@ -1,8 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./navigation.css";
+import axios from "axios";
 
 const Navigation = () => {
+
+  const countriesResponse = axios.get('/files/countries.json');
+
   return (
     <div className="container">
       <div className="row">

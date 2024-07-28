@@ -9,6 +9,7 @@ import Test from "./components/Test";
 import Ranking from "./pages/Ranking";
 import Tennis from "./pages/Tennis";
 import ApiTennis from "./components/ApiTennis";
+import Athlete from "./pages/Athlete";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/tennis" element={<Tennis />} />
           <Route path="/api/tennis" element={<ApiTennis />} />
           <Route path="*" element={<Home />} />
+          <Route path="/athletes/:athleteId" element={<Athlete />} />
         </Routes>
     </BrowserRouter>
     // <div className="App">

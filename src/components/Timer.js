@@ -40,9 +40,9 @@ const Timer = ({activeButton, handleButtonClick }) => (
           </button>
           &nbsp;
           <button
-            onClick={() => handleButtonClick(10000)}
+            onClick={() => handleButtonClick(5000)}
             className={`btn ${
-              activeButton === 10000 ? "btn-danger" : "btn-primary"
+              activeButton === 5000 ? "btn-danger" : "btn-primary"
             }`}
           >
             10 s
