@@ -15,7 +15,7 @@ const useCustomHook = (apikeys) => {
   const [delay, setDelay] = useState(5000);
   const [roi, setRoi] = useState(1560);
   const [tennis_live, setTennisLive] = useState("https://sports-live-scores.p.rapidapi.com/tennis/live");
-  const [currentApiKey, setCurrentApiKey] = useState(apikeys[0]);
+  const [currentApiKey, setCurrentApiKey] = useState(apikeys[6]);
   const [nextIndex, setNextIndex] = useState(
     (apiKeyIndex + 1) % apikeys.length
   );

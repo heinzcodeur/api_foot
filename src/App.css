@@ -2,9 +2,17 @@
   text-align: center;
 }
 
+.bg-dark{
+  background-color: #000;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.min-height{
+  min-height: 150vh;;
 }
 
 @media (prefers-reduced-motion: no-preference) {

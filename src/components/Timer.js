@@ -16,7 +16,7 @@ const Timer = ({ limitRequestLeft, activeButton, danger, handleButtonClick }) =>
               activeButton === 360000000 ? "btn-danger" : "btn-primary"
             }`}
           >
-            stop
+            stop it
           </button>
           &nbsp;
           <button

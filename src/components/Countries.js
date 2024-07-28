@@ -14,6 +14,8 @@ import useCustomHook from "./useCustomHook";
 import apikeys from "./apiKeys"; // Assurez-vous d'utiliser le bon chemin
 import Matchs from "./Matchs";
 import Main from "./Main";
+import PlayerRanking from "./PlayerRanking";
+
 
 const Countries = () => {
   const {
@@ -53,16 +55,17 @@ const Countries = () => {
 
   const fetchData = () => {
     axios
-      .get(tennis_live, {
+      .get("https://sports-live-scores.p.rapidapi.com/tennis/live", {
         headers: { "X-RapidAPI-Key": currentApiKey },
       })
       .then((res) => {
         setDanger("");
+        console.log('cuisine')
         setData(res.data.matches);
         setLimitRequestLeft(res.headers["x-ratelimit-requests-remaining"]);
       })
       .catch((error) => {
-        console.log(error)
+        console.warn(error)
         // if (error.response.status === 429) {
         //   const nextIndex = (apiKeyIndex + 1) % apikeys.length;
         //   // alert(nextIndex);
@@ -94,15 +97,13 @@ const getMatchs = async () => {
   }
 };
 
-  
-
   useEffect(() => {
-    const intervalId = setInterval(getMatchs, delay);
+    const intervalId = setInterval(fetchData, delay);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [delay]);
 
   return (
-    <div>
+    <div className="bg-dark text-light min-height">
       <Navigation />
       <div className="container border border-primary mx-auto">
         <Timer
@@ -111,8 +112,112 @@ const getMatchs = async () => {
           danger={danger}
           handleButtonClick={handleButtonClick}
         />
-        <Matchs donnees={donnees} />
-        <Main players={atpRanking}/>
+        <div className="row">
+      <div className="overflow-auto col-12">
+        <table className="table table-striped">
+          <thead></thead>
+          <tbody className="text-light">
+              {donnees ? (
+                donnees.length > 0 ? (
+                donnees.map((match, index) => (
+                  !checkBackSlash(match["Home Player"]) && !checkItf(match["Tournament"]) && (
+                    <tr key={index} className="border-bottom">
+                      <td className={`large-width-td ${match["Surface"].includes("clay")
+                          ? "bg-warning text-light"
+                          : match["Surface"] === "Grass"
+                            ? "bg-success text-light"
+                            : "bg-info text-light"
+                        }`}>
+                        {match["Tournament"]} - {match["Surface"]}
+                      </td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>{match["Home Player"] || "N/A"}</td>
+                              <td><PlayerRanking playerName={match["Home Player"]} /></td>
+                            </tr>
+                            <tr>
+                              <td>{match["Away Player"] || "N/A"} - </td>
+                              <td><PlayerRanking playerName={match["Away Player"]} /></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td className="text-danger">
+                                <b>{match["Live Home Odd"]}</b>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td className="text-danger">
+                                <b>{match["Live Away Odd"]}</b>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      {/* Assuming match properties for sets and scores exist */}
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td className="text-success">{match["Sets Player 1"]}</td>
+                            </tr>
+                            <tr>
+                              <td className="text-success">{match["Sets Player 2"]}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>{match["Set1 Player 1"]}</td>
+                            </tr>
+                            <tr>
+                              <td>{match["Set1 Player 2"]}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      {/* ... Repeat for Set2 and Set3 tables (if applicable) */}
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td className="text-success">
+                                <b>{match["Player 1 Score"]}</b>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td className="text-success">
+                                <b>{match["Player 2 Score"]}</b>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  )
+                ))
+              ) : (
+                <p className="text-danger">Aucune donnée à afficher pour les critères sélectionnés.</p>
+              )
+            ) : (
+              <p className="text-danger">Aucune donnée à afficher pour les critères sélectionnés.</p>
+            )}
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+        {/* <Matchs donnees={donnees} /> */}
+        {/* <Main players={atpRanking}/> */}
       </div>
     </div>
   );
