@@ -1,6 +1,6 @@
 const PlayerImg = ({src}) => {
     return(
-    <img src={src} className="rounded-circle" style={{ width: '50px', height: '50px', objectFit: 'cover' }}/>
+    <img src={src} className="rounded-circle ml-1" style={{ width: '40', height: '40px', objectFit: 'cover'}}/>
     )
 }
 

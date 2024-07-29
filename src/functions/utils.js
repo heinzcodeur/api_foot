@@ -1,13 +1,12 @@
 import axios from 'axios';
 
 
-
     const fetchTournois = (setTournois) => {
         let d = new Date();
         console.log(d.getFullYear()+'-'+d.getMonth()+'-'+d.getDate())
         axios.get('/tournament.json')
             .then((res) => {
-                console.log(Math.floor(Math.random() * res.data.result.length));
+               // console.log(Math.floor(Math.random() * res.data.result.length));
                 setTournois(res.data)
             })
             .catch(error => {
@@ -20,7 +19,6 @@ import axios from 'axios';
         return regex.test(inputString); // Vérifie si la chaîne contient "/"
     };
 
-   
     const today = () => {
         let d = new Date();
         const year = d.getFullYear();
@@ -30,11 +28,11 @@ import axios from 'axios';
         return year+'-'+month+'-'+day;
     }
 
-    // const handleDebuted = (e) => {
-    //     console.log(e)
-    //     // setIsDebuted(e.target.checked);
-    // };
-
+    const get_lastName = string => {
+        let first = string.split('.');
+        let second = first[first.length-1];
+        return second.trim();
+    }
 
     const checkItf = (inputString) => {
         const regex = /Itf/; // Expression régulière pour rechercher le symbole "/"
@@ -49,13 +47,16 @@ import axios from 'axios';
         return regex.test(string);
     };
   
-
     const checkAtp = (inputString) => {
         const regex = /Atp/; // Expression régulière pour rechercher le symbole "/"
         return regex.test(inputString); // Vérifie si la chaîne contient "/"
     };
     const checkWta = (inputString) => {
         const regex = /Wta/; // Expression régulière pour rechercher le symbole "/"
+        return regex.test(inputString); // Vérifie si la chaîne contient "/"
+    };
+    const checkOlympics = (inputString) => {
+        const regex = /Olympic/; // Expression régulière pour rechercher le symbole "/"
         return regex.test(inputString); // Vérifie si la chaîne contient "/"
     };
 
@@ -100,6 +101,28 @@ import axios from 'axios';
         }
     };
 
+    const rankingsCombiner = ({ wtaRankings, atpRankings, setRankings, setError }) => {
+
+        let combineRankings = [];
+        console.log(combineRankings.length);
+            try {
+                if (Array.isArray(wtaRankings) && Array.isArray(atpRankings)) {
+                    const combinedRankings = [...wtaRankings, ...atpRankings];
+                    console.log('combinedRankings length:', combinedRankings.length); // Log the length here
+                    
+                    setRankings(combinedRankings);
+                } else {
+                    alert('tito')
+                    setError('Error: Invalid data format for rankings');
+                }
+            } catch (error) {
+                setError('Error combining rankings:', error);
+            }
+        
+
+        return null;
+    }
+
 export {
     fetchTournois,
     checkBackSlash,
@@ -108,8 +131,11 @@ export {
     checkGirlsBoys,
     checkAtp,
     checkWta,
+    checkOlympics,
     today,
     createDateFromString,
     handleFilterChange,
-    shortName
+    shortName,
+    rankingsCombiner, 
+    get_lastName
 }

@@ -62,6 +62,7 @@ const Athlete = () => {
     <div>
       <Navigation />
       <h1>{athlete.player_full_name}</h1>
+      <p>Current Rank : {athlete.stats[0].rank}</p>
       <img src={athlete.player_logo} alt={athlete.player_name} />
       <br />
       <img src={athlete.flag} alt={athlete.player_country} />

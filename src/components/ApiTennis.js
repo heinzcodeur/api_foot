@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 import '../assets/css/app.css'; // Import correct
 import Timer from "./Timer";
 import PlayerImg from "./PlayerImg";
-import { checkBackSlash, fetchTournois, reverseDate, checkAtp, checkGirlsBoys, checkItf, checkWta, today, createDateFromString, shortName } from "../functions/utils";
+import { checkBackSlash, fetchTournois, reverseDate, checkAtp, checkGirlsBoys, checkItf, checkWta, today, createDateFromString, shortName, checkOlympics, rankingsCombiner, get_lastName } from "../functions/utils";
 import GenerateApiUrl from "./GenerateApiUrl";
 import { Link } from "react-router-dom";
 
@@ -14,7 +14,6 @@ const ApiTennis = () => {
     const [nombre, setNombre] = useState(null);
     const [duty, setDuty] = useState([]);
     // const [tiiti, setTiti/] = useState(null);
-    const [error, setError] = useState(null);
     const [filterLive, setFilterLive] = useState(false);
     const [filterAtp, setFilterAtp] = useState(false);
     const [filterWta, setFilterWta] = useState(false);
@@ -22,40 +21,92 @@ const ApiTennis = () => {
     const [filterOver, setFilterOver] = useState(false);
     const [filterOlympics, setfilterOlympics] = useState(true);
     const [tri, setTri] = useState(false);
-    const [filteredData, setFilteredData] = useState([]);
-    const [wta, setWta] = useState(false); // État pour le filtre 'event_live'
-    const [delay, setDelay] = useState(5000); // État pour le filtre 'event_live'
+    const [filteredData, setFilteredData] = useState(null);
+    const [wta, setWta] = useState([]); // État pour le filtre 'event_live'
+    const [atp, setAtp] = useState([]); // État pour le filtre 'event_live'
+    const [delay, setDelay] = useState(18000); // État pour le filtre 'event_live'
     const [activeButton, setActiveButton] = useState(false); // État pour le filtre 'event_live'
     const [tournois, setTournois] = useState([]);
+    const [rankings, setRankings] = useState([]); // State to hold combined rankings
+    const [error, setError] = useState(null);
+    const [isLoading, setIsLoading] = useState(true); // Nouvel état pour gérer le chargement
 
-    
+
+
+
     const urlwta = 'https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a';
-     
-    const getWtaRankings = () => {
-        axios
-            .get(urlwta)
-            .then((res) => {
-                //setDanger("");
-                console.log(res.data);
+    const urlAtp = 'https://api.api-tennis.com/tennis/?method=get_standings&event_type=ATP&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a';
+
+    const getWtaRankings = async () => {
+        try {
+            const response = await axios.get(urlwta);
+            return response.data.result; // Return the fetched WTA rankings data
+        } catch (error) {
+            console.error('Error fetching WTA rankings:', error);
+            // Optionally, handle errors gracefully, e.g., display an error message
+            return []; // Return an empty array in case of error
+        }
+    };
+
+    const getAtpRankings = async () => {
+        try {
+            const response = await axios.get(urlAtp);
+            return response.data.result; // Return the fetched ATP rankings data
+        } catch (error) {
+            console.error('Error fetching ATP rankings:', error);
+            // Optionally, handle errors gracefully, e.g., display an error message
+            return []; // Return an empty array in case of error
+        }
+    };
+
+    const getRank = (string, array) => {
+        console.log(array.length);
+        const regex = new RegExp(string); // Créer une expression régulière à partir de la chaîne
+    
+        const foundRanking = array.find(element => regex.test(element.player));
+    
+        return foundRanking ? foundRanking.place : ' - '; // Retourner le rang si trouvé, sinon null
+    };
+
+    // Appel de la fonction pour générer l'URL
+    const fetchData = async () => {
+        try {
+            const [wtaRankings, atpRankings] = await Promise.all([
+                getWtaRankings(),
+                getAtpRankings(),
+            ]);
+            //   rankingsCombiner({ wtaRankings, atpRankings, setRankings, setError });
+            console.log(atpRankings.length)
+            console.log(wtaRankings.length)
+            const combinedRankings = [...wtaRankings, ...atpRankings];
+            console.log(combinedRankings.length)
+            setRankings(combinedRankings);
+            console.log(getRank(get_lastName("Coco Gauff"), combinedRankings));
+
+            combinedRankings.find(item => {
+                const regex = /Wozniacki/;
+                if (regex.test(item.player)) {
+                    console.log(item);
+                }
             })
-            .catch((error) => {
-                console.warn(error)
-            });
-    }
-      // Appel de la fonction pour générer l'URL
-    const fetchData = () => {
-        getWtaRankings();
+
+        } catch (error) {
+            console.error('Error fetching rankings:', error);
+        }
+
         const url = GenerateApiUrl();
         axios
             .get(url)
             .then((res) => {
-                //setDanger("");
                 setData(res.data.result);
             })
             .catch((error) => {
-                console.warn(error)
+                console.warn(error);
             });
     };
+
+    
+
 
     // Fonction pour gérer le changement du filtre 'event_live'
     const handleFilterChange = (e) => {
@@ -91,13 +142,13 @@ const ApiTennis = () => {
     useEffect(() => {
         let result = null;
         if (data) {
-            result = data.filter(item => !checkItf(item.event_type_type) && !checkBackSlash(item.event_first_player) && !checkGirlsBoys(item.event_type_type) );
-            
-            result.forEach((item)=>{
+            result = data.filter(item => !checkItf(item.event_type_type) && !checkBackSlash(item.event_first_player) && !checkGirlsBoys(item.event_type_type));
+
+            result.forEach((item) => {
                 item.start_date = createDateFromString(item.event_date, item.event_time);
             })
-            
-            result.sort((a,b)=>{
+
+            result.sort((a, b) => {
                 return a.start_date - b.start_date;
             })
             // console.log(result);
@@ -105,7 +156,7 @@ const ApiTennis = () => {
 
         if (result) {
             if (filterLive) {
-                result = result.filter(item => item.event_live === "1") ;
+                result = result.filter(item => item.event_live === "1");
             }
             if (filterAtp) {
                 result = result.filter(item => checkAtp(item.event_type_type));
@@ -124,11 +175,12 @@ const ApiTennis = () => {
                 console.log(result.length)
             }
             if (filterOlympics) {
-                result = result.filter(item => item.tournament_name === "Olympic Games");
+                console.log('checkOlympics')
+                result = result.filter(item => checkOlympics(item.tournament_name));
                 console.log(result.length)
             }
-            if  (tri){
-                result.sort((a,b)=>{
+            if (tri) {
+                result.sort((a, b) => {
                     return b.start_date - a.start_date;
                 })
             }
@@ -137,9 +189,9 @@ const ApiTennis = () => {
         }
 
         setFilteredData(result);
-    }, [data, filterLive, filterAtp, filterWta, filterPreview, filterOlympics,tri, filterOver]);
+    }, [data, filterLive, filterAtp, filterWta, filterPreview, filterOlympics, tri, filterOver]);
 
-    
+
     const handleButtonClick = (delay) => {
         console.log(delay + today())
         setDelay(delay); // Mettre à jour le délai
@@ -151,7 +203,6 @@ const ApiTennis = () => {
     }, [duty])
 
     useEffect(() => {
-        // console.log('nouveau rendu')
         const intervalId = setInterval(fetchData, delay);
         return () => clearInterval(intervalId);
     }, [delay]);
@@ -222,39 +273,42 @@ const ApiTennis = () => {
                         </label>&nbsp;&nbsp;
                         <b className="text-danger">{filteredData ? filteredData.length : 0} matchs</b>
                     </div>
-                    
+                <div></div>
                     {filteredData === null ? (
-                        <p className="text-light">Loading...
-                        jkkjdf
-                        djkjkdfs
-                        djkjds</p>
-                    ) : (
+                        <div className="spinner-container">
+                            <div className="spinner">toto</div>
+                        </div>                    ) : (
                         filteredData.slice().map((item) =>
                             <div key={item.id} className="col-12 col-sm-6 col-md-4 d-flex align-items-stretch mb-4 text-center $`{item.event_live === 1 ? bg-primary}`">
                                 <div className="border border-primary pt-2 d-flex flex-column justify-content-between w-100 rounded">
                                     <ul className="text-light flex-grow-1 d-flex flex-column justify-content-between list-unstyled">
                                         <li></li>
                                         <li className="mb-2">
-                                        <Link to={`/athletes/${item.first_player_key}`} >
-                                            {item.event_first_player_logo ? (
-                                                <PlayerImg src={item.event_first_player_logo} />
-                                            ) : (
-                                                <i className="fas fa-user rounded-circle" ></i>
-                                            )}
-                                        </Link>
-
-                                            <span className="ms-2 text-primary m-l-3">{shortName(item.event_first_player)}</span>
+                                            <Link to={`/athletes/${item.first_player_key}`} >
+                                                {item.event_first_player_logo ? (
+                                                    <PlayerImg src={item.event_first_player_logo} />
+                                                ) : (
+                                                    <i className="fas fa-user rounded-circle" ></i>
+                                                )}
+                                            </Link>
+                                            <span>{getRank(get_lastName(item.event_first_player), rankings)}</span>
+                                            
+                                            <span className="ms-2 text-primary m-l-3">{shortName(get_lastName(item.event_first_player))}</span>
                                             <span> VS </span>
 
-                                            <span className="ms-2 text-primary m-r-3">{shortName(item.event_second_player)}</span>
+                                            <span className="ms-2 text-primary m-r-3">{get_lastName(item.event_second_player)}</span>
+                                            {/* {get_lastName(item.event_second_player)} */}
+                                            <span>{getRank(get_lastName(item.event_second_player), rankings)}</span>
+
                                             <Link to={`/athletes/${item.second_player_key}`}>
 
-                                            {item.event_second_player_logo ? (
-                                                <PlayerImg src={item.event_second_player_logo} />
-                                            ) : (
-                                                <i className="fas fa-user rounded-circle" ></i>
-                                            )}
+                                                {item.event_second_player_logo ? (
+                                                    <PlayerImg src={item.event_second_player_logo} />
+                                                ) : (
+                                                    <i className="fas fa-user rounded-circle" ></i>
+                                                )}
                                             </Link>
+
 
                                         </li>
                                         <li>
@@ -270,10 +324,10 @@ const ApiTennis = () => {
                                         <li>
                                             {item.scores.length > 0 ? (
                                                 <span>
-                                                    {item.scores[0].score_first} - {item.scores[0].score_second} 
+                                                    {item.scores[0].score_first} - {item.scores[0].score_second}
                                                     {item.scores.length >= 2 && (
                                                         <b>
-                                                            /{item.scores[1].score_first} - {item.scores[1].score_second} 
+                                                            /{item.scores[1].score_first} - {item.scores[1].score_second}
                                                         </b>
                                                     )}
                                                     {item.scores.length >= 3 && (
