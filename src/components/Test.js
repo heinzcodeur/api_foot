@@ -3,11 +3,20 @@ import axios from "axios";
 import Navigation from "./Navigation";
 
 const Test = () => {
+
+    const ladate = new Date();
+    const year = ladate.getFullYear();
+    const day = ladate.getDate();
+    const month = ladate.getMonth()+1;
+
+    const date_du_jour = day+'/'+month+'/'+year;
+    console.log(date_du_jour);
+
     const apikey_first = "50736dc75amsh7f9e578a03cb22ap1ea0e4jsn338832cda913";
     const apikey_second = "7a3522b864msh458ad29cbfda53dp191cd6jsn8a9ecb8f7113";
-    const api_foot_first = "https://footapi7.p.rapidapi.com/api/matches/top/20/7/2023";
+    const api_foot_first = `https://footapi7.p.rapidapi.com/api/matches/top/${date_du_jour}`;
     const tennis_live = "https://sports-live-scores.p.rapidapi.com/tennis/live";
-    const tennis_bis = "https://allsportsapi2.p.rapidapi.com/api/tennis/events/18/7/2023";
+    const tennis_bis = `https://allsportsapi2.p.rapidapi.com/api/tennis/events/${date_du_jour}`;
 
     const [donnees, setData] = useState([]);
     // const [list_matchs, setListMatchs] = useState([]);
