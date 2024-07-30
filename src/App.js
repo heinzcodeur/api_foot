@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/tennis" element={<Tennis />} />
           <Route path="/api/tennis" element={<ApiTennis />} />
           <Route path="*" element={<Home />} />
-          <Route path="/athletes/:athleteId" element={<Athlete />} />
+          <Route path="/athletes/:athleteId/:athleteRank" element={<Athlete />} />
         </Routes>
     </BrowserRouter>
     // <div className="App">

@@ -5,7 +5,7 @@ import axios from "axios";
 
 const Navigation = () => {
 
-  const countriesResponse = axios.get('/files/countries.json');
+  // const countriesResponse = axios.get('/files/countries.json');
 
   return (
     <div className="container">

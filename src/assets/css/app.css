@@ -54,6 +54,39 @@ body {
   margin-right: 3px;
 }
 
+.flag-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* This gives a 16:9 aspect ratio, adjust as needed */
+  overflow: hidden;
+  border-radius: 10px; /* Optional, to round the corners */
+}
+
+.flag-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust for desired opacity level */
+}
+
+.player-image {
+  position: absolute;
+  width: 14%; /* Adjust size as needed */
+  height: auto;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 50%; /* Make the player's image round */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional, for a shadow effect */
+}
+
+
 .custom-round{
    width: '50px';
     height: '50px';

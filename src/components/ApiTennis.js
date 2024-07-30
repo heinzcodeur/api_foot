@@ -1,360 +1,433 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navigation from "./Navigation";
-import '../assets/css/app.css'; // Import correct
+import "../assets/css/app.css"; // Import correct
 import Timer from "./Timer";
 import PlayerImg from "./PlayerImg";
-import { checkBackSlash, fetchTournois, reverseDate, checkAtp, checkGirlsBoys, checkItf, checkWta, today, createDateFromString, shortName, checkOlympics, rankingsCombiner, get_lastName } from "../functions/utils";
+import {
+  checkBackSlash,
+  fetchTournois,
+  reverseDate,
+  checkAtp,
+  checkGirlsBoys,
+  checkItf,
+  checkWta,
+  today,
+  createDateFromString,
+  shortName,
+  checkOlympics,
+  rankingsCombiner,
+  get_lastName,
+} from "../functions/utils";
 import GenerateApiUrl from "./GenerateApiUrl";
 import { Link } from "react-router-dom";
 
 const ApiTennis = () => {
+  const [data, setData] = useState(null);
+  const [nombre, setNombre] = useState(null);
+  const [duty, setDuty] = useState([]);
+  // const [tiiti, setTiti/] = useState(null);
+  const [filterLive, setFilterLive] = useState(false);
+  const [filterAtp, setFilterAtp] = useState(false);
+  const [filterWta, setFilterWta] = useState(false);
+  const [filterPreview, setFilterPreview] = useState(false);
+  const [filterOver, setFilterOver] = useState(false);
+  const [filterOlympics, setfilterOlympics] = useState(true);
+  const [tri, setTri] = useState(false);
+  const [filteredData, setFilteredData] = useState(null);
+  const [wta, setWta] = useState([]); // État pour le filtre 'event_live'
+  const [atp, setAtp] = useState([]); // État pour le filtre 'event_live'
+  const [delay, setDelay] = useState(18000); // État pour le filtre 'event_live'
+  const [activeButton, setActiveButton] = useState(false); // État pour le filtre 'event_live'
+  const [tournois, setTournois] = useState([]);
+  const [rankings, setRankings] = useState([]); // State to hold combined rankings
+  const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true); // Nouvel état pour gérer le chargement
 
-    const [data, setData] = useState(null);
-    const [nombre, setNombre] = useState(null);
-    const [duty, setDuty] = useState([]);
-    // const [tiiti, setTiti/] = useState(null);
-    const [filterLive, setFilterLive] = useState(false);
-    const [filterAtp, setFilterAtp] = useState(false);
-    const [filterWta, setFilterWta] = useState(false);
-    const [filterPreview, setFilterPreview] = useState(false);
-    const [filterOver, setFilterOver] = useState(false);
-    const [filterOlympics, setfilterOlympics] = useState(true);
-    const [tri, setTri] = useState(false);
-    const [filteredData, setFilteredData] = useState(null);
-    const [wta, setWta] = useState([]); // État pour le filtre 'event_live'
-    const [atp, setAtp] = useState([]); // État pour le filtre 'event_live'
-    const [delay, setDelay] = useState(18000); // État pour le filtre 'event_live'
-    const [activeButton, setActiveButton] = useState(false); // État pour le filtre 'event_live'
-    const [tournois, setTournois] = useState([]);
-    const [rankings, setRankings] = useState([]); // State to hold combined rankings
-    const [error, setError] = useState(null);
-    const [isLoading, setIsLoading] = useState(true); // Nouvel état pour gérer le chargement
+  const urlwta =
+    "https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a";
+  const urlAtp =
+    "https://api.api-tennis.com/tennis/?method=get_standings&event_type=ATP&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a";
 
+  const getWtaRankings = async () => {
+    try {
+      const response = await axios.get(urlwta);
+      return response.data.result; // Return the fetched WTA rankings data
+    } catch (error) {
+      console.error("Error fetching WTA rankings:", error);
+      // Optionally, handle errors gracefully, e.g., display an error message
+      return []; // Return an empty array in case of error
+    }
+  };
 
+  const getAtpRankings = async () => {
+    try {
+      const response = await axios.get(urlAtp);
+      return response.data.result; // Return the fetched ATP rankings data
+    } catch (error) {
+      console.error("Error fetching ATP rankings:", error);
+      // Optionally, handle errors gracefully, e.g., display an error message
+      return []; // Return an empty array in case of error
+    }
+  };
 
+  const getRank = (string, array) => {
+    const regex = new RegExp(string); // Créer une expression régulière à partir de la chaîne
 
-    const urlwta = 'https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a';
-    const urlAtp = 'https://api.api-tennis.com/tennis/?method=get_standings&event_type=ATP&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a';
+    const foundRanking = array.find((element) => regex.test(element.player));
+    // console.log(foundRanking)
+    // console.log('athlete : '+ foundRanking.place);
+    return foundRanking ? foundRanking.place : 0; // Retourner le rang si trouvé, sinon null
+  };
 
-    const getWtaRankings = async () => {
-        try {
-            const response = await axios.get(urlwta);
-            return response.data.result; // Return the fetched WTA rankings data
-        } catch (error) {
-            console.error('Error fetching WTA rankings:', error);
-            // Optionally, handle errors gracefully, e.g., display an error message
-            return []; // Return an empty array in case of error
+  // Appel de la fonction pour générer l'URL
+  const fetchData = async () => {
+    try {
+      const [wtaRankings, atpRankings] = await Promise.all([
+        getWtaRankings(),
+        getAtpRankings(),
+      ]);
+      //   rankingsCombiner({ wtaRankings, atpRankings, setRankings, setError });
+      console.log(atpRankings.length);
+      console.log(wtaRankings.length);
+      const combinedRankings = [...wtaRankings, ...atpRankings];
+      console.log(combinedRankings.length);
+      setRankings(combinedRankings);
+      console.log(getRank(get_lastName("Coco Gauff"), combinedRankings));
+
+      combinedRankings.find((item) => {
+        const regex = /Wozniacki/;
+        if (regex.test(item.player)) {
+          console.log(item);
         }
-    };
+      });
+    } catch (error) {
+      console.error("Error fetching rankings:", error);
+    }
 
-    const getAtpRankings = async () => {
-        try {
-            const response = await axios.get(urlAtp);
-            return response.data.result; // Return the fetched ATP rankings data
-        } catch (error) {
-            console.error('Error fetching ATP rankings:', error);
-            // Optionally, handle errors gracefully, e.g., display an error message
-            return []; // Return an empty array in case of error
-        }
-    };
+    const url = GenerateApiUrl();
+    axios
+      .get(url)
+      .then((res) => {
+        setData(res.data.result);
+      })
+      .catch((error) => {
+        console.warn(error);
+      });
+  };
 
-    const getRank = (string, array) => {
-        console.log(array.length);
-        const regex = new RegExp(string); // Créer une expression régulière à partir de la chaîne
-    
-        const foundRanking = array.find(element => regex.test(element.player));
-    
-        return foundRanking ? foundRanking.place : ' - '; // Retourner le rang si trouvé, sinon null
-    };
+  // Fonction pour gérer le changement du filtre 'event_live'
+  const handleFilterChange = (e) => {
+    const { name, checked } = e.target;
 
-    // Appel de la fonction pour générer l'URL
-    const fetchData = async () => {
-        try {
-            const [wtaRankings, atpRankings] = await Promise.all([
-                getWtaRankings(),
-                getAtpRankings(),
-            ]);
-            //   rankingsCombiner({ wtaRankings, atpRankings, setRankings, setError });
-            console.log(atpRankings.length)
-            console.log(wtaRankings.length)
-            const combinedRankings = [...wtaRankings, ...atpRankings];
-            console.log(combinedRankings.length)
-            setRankings(combinedRankings);
-            console.log(getRank(get_lastName("Coco Gauff"), combinedRankings));
+    switch (name) {
+      case "live":
+        setFilterLive(checked);
+        break;
+      case "atp":
+        setFilterAtp(checked);
+        break;
+      case "wta":
+        setFilterWta(checked);
+        break;
+      case "preview":
+        setFilterPreview(checked);
+        break;
+      case "over":
+        setFilterOver(checked);
+        break;
+      case "olympics":
+        setfilterOlympics(checked);
+        break;
+      case "tri":
+        setTri(checked);
+        break;
+      default:
+        break;
+    }
+  };
 
-            combinedRankings.find(item => {
-                const regex = /Wozniacki/;
-                if (regex.test(item.player)) {
-                    console.log(item);
-                }
-            })
+  useEffect(() => {
+    let result = null;
+    if (data) {
+      result = data.filter(
+        (item) =>
+          !checkItf(item.event_type_type) &&
+          !checkBackSlash(item.event_first_player) &&
+          !checkGirlsBoys(item.event_type_type)
+      );
 
-        } catch (error) {
-            console.error('Error fetching rankings:', error);
-        }
+      result.forEach((item) => {
+        item.start_date = createDateFromString(
+          item.event_date,
+          item.event_time
+        );
+      });
 
-        const url = GenerateApiUrl();
-        axios
-            .get(url)
-            .then((res) => {
-                setData(res.data.result);
-            })
-            .catch((error) => {
-                console.warn(error);
-            });
-    };
+      result.sort((a, b) => {
+        return a.start_date - b.start_date;
+      });
+      // console.log(result);
+    }
 
-    
+    if (result) {
+      if (filterLive) {
+        result = result.filter((item) => item.event_live === "1");
+      }
+      if (filterAtp) {
+        result = result.filter((item) => checkAtp(item.event_type_type));
+        console.log(result.length);
+      }
+      if (filterWta) {
+        result = result.filter((item) => checkWta(item.event_type_type));
+        console.log(result.length);
+      }
+      if (filterPreview) {
+        result = result.filter(
+          (item) => item.event_live === "0" && item.event_status !== "Finished"
+        );
+        console.log(result.length);
+      }
+      if (filterOver) {
+        result = result.filter((item) => item.event_status === "Finished");
+        console.log(result.length);
+      }
+      if (filterOlympics) {
+        console.log("checkOlympics");
+        result = result.filter((item) => checkOlympics(item.tournament_name));
+        console.log(result.length);
+      }
+      if (tri) {
+        result.sort((a, b) => {
+          return b.start_date - a.start_date;
+        });
+      }
+    } else {
+      result = [];
+    }
 
+    setFilteredData(result);
+  }, [
+    data,
+    filterLive,
+    filterAtp,
+    filterWta,
+    filterPreview,
+    filterOlympics,
+    tri,
+    filterOver,
+  ]);
 
-    // Fonction pour gérer le changement du filtre 'event_live'
-    const handleFilterChange = (e) => {
-        const { name, checked } = e.target;
+  const handleButtonClick = (delay) => {
+    console.log(delay + today());
+    setDelay(delay); // Mettre à jour le délai
+    setActiveButton(delay); // Mettre à jour le bouton actif
+  };
 
-        switch (name) {
-            case 'live':
-                setFilterLive(checked);
-                break;
-            case 'atp':
-                setFilterAtp(checked);
-                break;
-            case 'wta':
-                setFilterWta(checked);
-                break;
-            case 'preview':
-                setFilterPreview(checked);
-                break;
-            case 'over':
-                setFilterOver(checked);
-                break;
-            case 'olympics':
-                setfilterOlympics(checked);
-                break;
-            case 'tri':
-                setTri(checked);
-                break;
-            default:
-                break;
-        }
-    };
+//   useEffect(() => {
+//     fetchTournois(setTournois);
+//   }, [duty]);
 
-    useEffect(() => {
-        let result = null;
-        if (data) {
-            result = data.filter(item => !checkItf(item.event_type_type) && !checkBackSlash(item.event_first_player) && !checkGirlsBoys(item.event_type_type));
+  useEffect(() => {
+    const intervalId = setInterval(fetchData, delay);
+    return () => clearInterval(intervalId);
+  }, [delay]);
 
-            result.forEach((item) => {
-                item.start_date = createDateFromString(item.event_date, item.event_time);
-            })
+  return (
+    <div className="wizard">
+      <Navigation />
+      <Timer
+        handleButtonClick={handleButtonClick}
+        activeButton={activeButton}
+      ></Timer>
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-12 text-light text-center">
+            <label>
+              <input
+                type="checkbox"
+                name="live"
+                checked={filterLive}
+                onChange={handleFilterChange}
+              />{" "}
+              live events
+            </label>
+            &nbsp;&nbsp;
+            <label>
+              <input
+                type="checkbox"
+                name="atp"
+                checked={filterAtp}
+                onChange={handleFilterChange}
+              />{" "}
+              ATP events
+            </label>
+            &nbsp;&nbsp;
+            <label>
+              <input
+                type="checkbox"
+                name="wta"
+                checked={filterWta}
+                onChange={handleFilterChange}
+              />{" "}
+              WTA events
+            </label>
+            &nbsp;&nbsp;
+            <label>
+              <input
+                type="checkbox"
+                name="preview"
+                checked={filterPreview}
+                onChange={handleFilterChange}
+              />{" "}
+              preview events
+            </label>
+            &nbsp;&nbsp;
+            <label>
+              <input
+                type="checkbox"
+                name="over"
+                checked={filterOver}
+                onChange={handleFilterChange}
+              />{" "}
+              terminés
+            </label>
+            &nbsp;&nbsp;
+            <label>
+              <input
+                type="checkbox"
+                name="olympics"
+                checked={filterOlympics}
+                onChange={handleFilterChange}
+              />{" "}
+              Olympics events
+            </label>
+            &nbsp;&nbsp;
+            <label>
+              <input
+                type="checkbox"
+                name="tri"
+                checked={tri}
+                onChange={handleFilterChange}
+              />{" "}
+              tri {tri}
+            </label>
+            &nbsp;&nbsp;
+            <b className="text-danger">
+              {filteredData ? filteredData.length : 0} matchs
+            </b>
+          </div>
 
-            result.sort((a, b) => {
-                return a.start_date - b.start_date;
-            })
-            // console.log(result);
-        }
+          <div></div>
 
-        if (result) {
-            if (filterLive) {
-                result = result.filter(item => item.event_live === "1");
-            }
-            if (filterAtp) {
-                result = result.filter(item => checkAtp(item.event_type_type));
-                console.log(result.length)
-            }
-            if (filterWta) {
-                result = result.filter(item => checkWta(item.event_type_type));
-                console.log(result.length)
-            }
-            if (filterPreview) {
-                result = result.filter(item => item.event_live === "0" && item.event_status !== "Finished");
-                console.log(result.length)
-            }
-            if (filterOver) {
-                result = result.filter(item => item.event_status === "Finished");
-                console.log(result.length)
-            }
-            if (filterOlympics) {
-                console.log('checkOlympics')
-                result = result.filter(item => checkOlympics(item.tournament_name));
-                console.log(result.length)
-            }
-            if (tri) {
-                result.sort((a, b) => {
-                    return b.start_date - a.start_date;
-                })
-            }
-        } else {
-            result = [];
-        }
+            {filteredData === null ? (
+              <div className="spinner-container">
+                <div className="spinner">toto</div>
+              </div>
+            ) : (
+              filteredData.slice().map((item) => (
+                <div
+                  key={item.id}
+                  className="col-12 col-sm-6 col-md-4 d-flex align-items-stretch mb-4 text-center $`{item.event_live === 1 ? bg-primary}`"
+                >
+                  <div className="border border-primary pt-2 d-flex flex-column justify-content-between w-100 rounded">
+                    <ul className="text-light flex-grow-1 d-flex flex-column justify-content-between list-unstyled">
+                      <li></li>
+                      <li className="mb-2">
+                        <Link to={`/athletes/${item.first_player_key}/${getRank(get_lastName(item.event_first_player),rankings)}`}>
+                          {item.event_first_player_logo ? (
+                            <PlayerImg src={item.event_first_player_logo} />
+                          ) : (
+                            <i className="fas fa-user rounded-circle"></i>
+                          )}
+                        </Link>
+                        <span>
+                          {getRank(
+                            get_lastName(item.event_first_player),
+                            rankings
+                          )}
+                        </span>
 
-        setFilteredData(result);
-    }, [data, filterLive, filterAtp, filterWta, filterPreview, filterOlympics, tri, filterOver]);
+                        <span className="ms-2 text-primary m-l-3">
+                          {shortName(get_lastName(item.event_first_player))}
+                        </span>
+                        <span> VS </span>
 
+                        <span className="ms-2 text-primary m-r-3">
+                          {get_lastName(item.event_second_player)}
+                        </span>
+                        {/* {get_lastName(item.event_second_player)} */}
+                        <span>
+                          {getRank(
+                            get_lastName(item.event_second_player),
+                            rankings
+                          )}
+                        </span>
 
-    const handleButtonClick = (delay) => {
-        console.log(delay + today())
-        setDelay(delay); // Mettre à jour le délai
-        setActiveButton(delay); // Mettre à jour le bouton actif
-    };
+                        <Link to={`/athletes/${item.second_player_key}/${getRank(get_lastName(item.event_second_player),rankings)}`}>
+                          {item.event_second_player_logo ? (
+                            <PlayerImg src={item.event_second_player_logo} />
+                          ) : (
+                            <i className="fas fa-user rounded-circle"></i>
+                          )}
+                        </Link>
+                      </li>
+                      <li>
+                        <p>{item.event_type_type} </p>
+                      </li>
+                      <li>
+                        {item.tournament_round
+                          ? item.tournament_round
+                          : item.tournament_name}
+                      </li>
+                      <li>
+                        <p>
+                          {reverseDate(item.event_date)} - {item.event_time}
+                        </p>
+                      </li>
+                      <li
+                        className="text-success animated-item"
+                        style={{ transition: "color 0.5s" }}
+                      >
+                        <b>{item.event_game_result}</b>
+                      </li>
+                      <li>
+                        {item.scores.length > 0 ? (
+                          <span>
+                            {item.scores[0].score_first} -{" "}
+                            {item.scores[0].score_second}
+                            {item.scores.length >= 2 && (
+                              <b>
+                                /{item.scores[1].score_first} -{" "}
+                                {item.scores[1].score_second}
+                              </b>
+                            )}
+                            {item.scores.length >= 3 && (
+                              <>
+                                /{item.scores[2].score_first} -{" "}
+                                {item.scores[2].score_second}
+                              </>
+                            )}
+                          </span>
+                        ) : (
+                          <>na</> // Valeur de repli si aucun score n'existe
+                        )}
 
-    useEffect(() => {
-        fetchTournois(setTournois);
-    }, [duty])
-
-    useEffect(() => {
-        const intervalId = setInterval(fetchData, delay);
-        return () => clearInterval(intervalId);
-    }, [delay]);
-
-    return (
-        <div className="wizard">
-            <Navigation />
-            <Timer handleButtonClick={handleButtonClick} activeButton={activeButton} ></Timer>
-            <div className="container mt-4">
-                <div className="row">
-                    <div className="col-12 text-light text-center">
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="live"
-                                checked={filterLive}
-                                onChange={handleFilterChange}
-                            />                            live events
-                        </label>
-                        &nbsp;&nbsp;
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="atp"
-                                checked={filterAtp}
-                                onChange={handleFilterChange}
-                            />                            ATP events
-                        </label>&nbsp;&nbsp;
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="wta"
-                                checked={filterWta}
-                                onChange={handleFilterChange}
-                            />                            WTA events
-                        </label>&nbsp;&nbsp;
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="preview"
-                                checked={filterPreview}
-                                onChange={handleFilterChange}
-                            />                            preview events
-                        </label>&nbsp;&nbsp;
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="over"
-                                checked={filterOver}
-                                onChange={handleFilterChange}
-                            />                            terminés
-                        </label>&nbsp;&nbsp;
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="olympics"
-                                checked={filterOlympics}
-                                onChange={handleFilterChange}
-                            />                            Olympics events
-                        </label>&nbsp;&nbsp;
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="tri"
-                                checked={tri}
-                                onChange={handleFilterChange}
-                            />                            tri {tri}
-                        </label>&nbsp;&nbsp;
-                        <b className="text-danger">{filteredData ? filteredData.length : 0} matchs</b>
-                    </div>
-                <div></div>
-                    {filteredData === null ? (
-                        <div className="spinner-container">
-                            <div className="spinner">toto</div>
-                        </div>                    ) : (
-                        filteredData.slice().map((item) =>
-                            <div key={item.id} className="col-12 col-sm-6 col-md-4 d-flex align-items-stretch mb-4 text-center $`{item.event_live === 1 ? bg-primary}`">
-                                <div className="border border-primary pt-2 d-flex flex-column justify-content-between w-100 rounded">
-                                    <ul className="text-light flex-grow-1 d-flex flex-column justify-content-between list-unstyled">
-                                        <li></li>
-                                        <li className="mb-2">
-                                            <Link to={`/athletes/${item.first_player_key}`} >
-                                                {item.event_first_player_logo ? (
-                                                    <PlayerImg src={item.event_first_player_logo} />
-                                                ) : (
-                                                    <i className="fas fa-user rounded-circle" ></i>
-                                                )}
-                                            </Link>
-                                            <span>{getRank(get_lastName(item.event_first_player), rankings)}</span>
-                                            
-                                            <span className="ms-2 text-primary m-l-3">{shortName(get_lastName(item.event_first_player))}</span>
-                                            <span> VS </span>
-
-                                            <span className="ms-2 text-primary m-r-3">{get_lastName(item.event_second_player)}</span>
-                                            {/* {get_lastName(item.event_second_player)} */}
-                                            <span>{getRank(get_lastName(item.event_second_player), rankings)}</span>
-
-                                            <Link to={`/athletes/${item.second_player_key}`}>
-
-                                                {item.event_second_player_logo ? (
-                                                    <PlayerImg src={item.event_second_player_logo} />
-                                                ) : (
-                                                    <i className="fas fa-user rounded-circle" ></i>
-                                                )}
-                                            </Link>
-
-
-                                        </li>
-                                        <li>
-                                            <p>{item.event_type_type} </p>
-                                        </li>
-                                        <li>{item.tournament_round ? item.tournament_round : item.tournament_name}</li>
-                                        <li>
-                                            <p>{reverseDate(item.event_date)} - {item.event_time}</p>
-                                        </li>
-                                        <li className="text-success animated-item" style={{ transition: 'color 0.5s' }}>
-                                            <b>{item.event_game_result}</b>
-                                        </li>
-                                        <li>
-                                            {item.scores.length > 0 ? (
-                                                <span>
-                                                    {item.scores[0].score_first} - {item.scores[0].score_second}
-                                                    {item.scores.length >= 2 && (
-                                                        <b>
-                                                            /{item.scores[1].score_first} - {item.scores[1].score_second}
-                                                        </b>
-                                                    )}
-                                                    {item.scores.length >= 3 && (
-                                                        <>
-                                                            /{item.scores[2].score_first} - {item.scores[2].score_second}
-                                                        </>
-                                                    )}
-                                                </span>
-                                            ) : (
-                                                <>na</> // Valeur de repli si aucun score n'existe
-                                            )}
-
-                                            <p className="text-primary">{item.event_final_result}</p>
-                                            <p>match key: {item.event_key}</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <br />
-                            </div>
-                        )
-                    )}
+                        <p className="text-primary">
+                          {item.event_final_result}
+                        </p>
+                        <p>match key: {item.event_key}</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <br />
                 </div>
-            </div>
+              ))
+            )}
         </div>
-    );
-
-}
+      </div>
+    </div>
+  );
+};
 
 export default ApiTennis;
-
