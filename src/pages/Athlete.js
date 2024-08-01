@@ -33,7 +33,9 @@ const Athlete = () => {
       if (matchingCountry) {
         athleteData.flag = matchingCountry.flags.png;
       } else {
-        setFlagError(true);
+        athleteData.flag =
+          "https://media.cnewyork.net/uploads/2021/02/drapeau-americain.jpg";
+        //setFlagError(true);
         console.warn("Country flag not found:", land);
       }
 
@@ -69,20 +71,50 @@ const Athlete = () => {
         <div className="row">
           <div className="col-8 mx-auto text-center">
             <h1 className="text-secondary">{athlete.player_full_name}</h1>
-            <p>from {athlete.player_country}</p>
+            <p>from {athlete.player_country === "World" ? (
+              'Russia') : (
+                  athlete.player_country
+              )
+            }</p>
             <p>Current Rank: {athleteRank}</p>
-            <br></br><br></br>
+            <br></br>
+            <br></br>
             <div className="player-image-container mt-4">
-              <img className="player-image" src={athlete.player_logo} alt={athlete.player_name} />
+              <img
+                className="player-image"
+                src={athlete.player_logo}
+                alt={athlete.player_name}
+              />
               {flagError === 0 ? (
-              <img className="background-flag" src={athlete.flag} alt={athlete.player_country} />
-                ) : (<span>no flag</span>)}
+                  athlete.player_country === "USA" ? (
+                    <img
+                      className="flag-background"
+                      src="https://media.cnewyork.net/uploads/2021/02/drapeau-americain.jpg"
+                      alt={athlete.player_country}
+                    />
+                  ) : athlete.player_country === "World" ? (
+                    <img
+                      className="flag-background-russia"
+                      src="https://alexandrederussie.com/wp-content/uploads/2020/11/drapeau-russie.jpg"
+                      alt='russia'
+                    />
+                    
+                  ) : (
+                    <img
+                      className="background-flag"
+                      src={athlete.flag}
+                      alt={athlete.player_country}
+                    />
+                  )
+                ) : (
+                <span>No flag</span>
+              )}
             </div>
-            {/* Afficher les autres informations de l'athlète */}
+            {/* Afficher les autres informations de l'athlète
+             */}
           </div>
-  </div>
-</div>
-
+        </div>
+      </div>
     </div>
   );
 };

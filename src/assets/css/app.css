@@ -74,11 +74,35 @@ body {
   opacity: 0.5; /* Adjust for desired opacity level */
 }
 
+.flag-background-russia {
+  position: absolute;
+  margin-left:25%;
+  top: 80%;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border: 0.25px solid rgb(137, 137, 145)
+  /* opacity: 0.5;  */
+}
+
 .player-image {
   position: absolute;
   width: 14%; /* Adjust size as needed */
   height: auto;
   top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 50%; /* Make the player's image round */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional, for a shadow effect */
+}
+.player-image-condition {
+  position: absolute;
+  width: 14%; /* Adjust size as needed */
+  height: auto;
+  top: 107%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;

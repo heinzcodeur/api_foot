@@ -29,8 +29,12 @@ import axios from 'axios';
     }
 
     const get_lastName = string => {
+        console.log(string)
         let first = string.split('.');
         let second = first[first.length-1];
+        if(string === "D. Medvedev"){
+            console.log(second.trim());
+        }
         return second.trim();
     }
 

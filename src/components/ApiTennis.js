@@ -37,12 +37,14 @@ const ApiTennis = () => {
   const [filteredData, setFilteredData] = useState(null);
   const [wta, setWta] = useState([]); // État pour le filtre 'event_live'
   const [atp, setAtp] = useState([]); // État pour le filtre 'event_live'
-  const [delay, setDelay] = useState(18000); // État pour le filtre 'event_live'
+  const [delay, setDelay] = useState(5000); // État pour le filtre 'event_live'
   const [activeButton, setActiveButton] = useState(false); // État pour le filtre 'event_live'
   const [tournois, setTournois] = useState([]);
   const [rankings, setRankings] = useState([]); // State to hold combined rankings
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true); // Nouvel état pour gérer le chargement
+  const [favorite, setFavorite] = useState(1);
+  const [challenger, setChallenger] = useState(2);
 
   const urlwta =
     "https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a";
@@ -71,13 +73,43 @@ const ApiTennis = () => {
     }
   };
 
-  const getRank = (string, array) => {
-    const regex = new RegExp(string); // Créer une expression régulière à partir de la chaîne
+  const getRank = (position, object, array) => {
+    console.log(array.length)
+    let string = null;
+    let player = null;
+    let tournoi = "WTA";
+    let ranking = 0;
 
-    const foundRanking = array.find((element) => regex.test(element.player));
-    // console.log(foundRanking)
-    // console.log('athlete : '+ foundRanking.place);
-    return foundRanking ? foundRanking.place : 0; // Retourner le rang si trouvé, sinon null
+    if(position === 1){ 
+        player = object.event_first_player;
+        console.log(player)
+    }
+    else{ 
+        player = object.event_second_player
+    }
+
+    console.log(player);
+  
+    if(checkAtp(object.event_type_type)){
+        tournoi ='ATP';
+    }
+
+    console.log(tournoi)
+    string = get_lastName(player);
+
+    console.log(string);
+
+    const regex = new RegExp(string, 'g');
+    
+    const foundRankings = array.filter((element) => regex.test(element.player));  
+    // if(string === "Medvedev"){
+        console.log(foundRankings[0].place);
+
+        ranking = foundRankings[0].place;
+    // }
+   
+    // return ; // Retourner le rang si trouvé, sinon null
+    return ranking; // Retourner le rang si trouvé, sinon null
   };
 
   // Appel de la fonction pour générer l'URL
@@ -93,7 +125,7 @@ const ApiTennis = () => {
       const combinedRankings = [...wtaRankings, ...atpRankings];
       console.log(combinedRankings.length);
       setRankings(combinedRankings);
-      console.log(getRank(get_lastName("Coco Gauff"), combinedRankings));
+    //   console.log(getRank(get_lastName("Coco Gauff"), combinedRankings));
 
       combinedRankings.find((item) => {
         const regex = /Wozniacki/;
@@ -195,7 +227,7 @@ const ApiTennis = () => {
       if (filterOlympics) {
         console.log("checkOlympics");
         result = result.filter((item) => checkOlympics(item.tournament_name));
-        console.log(result.length);
+        console.log(result);
       }
       if (tri) {
         result.sort((a, b) => {
@@ -332,46 +364,42 @@ const ApiTennis = () => {
                 >
                   <div className="border border-primary pt-2 d-flex flex-column justify-content-between w-100 rounded">
                     <ul className="text-light flex-grow-1 d-flex flex-column justify-content-between list-unstyled">
-                      <li></li>
-                      <li className="mb-2">
-                        <Link to={`/athletes/${item.first_player_key}/${getRank(get_lastName(item.event_first_player),rankings)}`}>
-                          {item.event_first_player_logo ? (
-                            <PlayerImg src={item.event_first_player_logo} />
-                          ) : (
-                            <i className="fas fa-user rounded-circle"></i>
-                          )}
-                        </Link>
-                        <span>
-                          {getRank(
-                            get_lastName(item.event_first_player),
-                            rankings
-                          )}
-                        </span>
+                        <li></li>
+                        <li className="mb-2">
+                            <Link to={`/athletes/${item.first_player_key}/${getRank(1,item, rankings)}`}>
+                                {item.event_first_player_logo ? (
+                                    <PlayerImg src={item.event_first_player_logo} />
+                                        ) : (
+                                    <i className="fas fa-user rounded-circle"></i>
+                                        )}
+                            </Link>
 
-                        <span className="ms-2 text-primary m-l-3">
-                          {shortName(get_lastName(item.event_first_player))}
-                        </span>
-                        <span> VS </span>
+                            <span> 
+                            {getRank(1,item, rankings)}
+                            </span>
 
-                        <span className="ms-2 text-primary m-r-3">
-                          {get_lastName(item.event_second_player)}
-                        </span>
-                        {/* {get_lastName(item.event_second_player)} */}
-                        <span>
-                          {getRank(
-                            get_lastName(item.event_second_player),
-                            rankings
-                          )}
-                        </span>
+                            <span className="ms-2 text-primary m-l-3"> 
+                            {shortName(item.event_first_player)}
+                             </span>
+                            <span> VS </span>
 
-                        <Link to={`/athletes/${item.second_player_key}/${getRank(get_lastName(item.event_second_player),rankings)}`}>
-                          {item.event_second_player_logo ? (
-                            <PlayerImg src={item.event_second_player_logo} />
-                          ) : (
-                            <i className="fas fa-user rounded-circle"></i>
-                          )}
-                        </Link>
+                            <span className="ms-2 text-primary m-l-3"> 
+                            {shortName(item.event_second_player)}
+                             </span>&nbsp;
+                            <span className="ms-2 m-r-3">
+                            {getRank(2, item,rankings)}
+                           </span>
+                            
+
+                            <Link to={`/athletes/${item.second_player_key}/${getRank(2,item, rankings)}`}>
+                            {item.event_second_player_logo ? (
+                                <PlayerImg src={item.event_second_player_logo} />
+                            ) : (
+                                <i className="fas fa-user rounded-circle"></i>
+                            )}
+                            </Link>
                       </li>
+
                       <li>
                         <p>{item.event_type_type} </p>
                       </li>
