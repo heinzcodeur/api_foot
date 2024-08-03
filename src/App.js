@@ -9,21 +9,28 @@ import Test from "./components/Test";
 import Ranking from "./pages/Ranking";
 import Tennis from "./pages/Tennis";
 import ApiTennis from "./components/ApiTennis";
+import Olympics from "./components/Olympics";
 import Athlete from "./pages/Athlete";
+import Layout from "./components/Layout";
 
 const App = () => {
   return (
     <BrowserRouter>
-        <Routes>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/pays" element={<Countries />} />
           <Route path="/ranking" element={<Ranking />} />
           <Route path="/tennis" element={<Tennis />} />
           <Route path="/api/tennis" element={<ApiTennis />} />
+          <Route path="/api/olympics" element={<Olympics />} />
           <Route path="*" element={<Home />} />
           <Route path="/athletes/:athleteId/:athleteRank" element={<Athlete />} />
-        </Routes>
+
+        </Route>
+      </Routes>
     </BrowserRouter>
     // <div className="App">
     //   <header className="App-header">

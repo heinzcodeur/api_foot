@@ -6,8 +6,6 @@ import User from "./User";
 const Home = () =>{
     return (
         <div>
-            <Navigation />
-
             <User></User>
         </div>
     )

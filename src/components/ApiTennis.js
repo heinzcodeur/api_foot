@@ -266,8 +266,7 @@ const ApiTennis = () => {
   }, [delay]);
 
   return (
-    <div className="wizard">
-      <Navigation />
+    <div>
       <Timer
         handleButtonClick={handleButtonClick}
         activeButton={activeButton}

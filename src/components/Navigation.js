@@ -11,7 +11,7 @@ const Navigation = () => {
     <div className="container">
       <div className="row">
         <div className="col-10 mx-auto mt-4">
-          <h1 className="text-primary text-center">API FOOT (tennis live)</h1>
+          <h1 className="text-danger text-center">API FOOT (tennis live)</h1>
           <ul className="list-inline text-center">
             <NavLink to="/">
               <li>home</li>
@@ -30,6 +30,9 @@ const Navigation = () => {
             </NavLink>
             <NavLink to="/api/tennis">
               <li>api-tennis</li>
+            </NavLink>
+            <NavLink to="/api/olympics">
+              <li>paris 2024</li>
             </NavLink>
           </ul>
         </div>
