@@ -107,6 +107,30 @@ import axios from 'axios';
         return date;
       }
 
+      const formatDateToFrench = (dateString) => {
+        // Créer un objet Date à partir de la chaîne ISO
+        const date = new Date(dateString);
+    
+        // Utiliser Intl.DateTimeFormat pour formater la date en français
+        const options = {
+            weekday: 'long',    // Affiche le jour de la semaine (ex: dimanche)
+            year: 'numeric',    // Affiche l'année (ex: 2024)
+            month: 'long',      // Affiche le mois en toutes lettres (ex: août)
+            day: 'numeric',     // Affiche le jour du mois (ex: 4)
+            hour: '2-digit',    // Affiche l'heure (ex: 09)
+            minute: '2-digit',  // Affiche les minutes (ex: 00)
+            second: '2-digit',  // Affiche les secondes (ex: 00)
+            timeZoneName: 'short' // Affiche le fuseau horaire (ex: GMT+2)
+        };
+    
+        const formatter = new Intl.DateTimeFormat('fr-FR', options);
+    
+        return formatter.format(date);
+    }
+    
+   
+    
+
       const handleFilterChange = (e,setFilterLive, setFilterAtp, setFilterWta, setPreview) => {
         const { name, checked } = e.target;
 
@@ -164,5 +188,6 @@ export {
     handleFilterChange,
     shortName,
     rankingsCombiner, 
-    get_lastName
+    get_lastName,
+    formatDateToFrench
 }

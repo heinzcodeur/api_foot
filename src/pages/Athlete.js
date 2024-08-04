@@ -7,7 +7,7 @@ import { calculateAge } from "../functions/mixins";
 const Athlete = () => {
   const { athleteId } = useParams(); // Assuming you're using react-router-dom
   const { athleteRank } = useParams(); // Assuming you're using react-router-dom
-  const url = `https://api.api-tennis.com/tennis/?method=get_players&player_key=${athleteId}&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a`;
+  const url = `https://api.api-tennis.com/tennis/?method=get_players&player_key=${athleteId}&APIkey=d1d5e28f7576f2ba4c75e6ed53ddfd7e01f162f10b6b4b25bad23e0104255a06`;
   const [athlete, setAthlete] = useState(null);
   const [countries, setCountries] = useState([]);
   const [error, setError] = useState(null);
@@ -66,10 +66,9 @@ const Athlete = () => {
 
   return (
     <div>
-      <Navigation />
       <div className="container">
         <div className="row">
-          <div className="col-8 mx-auto text-center">
+          <div className="col-8 mx-auto text-center text-light">
             <h1 className="text-secondary">{athlete.player_full_name}</h1>
             <p>from {athlete.player_country === "World" ? (
               'Russia') : (

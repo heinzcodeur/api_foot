@@ -47,9 +47,9 @@ const ApiTennis = () => {
   const [challenger, setChallenger] = useState(2);
 
   const urlwta =
-    "https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a";
+    "https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=d1d5e28f7576f2ba4c75e6ed53ddfd7e01f162f10b6b4b25bad23e0104255a06";
   const urlAtp =
-    "https://api.api-tennis.com/tennis/?method=get_standings&event_type=ATP&APIkey=7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a";
+    "https://api.api-tennis.com/tennis/?method=get_standings&event_type=ATP&APIkey=d1d5e28f7576f2ba4c75e6ed53ddfd7e01f162f10b6b4b25bad23e0104255a06";
 
   const getWtaRankings = async () => {
     try {
@@ -101,11 +101,14 @@ const ApiTennis = () => {
 
     const regex = new RegExp(string, 'g');
     
-    const foundRankings = array.filter((element) => regex.test(element.player));  
-    // if(string === "Medvedev"){
-        console.log(foundRankings[0].place);
+    const foundRankings = array.find((element) => regex.test(element.player));
 
-        ranking = foundRankings[0].place;
+if (foundRankings) {  // Vérifie que foundRankings n'est pas undefined
+    ranking = foundRankings.place;
+} else {
+    console.log('Player not found');
+}
+
     // }
    
     // return ; // Retourner le rang si trouvé, sinon null
@@ -390,13 +393,13 @@ const ApiTennis = () => {
                            </span>
                             
 
-                            <Link to={`/athletes/${item.second_player_key}/${getRank(2,item, rankings)}`}>
+                            {/* <Link to={`/athletes/${item.second_player_key}/${getRank(2,item, rankings)}`}> */}
                             {item.event_second_player_logo ? (
                                 <PlayerImg src={item.event_second_player_logo} />
                             ) : (
                                 <i className="fas fa-user rounded-circle"></i>
                             )}
-                            </Link>
+                            {/* </Link> */}
                       </li>
 
                       <li>

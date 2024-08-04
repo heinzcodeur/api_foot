@@ -19,7 +19,8 @@ const GenerateApiUrl = () => {
     const dateStart = formatDate(today);
     const dateStop = formatDate(tomorrow);
 
-    const apiKey = '7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a';
+    // const apiKey = '7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a';
+    const apiKey = 'd1d5e28f7576f2ba4c75e6ed53ddfd7e01f162f10b6b4b25bad23e0104255a06';
 
     // Construction de l'URL avec des backticks pour utiliser l'interpolation de chaîne
     const url = `https://api.api-tennis.com/tennis/?method=get_fixtures&APIkey=${apiKey}&date_start=${dateStart}&date_stop=${dateStop}`;
