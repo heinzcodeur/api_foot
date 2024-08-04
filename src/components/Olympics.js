@@ -71,7 +71,7 @@ const Olympics = () => {
                 <div className="row">
                     <div className="col-12 mx-auto text-light">
                         <h1 className="text-center">Paris 2024 </h1>
-                        <h4 className="text-center">{data ? data.length : ''} évènements</h4>
+                        <h4 className="text-center">{filteredData ? filteredData.length : ''} évènements</h4>
                         <div className="col-12 text-light text-center">
                         <select onChange={handleDisciplineChange}>
                         <option value="">-- Sélectionnez une discipline --</option>
