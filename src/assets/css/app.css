@@ -47,6 +47,27 @@ body {
   min-height: 200px; /* Vous pouvez ajuster la hauteur minimale selon vos besoins */
 }
 
+.checkbox-label {
+  margin-left: 5px; /* Ajustez la marge selon vos besoins */
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.icon-image {
+  width: 24px;   /* Définir la largeur de l'icône */
+  height: 24px;  /* Définir la hauteur de l'icône */
+  object-fit: cover; /* Assure que l'image est recadrée pour remplir les dimensions sans déformer */
+  display: inline-block; /* Permet à l'image de s'afficher à côté du texte sans espacement supplémentaire */
+  margin-left: 8px; /* Ajouter un espace entre l'image et le texte */
+  background: #ccc;
+  border-radius: 3px;
+}
+
+
 .m-l-3 {
   margin-left: 3px;
 }
@@ -144,24 +165,26 @@ body {
 }
 
 .spinner-container {
-          display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Adjust as needed */
-        }
-        .spinner {
-            border: 8px solid rgba(0, 0, 0, 0.1);
-            border-left-color: #09f;
-            border-radius: 50%;
-            width: 64px;
-            height: 64px;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        } 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajustez selon vos besoins */
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #09f;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  animation: spin 2s linear infinite; /* Durée de l'animation de 2 secondes */
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}

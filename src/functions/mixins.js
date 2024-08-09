@@ -21,6 +21,26 @@ const calculateAge = (birthdateString) => {
     return age;
 }
 
+const checkInternetConnection = () => {
+    // Vérifier l'état initial de la connexion
+    if (navigator.onLine) {
+        console.log("Connecté à Internet");
+    } else {
+        console.log("Déconnecté d'Internet");
+    }
+
+    // Écouter l'événement 'online' pour détecter la connexion
+    window.addEventListener('online', () => {
+        console.log("Connecté à Internet");
+    });
+
+    // Écouter l'événement 'offline' pour détecter la déconnexion
+    window.addEventListener('offline', () => {
+        console.log("Déconnecté d'Internet");
+    });
+}
+
 export {
-    calculateAge
+    calculateAge,
+    checkInternetConnection
 }

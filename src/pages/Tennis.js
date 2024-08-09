@@ -70,7 +70,6 @@ const Tennis = () => {
         <div className="wizard">
             <div className="row">
                 <div className="col-8 mx-auto bg-light opak">
-                    <Navigation />
                     <span>cool</span>
                     {error && <p>Erreur : {error.message}</p>}
                     {data && data.events ? (

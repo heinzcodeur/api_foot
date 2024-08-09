@@ -78,10 +78,12 @@ import axios from 'axios';
         const regex = /Atp/; // Expression régulière pour rechercher le symbole "/"
         return regex.test(inputString); // Vérifie si la chaîne contient "/"
     };
+
     const checkWta = (inputString) => {
         const regex = /Wta/; // Expression régulière pour rechercher le symbole "/"
         return regex.test(inputString); // Vérifie si la chaîne contient "/"
     };
+    
     const checkOlympics = (inputString) => {
         const regex = /Olympic/; // Expression régulière pour rechercher le symbole "/"
         return regex.test(inputString); // Vérifie si la chaîne contient "/"

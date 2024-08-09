@@ -1,0 +1,3207 @@
+{
+    "units": [
+        {
+            "disciplineName": "Handball",
+            "eventUnitName": "Femmes, tour préliminaire - groupe A",
+            "id": "HBLWTEAM7-------------GPA-000100--",
+            "disciplineCode": "HBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPA-",
+            "eventId": "HBLWTEAM7-------------------------",
+            "eventName": "Femmes",
+            "phaseId": "HBLWTEAM7-------------GPA---------",
+            "phaseName": "Femmes, tour préliminaire - groupe A",
+            "disciplineId": "HBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T09:00:00+02:00",
+            "endDate": "2024-07-25T10:30:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "SP6",
+            "venueDescription": "Arena Paris Sud 6",
+            "location": "SP6",
+            "locationDescription": "Arena Paris Sud 6",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "1",
+            "sessionCode": "HBL01",
+            "competitors": [
+                {
+                    "code": "HBLWTEAM7---SLO01",
+                    "noc": "SLO",
+                    "name": "Slovénie",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "19",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "HBLWTEAM7---DEN01",
+                    "noc": "DEN",
+                    "name": "Danemark",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "27",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/handball/femmes/gpa-000100--"
+            }
+        },
+        {
+            "disciplineName": "Tir à l'arc",
+            "eventUnitName": "Épreuve individuelle - femmes, tour de classement",
+            "id": "ARCWINDIVID-----------QUAL000100--",
+            "disciplineCode": "ARC",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "QUAL",
+            "eventId": "ARCWINDIVID-----------------------",
+            "eventName": "Épreuve individuelle - femmes",
+            "phaseId": "ARCWINDIVID-----------QUAL--------",
+            "phaseName": "Individuelle - femmes, classement",
+            "disciplineId": "ARC-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "ATH",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T09:30:00+02:00",
+            "endDate": "2024-07-25T12:30:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 1,
+            "venue": "INV",
+            "venueDescription": "Invalides",
+            "location": "INV",
+            "locationDescription": "Invalides",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "EVENT",
+            "unitNum": "",
+            "sessionCode": "ARC01",
+            "groupId": "",
+            "competitors": [
+                {
+                    "code": "1902147",
+                    "noc": "KOR",
+                    "name": "LIM Sihyeon",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "694",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1902148",
+                    "noc": "KOR",
+                    "name": "NAM Suhyeon",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "688",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1913380",
+                    "noc": "CHN",
+                    "name": "YANG Xiaolei",
+                    "order": 2,
+                    "results": {
+                        "position": "",
+                        "mark": "673",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1955601",
+                    "noc": "USA",
+                    "name": "Casey KAUFHOLD",
+                    "order": 3,
+                    "results": {
+                        "position": "",
+                        "mark": "672",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1565024",
+                    "noc": "TUR",
+                    "name": "Elif Berra GOKKIR",
+                    "order": 4,
+                    "results": {
+                        "position": "",
+                        "mark": "671",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1913983",
+                    "noc": "INA",
+                    "name": "Diananda CHOIRUNISA",
+                    "order": 5,
+                    "results": {
+                        "position": "",
+                        "mark": "670",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1553258",
+                    "noc": "GER",
+                    "name": "Michelle KROPPEN",
+                    "order": 6,
+                    "results": {
+                        "position": "",
+                        "mark": "670",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1535420",
+                    "noc": "MEX",
+                    "name": "Alejandra VALENCIA",
+                    "order": 7,
+                    "results": {
+                        "position": "",
+                        "mark": "669",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1913372",
+                    "noc": "CHN",
+                    "name": "LI Jiaman",
+                    "order": 8,
+                    "results": {
+                        "position": "",
+                        "mark": "667",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1560668",
+                    "noc": "AUT",
+                    "name": "Elisabeth STRAKA",
+                    "order": 9,
+                    "results": {
+                        "position": "",
+                        "mark": "667",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1546200",
+                    "noc": "IND",
+                    "name": "Ankita BHAKAT",
+                    "order": 10,
+                    "results": {
+                        "position": "",
+                        "mark": "666",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1890981",
+                    "noc": "JPN",
+                    "name": "NODA Satsuki",
+                    "order": 11,
+                    "results": {
+                        "position": "",
+                        "mark": "666",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1902121",
+                    "noc": "KOR",
+                    "name": "JEON Hunyoung",
+                    "order": 12,
+                    "results": {
+                        "position": "",
+                        "mark": "664",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1893596",
+                    "noc": "MAS",
+                    "name": "Syaqiera MASHAYIKH",
+                    "order": 13,
+                    "results": {
+                        "position": "",
+                        "mark": "663",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1915461",
+                    "noc": "ITA",
+                    "name": "Chiara REBAGLIATI",
+                    "order": 14,
+                    "results": {
+                        "position": "",
+                        "mark": "663",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1563638",
+                    "noc": "ESP",
+                    "name": "Elia CANALES",
+                    "order": 15,
+                    "results": {
+                        "position": "",
+                        "mark": "662",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1541266",
+                    "noc": "FRA",
+                    "name": "Amelie CORDEAU",
+                    "order": 16,
+                    "results": {
+                        "position": "",
+                        "mark": "661",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1937691",
+                    "noc": "ISR",
+                    "name": "Mikaella MOSHE",
+                    "order": 17,
+                    "results": {
+                        "position": "",
+                        "mark": "660",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1958706",
+                    "noc": "BRA",
+                    "name": "Ana Luiza SLIACHTICAS CAETANO",
+                    "order": 18,
+                    "results": {
+                        "position": "",
+                        "mark": "660",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1536479",
+                    "noc": "MEX",
+                    "name": "Ana VAZQUEZ",
+                    "order": 19,
+                    "results": {
+                        "position": "",
+                        "mark": "659",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1541268",
+                    "noc": "FRA",
+                    "name": "Caroline LOPEZ",
+                    "order": 20,
+                    "results": {
+                        "position": "",
+                        "mark": "659",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1546133",
+                    "noc": "IND",
+                    "name": "Bhajan KAUR",
+                    "order": 21,
+                    "results": {
+                        "position": "",
+                        "mark": "659",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1546132",
+                    "noc": "IND",
+                    "name": "Deepika KUMARI",
+                    "order": 22,
+                    "results": {
+                        "position": "",
+                        "mark": "658",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1535429",
+                    "noc": "MEX",
+                    "name": "Angela RUIZ",
+                    "order": 23,
+                    "results": {
+                        "position": "",
+                        "mark": "658",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1571753",
+                    "noc": "UKR",
+                    "name": "Veronika MARCHENKO",
+                    "order": 24,
+                    "results": {
+                        "position": "",
+                        "mark": "657",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1913382",
+                    "noc": "CHN",
+                    "name": "AN Qixuan",
+                    "order": 25,
+                    "results": {
+                        "position": "",
+                        "mark": "656",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1553257",
+                    "noc": "GER",
+                    "name": "Katharina BAUER",
+                    "order": 26,
+                    "results": {
+                        "position": "",
+                        "mark": "656",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1536632",
+                    "noc": "IRI",
+                    "name": "Mobina FALLAH",
+                    "order": 27,
+                    "results": {
+                        "position": "",
+                        "mark": "652",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1564634",
+                    "noc": "TPE",
+                    "name": "LEI Chien-Ying",
+                    "order": 28,
+                    "results": {
+                        "position": "",
+                        "mark": "652",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1541265",
+                    "noc": "FRA",
+                    "name": "Lisa BARBELIN",
+                    "order": 29,
+                    "results": {
+                        "position": "",
+                        "mark": "652",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1894503",
+                    "noc": "CZE",
+                    "name": "Marie HORACKOVA",
+                    "order": 30,
+                    "results": {
+                        "position": "",
+                        "mark": "651",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1913851",
+                    "noc": "INA",
+                    "name": "Rezza OCTAVIA",
+                    "order": 31,
+                    "results": {
+                        "position": "",
+                        "mark": "650",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1971736",
+                    "noc": "CAN",
+                    "name": "Virginie CHENIER",
+                    "order": 32,
+                    "results": {
+                        "position": "",
+                        "mark": "649",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1562602",
+                    "noc": "UZB",
+                    "name": "Ziyodakhon ABDUSATTOROVA",
+                    "order": 33,
+                    "results": {
+                        "position": "",
+                        "mark": "649",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1973411",
+                    "noc": "NED",
+                    "name": "Gaby SCHLOESSER",
+                    "order": 34,
+                    "results": {
+                        "position": "",
+                        "mark": "649",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1935464",
+                    "noc": "COL",
+                    "name": "Ana RENDON MARTINEZ",
+                    "order": 35,
+                    "results": {
+                        "position": "",
+                        "mark": "649",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1563314",
+                    "noc": "VIE",
+                    "name": "Thi Anh Nguyet DO",
+                    "order": 36,
+                    "results": {
+                        "position": "",
+                        "mark": "648",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1955599",
+                    "noc": "USA",
+                    "name": "Catalina GNORIEGA",
+                    "order": 37,
+                    "results": {
+                        "position": "",
+                        "mark": "648",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1972344",
+                    "noc": "AZE",
+                    "name": "Yaylagul RAMAZANOVA",
+                    "order": 38,
+                    "results": {
+                        "position": "",
+                        "mark": "647",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1564638",
+                    "noc": "TPE",
+                    "name": "LI Tsai-Chi",
+                    "order": 39,
+                    "results": {
+                        "position": "",
+                        "mark": "646",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1561000",
+                    "noc": "GBR",
+                    "name": "Bryony PITMAN",
+                    "order": 40,
+                    "results": {
+                        "position": "",
+                        "mark": "646",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1932757",
+                    "noc": "EST",
+                    "name": "Reena PARNAT",
+                    "order": 41,
+                    "results": {
+                        "position": "",
+                        "mark": "646",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1913884",
+                    "noc": "INA",
+                    "name": "Syifa Nurafifah KAMAL",
+                    "order": 42,
+                    "results": {
+                        "position": "",
+                        "mark": "640",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1931124",
+                    "noc": "AUS",
+                    "name": "Laura PAEGLIS",
+                    "order": 43,
+                    "results": {
+                        "position": "",
+                        "mark": "640",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1553285",
+                    "noc": "GER",
+                    "name": "Charline SCHWARZ",
+                    "order": 44,
+                    "results": {
+                        "position": "",
+                        "mark": "639",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1981582",
+                    "noc": "SLO",
+                    "name": "Zana PINTARIC",
+                    "order": 45,
+                    "results": {
+                        "position": "",
+                        "mark": "638",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1538449",
+                    "noc": "ROU",
+                    "name": "Madalina AMAISTROAIE",
+                    "order": 46,
+                    "results": {
+                        "position": "",
+                        "mark": "637",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1911467",
+                    "noc": "SVK",
+                    "name": "Denisa BARANKOVA",
+                    "order": 47,
+                    "results": {
+                        "position": "",
+                        "mark": "636",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1560990",
+                    "noc": "GBR",
+                    "name": "Megs HAVERS",
+                    "order": 48,
+                    "results": {
+                        "position": "",
+                        "mark": "635",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1893601",
+                    "noc": "MAS",
+                    "name": "Ariana Nur Dania MOHAMAD ZAIRI",
+                    "order": 49,
+                    "results": {
+                        "position": "",
+                        "mark": "633",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1898203",
+                    "noc": "MDA",
+                    "name": "Alexandra MIRCA",
+                    "order": 50,
+                    "results": {
+                        "position": "",
+                        "mark": "631",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1560991",
+                    "noc": "GBR",
+                    "name": "Penny HEALEY",
+                    "order": 51,
+                    "results": {
+                        "position": "",
+                        "mark": "631",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1564635",
+                    "noc": "TPE",
+                    "name": "CHIU Yi-Ching",
+                    "order": 52,
+                    "results": {
+                        "position": "",
+                        "mark": "628",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1965102",
+                    "noc": "POL",
+                    "name": "Wioleta MYSZOR",
+                    "order": 53,
+                    "results": {
+                        "position": "",
+                        "mark": "626",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1973408",
+                    "noc": "NED",
+                    "name": "Quinty ROEFFEN",
+                    "order": 54,
+                    "results": {
+                        "position": "",
+                        "mark": "625",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1895399",
+                    "noc": "DEN",
+                    "name": "Kirstine DANSTRUP ANDERSEN",
+                    "order": 55,
+                    "results": {
+                        "position": "",
+                        "mark": "625",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1955608",
+                    "noc": "USA",
+                    "name": "Jennifer MUCINO",
+                    "order": 56,
+                    "results": {
+                        "position": "",
+                        "mark": "625",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1979597",
+                    "noc": "SMR",
+                    "name": "Giorgia CESARINI",
+                    "order": 57,
+                    "results": {
+                        "position": "",
+                        "mark": "625",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1973409",
+                    "noc": "NED",
+                    "name": "Laura van der WINKEL",
+                    "order": 58,
+                    "results": {
+                        "position": "",
+                        "mark": "623",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1893598",
+                    "noc": "MAS",
+                    "name": "Nurul Azreena MOHAMAD FAZIL",
+                    "order": 59,
+                    "results": {
+                        "position": "",
+                        "mark": "622",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1888885",
+                    "noc": "GUI",
+                    "name": "Fatoumata SYLLA",
+                    "order": 60,
+                    "results": {
+                        "position": "",
+                        "mark": "619",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1909933",
+                    "noc": "TUN",
+                    "name": "Rihab ELWALID",
+                    "order": 61,
+                    "results": {
+                        "position": "",
+                        "mark": "593",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1889144",
+                    "noc": "EGY",
+                    "name": "Jana ALI",
+                    "order": 62,
+                    "results": {
+                        "position": "",
+                        "mark": "573",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1880735",
+                    "noc": "PUR",
+                    "name": "Alondra RIVERA",
+                    "order": 63,
+                    "results": {
+                        "position": "",
+                        "mark": "547",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/tir-a-l-arc/epreuve-individuelle---femmes/qual000100--"
+            }
+        },
+        {
+            "disciplineName": "Handball",
+            "eventUnitName": "Femmes, tour préliminaire - groupe B",
+            "id": "HBLWTEAM7-------------GPB-000100--",
+            "disciplineCode": "HBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPB-",
+            "eventId": "HBLWTEAM7-------------------------",
+            "eventName": "Femmes",
+            "phaseId": "HBLWTEAM7-------------GPB---------",
+            "phaseName": "Femmes, tour préliminaire - groupe B",
+            "disciplineId": "HBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T11:00:00+02:00",
+            "endDate": "2024-07-25T12:30:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "SP6",
+            "venueDescription": "Arena Paris Sud 6",
+            "location": "SP6",
+            "locationDescription": "Arena Paris Sud 6",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "2",
+            "sessionCode": "HBL01",
+            "competitors": [
+                {
+                    "code": "HBLWTEAM7---NED01",
+                    "noc": "NED",
+                    "name": "Pays-Bas",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "34",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "HBLWTEAM7---ANG01",
+                    "noc": "ANG",
+                    "name": "Angola",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "31",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/handball/femmes/gpb-000100--"
+            }
+        },
+        {
+            "disciplineName": "Handball",
+            "eventUnitName": "Femmes, tour préliminaire - groupe B",
+            "id": "HBLWTEAM7-------------GPB-000200--",
+            "disciplineCode": "HBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPB-",
+            "eventId": "HBLWTEAM7-------------------------",
+            "eventName": "Femmes",
+            "phaseId": "HBLWTEAM7-------------GPB---------",
+            "phaseName": "Femmes, tour préliminaire - groupe B",
+            "disciplineId": "HBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T14:00:00+02:00",
+            "endDate": "2024-07-25T15:30:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "SP6",
+            "venueDescription": "Arena Paris Sud 6",
+            "location": "SP6",
+            "locationDescription": "Arena Paris Sud 6",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "3",
+            "sessionCode": "HBL02",
+            "competitors": [
+                {
+                    "code": "HBLWTEAM7---ESP01",
+                    "noc": "ESP",
+                    "name": "Espagne",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "18",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "HBLWTEAM7---BRA01",
+                    "noc": "BRA",
+                    "name": "Brésil",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "29",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/handball/femmes/gpb-000200--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, poule B",
+            "id": "RU7MTEAM7-------------GPB-000500--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "GPB-",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------GPB---------",
+            "phaseName": "Hommes, poule B",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T14:00:00+02:00",
+            "endDate": "2024-07-25T14:16:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M13",
+            "sessionCode": "RU702",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---SAM01",
+                    "noc": "SAM",
+                    "name": "Samoa",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "26",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---KEN01",
+                    "noc": "KEN",
+                    "name": "Kenya",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "0",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/gpb-000500--"
+            }
+        },
+        {
+            "disciplineName": "Tir à l'arc",
+            "eventUnitName": "Épreuve individuelle - hommes, tour de classement",
+            "id": "ARCMINDIVID-----------QUAL000100--",
+            "disciplineCode": "ARC",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "QUAL",
+            "eventId": "ARCMINDIVID-----------------------",
+            "eventName": "Épreuve individuelle - hommes",
+            "phaseId": "ARCMINDIVID-----------QUAL--------",
+            "phaseName": "Individuelle - hommes, classement",
+            "disciplineId": "ARC-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "ATH",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T14:15:00+02:00",
+            "endDate": "2024-07-25T17:15:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 3,
+            "venue": "INV",
+            "venueDescription": "Invalides",
+            "location": "INV",
+            "locationDescription": "Invalides",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "EVENT",
+            "unitNum": "",
+            "sessionCode": "ARC02",
+            "groupId": "",
+            "competitors": [
+                {
+                    "code": "1902135",
+                    "noc": "KOR",
+                    "name": "KIM Woojin",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "686",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1902130",
+                    "noc": "KOR",
+                    "name": "KIM Je Deok",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "682",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1553249",
+                    "noc": "GER",
+                    "name": "Florian UNRUH",
+                    "order": 2,
+                    "results": {
+                        "position": "",
+                        "mark": "681",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1546108",
+                    "noc": "IND",
+                    "name": "Dhiraj BOMMADEVARA",
+                    "order": 3,
+                    "results": {
+                        "position": "",
+                        "mark": "681",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1902144",
+                    "noc": "KOR",
+                    "name": "LEE Wooseok",
+                    "order": 4,
+                    "results": {
+                        "position": "",
+                        "mark": "681",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1541270",
+                    "noc": "FRA",
+                    "name": "Baptiste ADDIS",
+                    "order": 5,
+                    "results": {
+                        "position": "",
+                        "mark": "678",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1955595",
+                    "noc": "USA",
+                    "name": "Brady ELLISON",
+                    "order": 6,
+                    "results": {
+                        "position": "",
+                        "mark": "677",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1565000",
+                    "noc": "TUR",
+                    "name": "Mete GAZOZ",
+                    "order": 7,
+                    "results": {
+                        "position": "",
+                        "mark": "676",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1541272",
+                    "noc": "FRA",
+                    "name": "Thomas CHIRAULT",
+                    "order": 8,
+                    "results": {
+                        "position": "",
+                        "mark": "676",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1565002",
+                    "noc": "TUR",
+                    "name": "Berkim TUMER",
+                    "order": 9,
+                    "results": {
+                        "position": "",
+                        "mark": "676",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1535430",
+                    "noc": "MEX",
+                    "name": "Matias GRANDE",
+                    "order": 10,
+                    "results": {
+                        "position": "",
+                        "mark": "676",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1913369",
+                    "noc": "CHN",
+                    "name": "WANG Yan",
+                    "order": 11,
+                    "results": {
+                        "position": "",
+                        "mark": "675",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1562613",
+                    "noc": "UZB",
+                    "name": "Amirkhon SADIKOV",
+                    "order": 12,
+                    "results": {
+                        "position": "",
+                        "mark": "674",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1546110",
+                    "noc": "IND",
+                    "name": "Tarundeep RAI",
+                    "order": 13,
+                    "results": {
+                        "position": "",
+                        "mark": "674",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1935642",
+                    "noc": "COL",
+                    "name": "Santiago ARCILA",
+                    "order": 14,
+                    "results": {
+                        "position": "",
+                        "mark": "673",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1537163",
+                    "noc": "ISV",
+                    "name": "Nicholas D'AMOUR",
+                    "order": 15,
+                    "results": {
+                        "position": "",
+                        "mark": "673",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1958717",
+                    "noc": "BRA",
+                    "name": "Marcus D'ALMEIDA",
+                    "order": 16,
+                    "results": {
+                        "position": "",
+                        "mark": "673",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1898162",
+                    "noc": "MDA",
+                    "name": "Dan OLARU",
+                    "order": 17,
+                    "results": {
+                        "position": "",
+                        "mark": "671",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1541275",
+                    "noc": "FRA",
+                    "name": "Jean-Charles VALLADONT",
+                    "order": 18,
+                    "results": {
+                        "position": "",
+                        "mark": "671",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1915454",
+                    "noc": "ITA",
+                    "name": "Mauro NESPOLI",
+                    "order": 19,
+                    "results": {
+                        "position": "",
+                        "mark": "670",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1550037",
+                    "noc": "CUB",
+                    "name": "Hugo FRANCO",
+                    "order": 20,
+                    "results": {
+                        "position": "",
+                        "mark": "669",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1931572",
+                    "noc": "KAZ",
+                    "name": "Dauletkeldi ZHANGBYRBAY",
+                    "order": 21,
+                    "results": {
+                        "position": "",
+                        "mark": "668",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1973414",
+                    "noc": "NED",
+                    "name": "Steve WIJLER",
+                    "order": 22,
+                    "results": {
+                        "position": "",
+                        "mark": "668",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1564630",
+                    "noc": "TPE",
+                    "name": "TAI Yu-Hsuan",
+                    "order": 23,
+                    "results": {
+                        "position": "",
+                        "mark": "665",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1564628",
+                    "noc": "TPE",
+                    "name": "TANG Chih-Chun",
+                    "order": 24,
+                    "results": {
+                        "position": "",
+                        "mark": "665",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1913366",
+                    "noc": "CHN",
+                    "name": "KAO Wenchao",
+                    "order": 25,
+                    "results": {
+                        "position": "",
+                        "mark": "665",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1561003",
+                    "noc": "GBR",
+                    "name": "Alex WISE",
+                    "order": 26,
+                    "results": {
+                        "position": "",
+                        "mark": "664",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1543012",
+                    "noc": "BHU",
+                    "name": "Lam DORJI",
+                    "order": 27,
+                    "results": {
+                        "position": "",
+                        "mark": "663",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1931570",
+                    "noc": "KAZ",
+                    "name": "Ilfat ABDULLIN",
+                    "order": 28,
+                    "results": {
+                        "position": "",
+                        "mark": "663",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1890985",
+                    "noc": "JPN",
+                    "name": "NAKANISHI Junya",
+                    "order": 29,
+                    "results": {
+                        "position": "",
+                        "mark": "663",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1981585",
+                    "noc": "SLO",
+                    "name": "Ziga RAVNIKAR",
+                    "order": 30,
+                    "results": {
+                        "position": "",
+                        "mark": "663",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1564631",
+                    "noc": "TPE",
+                    "name": "LIN Zih-Siang",
+                    "order": 31,
+                    "results": {
+                        "position": "",
+                        "mark": "662",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1563633",
+                    "noc": "ESP",
+                    "name": "Pablo ACHA GONZALEZ",
+                    "order": 32,
+                    "results": {
+                        "position": "",
+                        "mark": "662",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1915456",
+                    "noc": "ITA",
+                    "name": "Federico MUSOLESI",
+                    "order": 33,
+                    "results": {
+                        "position": "",
+                        "mark": "662",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1890994",
+                    "noc": "JPN",
+                    "name": "FURUKAWA Takaharu",
+                    "order": 34,
+                    "results": {
+                        "position": "",
+                        "mark": "659",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1971737",
+                    "noc": "CAN",
+                    "name": "Eric PETERS",
+                    "order": 35,
+                    "results": {
+                        "position": "",
+                        "mark": "659",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1915455",
+                    "noc": "ITA",
+                    "name": "Alessandro PAOLI",
+                    "order": 36,
+                    "results": {
+                        "position": "",
+                        "mark": "658",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1913367",
+                    "noc": "CHN",
+                    "name": "LI Zhongyuan",
+                    "order": 37,
+                    "results": {
+                        "position": "",
+                        "mark": "658",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1546112",
+                    "noc": "IND",
+                    "name": "Pravin Ramesh JADHAV",
+                    "order": 38,
+                    "results": {
+                        "position": "",
+                        "mark": "658",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1913631",
+                    "noc": "INA",
+                    "name": "Arif PANGESTU",
+                    "order": 39,
+                    "results": {
+                        "position": "",
+                        "mark": "656",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1905034",
+                    "noc": "FIN",
+                    "name": "Antti TEKONIEMI",
+                    "order": 40,
+                    "results": {
+                        "position": "",
+                        "mark": "656",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1937678",
+                    "noc": "ISR",
+                    "name": "Roy DROR",
+                    "order": 41,
+                    "results": {
+                        "position": "",
+                        "mark": "655",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1543412",
+                    "noc": "COL",
+                    "name": "Jorge ENRIQUEZ",
+                    "order": 42,
+                    "results": {
+                        "position": "",
+                        "mark": "655",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1536467",
+                    "noc": "MEX",
+                    "name": "Bruno MARTINEZ WING",
+                    "order": 43,
+                    "results": {
+                        "position": "",
+                        "mark": "653",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1543643",
+                    "noc": "BAN",
+                    "name": "Md Sagor ISLAM",
+                    "order": 44,
+                    "results": {
+                        "position": "",
+                        "mark": "652",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1560988",
+                    "noc": "GBR",
+                    "name": "Conor HALL",
+                    "order": 45,
+                    "results": {
+                        "position": "",
+                        "mark": "652",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1563324",
+                    "noc": "VIE",
+                    "name": "Quoc Phong le",
+                    "order": 46,
+                    "results": {
+                        "position": "",
+                        "mark": "652",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1571766",
+                    "noc": "UKR",
+                    "name": "Mykhailo USACH",
+                    "order": 47,
+                    "results": {
+                        "position": "",
+                        "mark": "651",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1890977",
+                    "noc": "JPN",
+                    "name": "SAITO Fumiya",
+                    "order": 48,
+                    "results": {
+                        "position": "",
+                        "mark": "650",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1570604",
+                    "noc": "LUX",
+                    "name": "Pit KLEIN",
+                    "order": 49,
+                    "results": {
+                        "position": "",
+                        "mark": "650",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1560989",
+                    "noc": "GBR",
+                    "name": "Tom HALL",
+                    "order": 50,
+                    "results": {
+                        "position": "",
+                        "mark": "645",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1911041",
+                    "noc": "ARG",
+                    "name": "Mario Damian JAJARABILLA",
+                    "order": 51,
+                    "results": {
+                        "position": "",
+                        "mark": "643",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1887539",
+                    "noc": "ESA",
+                    "name": "Oscar TICAS",
+                    "order": 52,
+                    "results": {
+                        "position": "",
+                        "mark": "643",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1888881",
+                    "noc": "MGL",
+                    "name": "Otgonbold BAATARKHUYAG",
+                    "order": 53,
+                    "results": {
+                        "position": "",
+                        "mark": "643",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1536460",
+                    "noc": "MEX",
+                    "name": "Carlos ROJAS",
+                    "order": 54,
+                    "results": {
+                        "position": "",
+                        "mark": "643",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1935644",
+                    "noc": "COL",
+                    "name": "Andres HERNANDEZ VERA",
+                    "order": 55,
+                    "results": {
+                        "position": "",
+                        "mark": "642",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1938165",
+                    "noc": "CHI",
+                    "name": "Andres GALLARDO FERRADA",
+                    "order": 56,
+                    "results": {
+                        "position": "",
+                        "mark": "641",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1565006",
+                    "noc": "TUR",
+                    "name": "Abdullah YILDIRMIS",
+                    "order": 57,
+                    "results": {
+                        "position": "",
+                        "mark": "640",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1560342",
+                    "noc": "KAZ",
+                    "name": "Alexandr YEREMENKO",
+                    "order": 58,
+                    "results": {
+                        "position": "",
+                        "mark": "640",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1931126",
+                    "noc": "AUS",
+                    "name": "Peter BOUKOUVALAS",
+                    "order": 59,
+                    "results": {
+                        "position": "",
+                        "mark": "638",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1894507",
+                    "noc": "CZE",
+                    "name": "Adam LI",
+                    "order": 60,
+                    "results": {
+                        "position": "",
+                        "mark": "627",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1888973",
+                    "noc": "EGY",
+                    "name": "Youssof TOLBA",
+                    "order": 61,
+                    "results": {
+                        "position": "",
+                        "mark": "624",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1940869",
+                    "noc": "RSA",
+                    "name": "Wian ROUX",
+                    "order": 62,
+                    "results": {
+                        "position": "",
+                        "mark": "601",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "1557704",
+                    "noc": "CHA",
+                    "name": "Israel MADAYE",
+                    "order": 63,
+                    "results": {
+                        "position": "",
+                        "mark": "600",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/tir-a-l-arc/epreuve-individuelle---hommes/qual000100--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, poule B",
+            "id": "RU7MTEAM7-------------GPB-000600--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "GPB-",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------GPB---------",
+            "phaseName": "Hommes, poule B",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T14:30:00+02:00",
+            "endDate": "2024-07-25T14:46:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M14",
+            "sessionCode": "RU702",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---ARG01",
+                    "noc": "ARG",
+                    "name": "Argentine",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "14",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---AUS01",
+                    "noc": "AUS",
+                    "name": "Australie",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "22",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/gpb-000600--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, poule C",
+            "id": "RU7MTEAM7-------------GPC-000500--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "GPC-",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------GPC---------",
+            "phaseName": "Hommes, poule C",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T15:00:00+02:00",
+            "endDate": "2024-07-25T15:16:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M15",
+            "sessionCode": "RU702",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---USA01",
+                    "noc": "USA",
+                    "name": "États-Unis",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "33",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---URU01",
+                    "noc": "URU",
+                    "name": "Uruguay",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "17",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/gpc-000500--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, poule C",
+            "id": "RU7MTEAM7-------------GPC-000600--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "GPC-",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------GPC---------",
+            "phaseName": "Hommes, poule C",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T15:30:00+02:00",
+            "endDate": "2024-07-25T15:46:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M16",
+            "sessionCode": "RU702",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---FIJ01",
+                    "noc": "FIJ",
+                    "name": "Fidji",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "19",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---FRA01",
+                    "noc": "FRA",
+                    "name": "France",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "12",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/gpc-000600--"
+            }
+        },
+        {
+            "disciplineName": "Handball",
+            "eventUnitName": "Femmes, tour préliminaire - groupe A",
+            "id": "HBLWTEAM7-------------GPA-000200--",
+            "disciplineCode": "HBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPA-",
+            "eventId": "HBLWTEAM7-------------------------",
+            "eventName": "Femmes",
+            "phaseId": "HBLWTEAM7-------------GPA---------",
+            "phaseName": "Femmes, tour préliminaire - groupe A",
+            "disciplineId": "HBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T16:00:00+02:00",
+            "endDate": "2024-07-25T17:30:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "SP6",
+            "venueDescription": "Arena Paris Sud 6",
+            "location": "SP6",
+            "locationDescription": "Arena Paris Sud 6",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "4",
+            "sessionCode": "HBL02",
+            "competitors": [
+                {
+                    "code": "HBLWTEAM7---GER01",
+                    "noc": "GER",
+                    "name": "Allemagne",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "22",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "HBLWTEAM7---KOR01",
+                    "noc": "KOR",
+                    "name": "Corée",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "23",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/handball/femmes/gpa-000200--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, poule A",
+            "id": "RU7MTEAM7-------------GPA-000500--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "GPA-",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------GPA---------",
+            "phaseName": "Hommes, poule A",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T16:00:00+02:00",
+            "endDate": "2024-07-25T16:16:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M17",
+            "sessionCode": "RU702",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---RSA01",
+                    "noc": "RSA",
+                    "name": "Afrique du Sud",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "49",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---JPN01",
+                    "noc": "JPN",
+                    "name": "Japon",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "5",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/gpa-000500--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, poule A",
+            "id": "RU7MTEAM7-------------GPA-000600--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "GPA-",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------GPA---------",
+            "phaseName": "Hommes, poule A",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T16:30:00+02:00",
+            "endDate": "2024-07-25T16:46:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M18",
+            "sessionCode": "RU702",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---NZL01",
+                    "noc": "NZL",
+                    "name": "Nouvelle-Zélande",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "14",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---IRL01",
+                    "noc": "IRL",
+                    "name": "Irlande",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "12",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/gpa-000600--"
+            }
+        },
+        {
+            "disciplineName": "Football",
+            "eventUnitName": "Femmes, éliminatoires - groupe A",
+            "id": "FBLWTEAM11------------GPA-000200--",
+            "disciplineCode": "FBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPA-",
+            "eventId": "FBLWTEAM11------------------------",
+            "eventName": "Femmes",
+            "phaseId": "FBLWTEAM11------------GPA---------",
+            "phaseName": "Femmes, éliminatoires - groupe A",
+            "disciplineId": "FBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T17:00:00+02:00",
+            "endDate": "2024-07-25T18:45:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 2,
+            "venue": "STE",
+            "venueDescription": "Stade Geoffroy-Guichard",
+            "location": "STE",
+            "locationDescription": "Stade Geoffroy-Guichard, Saint-Etienne",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "2",
+            "sessionCode": "FBL10",
+            "competitors": [
+                {
+                    "code": "FBLWTEAM11--CAN01",
+                    "noc": "CAN",
+                    "name": "Canada",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "2",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "FBLWTEAM11--NZL01",
+                    "noc": "NZL",
+                    "name": "Nouvelle-Zélande",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "1",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/football/femmes/gpa-000200--"
+            }
+        },
+        {
+            "disciplineName": "Football",
+            "eventUnitName": "Femmes, éliminatoires - groupe C",
+            "id": "FBLWTEAM11------------GPC-000100--",
+            "disciplineCode": "FBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPC-",
+            "eventId": "FBLWTEAM11------------------------",
+            "eventName": "Femmes",
+            "phaseId": "FBLWTEAM11------------GPC---------",
+            "phaseName": "Femmes, éliminatoires - groupe C",
+            "disciplineId": "FBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T17:00:00+02:00",
+            "endDate": "2024-07-25T18:45:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 5,
+            "venue": "NAN",
+            "venueDescription": "Stade de la Beaujoire",
+            "location": "NAN",
+            "locationDescription": "Stade de la Beaujoire, Nantes",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "5",
+            "sessionCode": "FBL09",
+            "competitors": [
+                {
+                    "code": "FBLWTEAM11--ESP01",
+                    "noc": "ESP",
+                    "name": "Espagne",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "2",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "FBLWTEAM11--JPN01",
+                    "noc": "JPN",
+                    "name": "Japon",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "1",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/football/femmes/gpc-000100--"
+            }
+        },
+        {
+            "disciplineName": "Football",
+            "eventUnitName": "Femmes, éliminatoires - groupe B",
+            "id": "FBLWTEAM11------------GPB-000200--",
+            "disciplineCode": "FBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPB-",
+            "eventId": "FBLWTEAM11------------------------",
+            "eventName": "Femmes",
+            "phaseId": "FBLWTEAM11------------GPB---------",
+            "phaseName": "Femmes, éliminatoires - groupe B",
+            "disciplineId": "FBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T19:00:00+02:00",
+            "endDate": "2024-07-25T20:45:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 4,
+            "venue": "MRS",
+            "venueDescription": "Stade de Marseille",
+            "location": "MRS",
+            "locationDescription": "Stade de Marseille, Marseille",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "4",
+            "sessionCode": "FBL12",
+            "competitors": [
+                {
+                    "code": "FBLWTEAM11--GER01",
+                    "noc": "GER",
+                    "name": "Allemagne",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "3",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "FBLWTEAM11--AUS01",
+                    "noc": "AUS",
+                    "name": "Australie",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "0",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/football/femmes/gpb-000200--"
+            }
+        },
+        {
+            "disciplineName": "Football",
+            "eventUnitName": "Femmes, éliminatoires - groupe C",
+            "id": "FBLWTEAM11------------GPC-000200--",
+            "disciplineCode": "FBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPC-",
+            "eventId": "FBLWTEAM11------------------------",
+            "eventName": "Femmes",
+            "phaseId": "FBLWTEAM11------------GPC---------",
+            "phaseName": "Femmes, éliminatoires - groupe C",
+            "disciplineId": "FBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T19:00:00+02:00",
+            "endDate": "2024-07-25T20:45:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 6,
+            "venue": "BOR",
+            "venueDescription": "Stade de Bordeaux",
+            "location": "BOR",
+            "locationDescription": "Stade de Bordeaux, Bordeaux",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "6",
+            "sessionCode": "FBL11",
+            "competitors": [
+                {
+                    "code": "FBLWTEAM11--NGR01",
+                    "noc": "NGR",
+                    "name": "Nigéria",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "0",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "FBLWTEAM11--BRA01",
+                    "noc": "BRA",
+                    "name": "Brésil",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "1",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/football/femmes/gpc-000200--"
+            }
+        },
+        {
+            "disciplineName": "Handball",
+            "eventUnitName": "Femmes, tour préliminaire - groupe B",
+            "id": "HBLWTEAM7-------------GPB-000300--",
+            "disciplineCode": "HBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPB-",
+            "eventId": "HBLWTEAM7-------------------------",
+            "eventName": "Femmes",
+            "phaseId": "HBLWTEAM7-------------GPB---------",
+            "phaseName": "Femmes, tour préliminaire - groupe B",
+            "disciplineId": "HBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T19:00:00+02:00",
+            "endDate": "2024-07-25T20:30:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "SP6",
+            "venueDescription": "Arena Paris Sud 6",
+            "location": "SP6",
+            "locationDescription": "Arena Paris Sud 6",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "5",
+            "sessionCode": "HBL03",
+            "competitors": [
+                {
+                    "code": "HBLWTEAM7---HUN01",
+                    "noc": "HUN",
+                    "name": "Hongrie",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "28",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "HBLWTEAM7---FRA01",
+                    "noc": "FRA",
+                    "name": "France",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "31",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/handball/femmes/gpb-000300--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, places 9-12",
+            "id": "RU7MTEAM7-------------SF9-000100--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "SF9-",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------SF9---------",
+            "phaseName": "Hommes, placement 9-12",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T20:00:00+02:00",
+            "endDate": "2024-07-25T20:16:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M19",
+            "sessionCode": "RU703",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---SAM01",
+                    "noc": "SAM",
+                    "name": "Samoa",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "42",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---JPN01",
+                    "noc": "JPN",
+                    "name": "Japon",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "7",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/sf9-000100--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, places 9-12",
+            "id": "RU7MTEAM7-------------SF9-000200--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "SF9-",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------SF9---------",
+            "phaseName": "Hommes, placement 9-12",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T20:30:00+02:00",
+            "endDate": "2024-07-25T20:46:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M20",
+            "sessionCode": "RU703",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---URU01",
+                    "noc": "URU",
+                    "name": "Uruguay",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "14",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---KEN01",
+                    "noc": "KEN",
+                    "name": "Kenya",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "19",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/sf9-000200--"
+            }
+        },
+        {
+            "disciplineName": "Football",
+            "eventUnitName": "Femmes, éliminatoires - groupe A",
+            "id": "FBLWTEAM11------------GPA-000100--",
+            "disciplineCode": "FBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPA-",
+            "eventId": "FBLWTEAM11------------------------",
+            "eventName": "Femmes",
+            "phaseId": "FBLWTEAM11------------GPA---------",
+            "phaseName": "Femmes, éliminatoires - groupe A",
+            "disciplineId": "FBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T21:00:00+02:00",
+            "endDate": "2024-07-25T22:45:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 1,
+            "venue": "LYO",
+            "venueDescription": "Stade de Lyon",
+            "location": "LYO",
+            "locationDescription": "Stade de Lyon, Lyon",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "1",
+            "sessionCode": "FBL13",
+            "competitors": [
+                {
+                    "code": "FBLWTEAM11--FRA01",
+                    "noc": "FRA",
+                    "name": "France",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "3",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "FBLWTEAM11--COL01",
+                    "noc": "COL",
+                    "name": "Colombie",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "2",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/football/femmes/gpa-000100--"
+            }
+        },
+        {
+            "disciplineName": "Football",
+            "eventUnitName": "Femmes, éliminatoires - groupe B",
+            "id": "FBLWTEAM11------------GPB-000100--",
+            "disciplineCode": "FBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPB-",
+            "eventId": "FBLWTEAM11------------------------",
+            "eventName": "Femmes",
+            "phaseId": "FBLWTEAM11------------GPB---------",
+            "phaseName": "Femmes, éliminatoires - groupe B",
+            "disciplineId": "FBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T21:00:00+02:00",
+            "endDate": "2024-07-25T22:45:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 3,
+            "venue": "NIC",
+            "venueDescription": "Stade de Nice",
+            "location": "NIC",
+            "locationDescription": "Stade de Nice, Nice",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "3",
+            "sessionCode": "FBL14",
+            "competitors": [
+                {
+                    "code": "FBLWTEAM11--USA01",
+                    "noc": "USA",
+                    "name": "États-Unis",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "3",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "FBLWTEAM11--ZAM01",
+                    "noc": "ZAM",
+                    "name": "Zambie",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "0",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/football/femmes/gpb-000100--"
+            }
+        },
+        {
+            "disciplineName": "Handball",
+            "eventUnitName": "Femmes, tour préliminaire - groupe A",
+            "id": "HBLWTEAM7-------------GPA-000300--",
+            "disciplineCode": "HBL",
+            "genderCode": "W",
+            "eventCode": "",
+            "phaseCode": "GPA-",
+            "eventId": "HBLWTEAM7-------------------------",
+            "eventName": "Femmes",
+            "phaseId": "HBLWTEAM7-------------GPA---------",
+            "phaseName": "Femmes, tour préliminaire - groupe A",
+            "disciplineId": "HBL-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T21:00:00+02:00",
+            "endDate": "2024-07-25T22:30:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "SP6",
+            "venueDescription": "Arena Paris Sud 6",
+            "location": "SP6",
+            "locationDescription": "Arena Paris Sud 6",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "6",
+            "sessionCode": "HBL03",
+            "competitors": [
+                {
+                    "code": "HBLWTEAM7---NOR01",
+                    "noc": "NOR",
+                    "name": "Norvège",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "28",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "HBLWTEAM7---SWE01",
+                    "noc": "SWE",
+                    "name": "Suède",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "32",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/handball/femmes/gpa-000300--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, quart de finale",
+            "id": "RU7MTEAM7-------------QFNL000100--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "QFNL",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------QFNL--------",
+            "phaseName": "Hommes, quarts de finale",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T21:00:00+02:00",
+            "endDate": "2024-07-25T21:16:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M21",
+            "sessionCode": "RU703",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---NZL01",
+                    "noc": "NZL",
+                    "name": "Nouvelle-Zélande",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "7",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---RSA01",
+                    "noc": "RSA",
+                    "name": "Afrique du Sud",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "14",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/qfnl000100--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, quart de finale",
+            "id": "RU7MTEAM7-------------QFNL000200--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "QFNL",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------QFNL--------",
+            "phaseName": "Hommes, quarts de finale",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T21:30:00+02:00",
+            "endDate": "2024-07-25T21:46:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M22",
+            "sessionCode": "RU703",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---ARG01",
+                    "noc": "ARG",
+                    "name": "Argentine",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "14",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---FRA01",
+                    "noc": "FRA",
+                    "name": "France",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "26",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/qfnl000200--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, quart de finale",
+            "id": "RU7MTEAM7-------------QFNL000300--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "QFNL",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------QFNL--------",
+            "phaseName": "Hommes, quarts de finale",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T22:00:00+02:00",
+            "endDate": "2024-07-25T22:16:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M23",
+            "sessionCode": "RU703",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---FIJ01",
+                    "noc": "FIJ",
+                    "name": "Fidji",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "19",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---IRL01",
+                    "noc": "IRL",
+                    "name": "Irlande",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "15",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/qfnl000300--"
+            }
+        },
+        {
+            "disciplineName": "Rugby à sept",
+            "eventUnitName": "Hommes, quart de finale",
+            "id": "RU7MTEAM7-------------QFNL000400--",
+            "disciplineCode": "RU7",
+            "genderCode": "M",
+            "eventCode": "",
+            "phaseCode": "QFNL",
+            "eventId": "RU7MTEAM7-------------------------",
+            "eventName": "Hommes",
+            "phaseId": "RU7MTEAM7-------------QFNL--------",
+            "phaseName": "Hommes, quarts de finale",
+            "disciplineId": "RU7-------------------------------",
+            "eventOrder": 0,
+            "phaseType": "3",
+            "eventUnitType": "HTEAM",
+            "olympicDay": "2024-07-25",
+            "startDate": "2024-07-25T22:30:00+02:00",
+            "endDate": "2024-07-25T22:46:00+02:00",
+            "hideStartDate": false,
+            "hideEndDate": false,
+            "startText": "",
+            "order": 0,
+            "venue": "STA",
+            "venueDescription": "Stade de France",
+            "location": "STA",
+            "locationDescription": "Stade de France",
+            "status": "FINISHED",
+            "statusDescription": "Terminée",
+            "medalFlag": 0,
+            "liveFlag": false,
+            "scheduleItemType": "H2H_NOC",
+            "unitNum": "M24",
+            "sessionCode": "RU703",
+            "competitors": [
+                {
+                    "code": "RU7MTEAM7---AUS01",
+                    "noc": "AUS",
+                    "name": "Australie",
+                    "order": 0,
+                    "results": {
+                        "position": "",
+                        "mark": "18",
+                        "winnerLoserTie": "W",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                },
+                {
+                    "code": "RU7MTEAM7---USA01",
+                    "noc": "USA",
+                    "name": "États-Unis",
+                    "order": 1,
+                    "results": {
+                        "position": "",
+                        "mark": "0",
+                        "winnerLoserTie": "L",
+                        "medalType": "",
+                        "irm": ""
+                    }
+                }
+            ],
+            "extraData": {
+                "detailUrl": "/fr/paris-2024/resultats/rugby-a-sept/hommes/qfnl000400--"
+            }
+        }
+    ],
+    "groups": []
+}

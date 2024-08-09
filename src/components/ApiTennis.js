@@ -15,7 +15,6 @@ import {
   today,
   createDateFromString,
   shortName,
-  checkOlympics,
   rankingsCombiner,
   get_lastName,
 } from "../functions/utils";
@@ -32,7 +31,7 @@ const ApiTennis = () => {
   const [filterWta, setFilterWta] = useState(false);
   const [filterPreview, setFilterPreview] = useState(false);
   const [filterOver, setFilterOver] = useState(false);
-  const [filterOlympics, setfilterOlympics] = useState(true);
+  const [filterDemain, setfilterDemain] = useState(false);
   const [tri, setTri] = useState(false);
   const [filteredData, setFilteredData] = useState(null);
   const [wta, setWta] = useState([]); // État pour le filtre 'event_live'
@@ -171,8 +170,8 @@ if (foundRankings) {  // Vérifie que foundRankings n'est pas undefined
       case "over":
         setFilterOver(checked);
         break;
-      case "olympics":
-        setfilterOlympics(checked);
+      case "demain":
+        setfilterDemain(checked);
         break;
       case "tri":
         setTri(checked);
@@ -227,9 +226,13 @@ if (foundRankings) {  // Vérifie que foundRankings n'est pas undefined
         result = result.filter((item) => item.event_status === "Finished");
         console.log(result.length);
       }
-      if (filterOlympics) {
-        console.log("checkOlympics");
-        result = result.filter((item) => checkOlympics(item.tournament_name));
+      if (filterDemain) {
+        result = result.filter((item) => {
+          const date1 = createDateFromString(item.event_date, item.event_time);
+          const today = new Date();
+          today.setHours(23, 59, 59, 999);
+          return date1 > today;
+        });
         console.log(result);
       }
       if (tri) {
@@ -248,7 +251,7 @@ if (foundRankings) {  // Vérifie que foundRankings n'est pas undefined
     filterAtp,
     filterWta,
     filterPreview,
-    filterOlympics,
+    filterDemain,
     tri,
     filterOver,
   ]);
@@ -330,11 +333,11 @@ if (foundRankings) {  // Vérifie que foundRankings n'est pas undefined
             <label>
               <input
                 type="checkbox"
-                name="olympics"
-                checked={filterOlympics}
-                onChange={handleFilterChange}
+                name="demain"
+                checked={filterDemain}
+                onChange={handleFilterChange}   
               />{" "}
-              Olympics events
+              demain
             </label>
             &nbsp;&nbsp;
             <label>
@@ -393,13 +396,13 @@ if (foundRankings) {  // Vérifie que foundRankings n'est pas undefined
                            </span>
                             
 
-                            {/* <Link to={`/athletes/${item.second_player_key}/${getRank(2,item, rankings)}`}> */}
+                            <Link to={`/athletes/${item.second_player_key}/${getRank(2,item, rankings)}`}>
                             {item.event_second_player_logo ? (
                                 <PlayerImg src={item.event_second_player_logo} />
                             ) : (
                                 <i className="fas fa-user rounded-circle"></i>
                             )}
-                            {/* </Link> */}
+                            </Link>
                       </li>
 
                       <li>
