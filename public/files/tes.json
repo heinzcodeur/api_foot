@@ -1,0 +1,62 @@
+{
+    "disciplines": [
+        {
+            "code": "TKW",
+            "name": "Taekwondo",
+            "gold": 0,
+            "silver": 0,
+            "bronze": 1,
+            "total": 1,
+            "medalWinners": [
+                {
+                    "disciplineCode": "TKW",
+                    "eventCode": "TKWMO80KG-------------",
+                    "eventCategory": "Men",
+                    "eventDescription": "+80 kg - hommes",
+                    "eventOrder": 4,
+                    "medalType": "ME_BRONZE",
+                    "official": true,
+                    "competitorCode": "1548401",
+                    "competitorType": "A",
+                    "competitorOrder": 0,
+                    "competitorDisplayName": "Cheick Sallah CISSE",
+                    "competitorDisplayPrintInitialName": "",
+                    "competitorDisplayTvName": "",
+                    "competitorDisplayPrintName": "",
+                    "date": "2024-08-10",
+                    "extraData": {
+                        "detailUrl": "/fr/paris-2024/athlete/cheick-sallah-cisse_1548401"
+                    }
+                }
+            ]
+        }
+    ],
+    "organisation": "CIV",
+    "description": "Côte d'Ivoire",
+    "longDescription": "Côte d'Ivoire",
+    "nameOrder": 530,
+    "longNameOrder": 530,
+    "protocolOrder": 51,
+    "rank": 83,
+    "rankEqual": true,
+    "sortRank": 84,
+    "rankTotal": 76,
+    "rankTotalEqual": true,
+    "sortTotalRank": 84,
+    "medalsNumber": [
+        {
+            "type": "Men",
+            "gold": 0,
+            "silver": 0,
+            "bronze": 1,
+            "total": 1
+        },
+        {
+            "type": "Total",
+            "gold": 0,
+            "silver": 0,
+            "bronze": 1,
+            "total": 1
+        }
+    ]
+}

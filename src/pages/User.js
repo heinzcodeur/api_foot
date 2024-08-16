@@ -1,10 +1,11 @@
-const User = () => {
+const User = (props) => {
 
     return (
-        <div>
+        <div className="bg-light col-6 mx-auto mt-4">
             <br></br>
             <hr></hr>
             <i class="fa-solid fa-user"></i>
+            <b>{props.apiKey}</b>
         </div>
     )
 };

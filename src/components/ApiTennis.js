@@ -20,23 +20,16 @@ import {
 } from "../functions/utils";
 import GenerateApiUrl from "./GenerateApiUrl";
 import { Link } from "react-router-dom";
+import FilterPanel from "./organisms/FilterPanel";
 
 const ApiTennis = () => {
   const [data, setData] = useState(null);
   const [nombre, setNombre] = useState(null);
   const [duty, setDuty] = useState([]);
-  // const [tiiti, setTiti/] = useState(null);
-  const [filterLive, setFilterLive] = useState(false);
-  const [filterAtp, setFilterAtp] = useState(false);
-  const [filterWta, setFilterWta] = useState(false);
-  const [filterPreview, setFilterPreview] = useState(false);
-  const [filterOver, setFilterOver] = useState(false);
-  const [filterDemain, setfilterDemain] = useState(false);
-  const [tri, setTri] = useState(false);
-  const [filteredData, setFilteredData] = useState(null);
   const [wta, setWta] = useState([]); // État pour le filtre 'event_live'
   const [atp, setAtp] = useState([]); // État pour le filtre 'event_live'
   const [delay, setDelay] = useState(5000); // État pour le filtre 'event_live'
+  const [filteredData, setFilteredData] = useState(null);
   const [activeButton, setActiveButton] = useState(false); // État pour le filtre 'event_live'
   const [tournois, setTournois] = useState([]);
   const [rankings, setRankings] = useState([]); // State to hold combined rankings
@@ -44,6 +37,16 @@ const ApiTennis = () => {
   const [isLoading, setIsLoading] = useState(true); // Nouvel état pour gérer le chargement
   const [favorite, setFavorite] = useState(1);
   const [challenger, setChallenger] = useState(2);
+
+  const [filters, setFilters] = useState({
+    live: false,
+    atp: false,
+    wta: false,
+    preview: false,
+    over: false,
+    demain: false,
+    tri: false,
+  });
 
   const urlwta =
     "https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=d1d5e28f7576f2ba4c75e6ed53ddfd7e01f162f10b6b4b25bad23e0104255a06";
@@ -73,7 +76,6 @@ const ApiTennis = () => {
   };
 
   const getRank = (position, object, array) => {
-    console.log(array.length)
     let string = null;
     let player = null;
     let tournoi = "WTA";
@@ -81,22 +83,20 @@ const ApiTennis = () => {
 
     if(position === 1){ 
         player = object.event_first_player;
-        console.log(player)
     }
     else{ 
         player = object.event_second_player
     }
 
-    console.log(player);
   
     if(checkAtp(object.event_type_type)){
         tournoi ='ATP';
     }
 
-    console.log(tournoi)
+    // console.log(tournoi)
     string = get_lastName(player);
 
-    console.log(string);
+    // console.log(string);
 
     const regex = new RegExp(string, 'g');
     
@@ -105,7 +105,7 @@ const ApiTennis = () => {
 if (foundRankings) {  // Vérifie que foundRankings n'est pas undefined
     ranking = foundRankings.place;
 } else {
-    console.log('Player not found');
+    // console.log('Player not found');
 }
 
     // }
@@ -117,28 +117,32 @@ if (foundRankings) {  // Vérifie que foundRankings n'est pas undefined
   // Appel de la fonction pour générer l'URL
   const fetchData = async () => {
     try {
-      const [wtaRankings, atpRankings] = await Promise.all([
-        getWtaRankings(),
-        getAtpRankings(),
-      ]);
-      //   rankingsCombiner({ wtaRankings, atpRankings, setRankings, setError });
+      const wtaRankings = await getWtaRankings();
+      // If this line is reached, it means wtaRankings was successful.
+      
+      const atpRankings = await getAtpRankings();
+      const combinedRankings = [...wtaRankings, ...atpRankings];
+      
       console.log(atpRankings.length);
       console.log(wtaRankings.length);
-      const combinedRankings = [...wtaRankings, ...atpRankings];
       console.log(combinedRankings.length);
+      
       setRankings(combinedRankings);
-    //   console.log(getRank(get_lastName("Coco Gauff"), combinedRankings));
-
+  
+      // Optional: find a specific player
       combinedRankings.find((item) => {
         const regex = /Wozniacki/;
         if (regex.test(item.player)) {
           console.log(item);
         }
       });
+  
     } catch (error) {
       console.error("Error fetching rankings:", error);
+      return;  // Stop further execution if any error occurs
     }
-
+    
+    // Generate API URL and fetch additional data, if needed.
     const url = GenerateApiUrl();
     axios
       .get(url)
@@ -149,113 +153,73 @@ if (foundRankings) {  // Vérifie que foundRankings n'est pas undefined
         console.warn(error);
       });
   };
-
-  // Fonction pour gérer le changement du filtre 'event_live'
-  const handleFilterChange = (e) => {
-    const { name, checked } = e.target;
-
-    switch (name) {
-      case "live":
-        setFilterLive(checked);
-        break;
-      case "atp":
-        setFilterAtp(checked);
-        break;
-      case "wta":
-        setFilterWta(checked);
-        break;
-      case "preview":
-        setFilterPreview(checked);
-        break;
-      case "over":
-        setFilterOver(checked);
-        break;
-      case "demain":
-        setfilterDemain(checked);
-        break;
-      case "tri":
-        setTri(checked);
-        break;
-      default:
-        break;
-    }
-  };
-
+  
   useEffect(() => {
-    let result = null;
+    let result = [];
+  
     if (data) {
+      // Filtrage initial
       result = data.filter(
         (item) =>
           !checkItf(item.event_type_type) &&
           !checkBackSlash(item.event_first_player) &&
           !checkGirlsBoys(item.event_type_type)
       );
-
+  
+      // Ajout de la date de début à chaque élément
       result.forEach((item) => {
-        item.start_date = createDateFromString(
-          item.event_date,
-          item.event_time
-        );
+        item.start_date = createDateFromString(item.event_date, item.event_time);
       });
-
-      result.sort((a, b) => {
-        return a.start_date - b.start_date;
-      });
-      // console.log(result);
+  
+      // Tri initial par date de début
+      result.sort((a, b) => a.start_date - b.start_date);
     }
-
-    if (result) {
-      if (filterLive) {
+  
+    // Application des filtres
+    if (result.length > 0) {
+      if (filters.live) {
         result = result.filter((item) => item.event_live === "1");
       }
-      if (filterAtp) {
+      if (filters.atp) {
         result = result.filter((item) => checkAtp(item.event_type_type));
-        console.log(result.length);
       }
-      if (filterWta) {
+      if (filters.wta) {
         result = result.filter((item) => checkWta(item.event_type_type));
-        console.log(result.length);
       }
-      if (filterPreview) {
+      if (filters.preview) {
         result = result.filter(
           (item) => item.event_live === "0" && item.event_status !== "Finished"
         );
-        console.log(result.length);
       }
-      if (filterOver) {
+      if (filters.over) {
         result = result.filter((item) => item.event_status === "Finished");
-        console.log(result.length);
       }
-      if (filterDemain) {
+      if (filters.demain) {
         result = result.filter((item) => {
           const date1 = createDateFromString(item.event_date, item.event_time);
           const today = new Date();
           today.setHours(23, 59, 59, 999);
           return date1 > today;
         });
-        console.log(result);
       }
-      if (tri) {
-        result.sort((a, b) => {
-          return b.start_date - a.start_date;
-        });
+      if (filters.tri) {
+        result.sort((a, b) => b.start_date - a.start_date);
       }
-    } else {
-      result = [];
     }
-
+  
+    // Mise à jour des données filtrées
     setFilteredData(result);
   }, [
     data,
-    filterLive,
-    filterAtp,
-    filterWta,
-    filterPreview,
-    filterDemain,
-    tri,
-    filterOver,
+    filters.live,
+    filters.atp,
+    filters.wta,
+    filters.preview,
+    filters.demain,
+    filters.tri,
+    filters.over,
   ]);
-
+  
   const handleButtonClick = (delay) => {
     console.log(delay + today());
     setDelay(delay); // Mettre à jour le délai
@@ -277,83 +241,16 @@ if (foundRankings) {  // Vérifie que foundRankings n'est pas undefined
         handleButtonClick={handleButtonClick}
         activeButton={activeButton}
       ></Timer>
+
+      {/* <div className="container mt-4">
+        <FilterPanel filters={filters} setFilters={setFilters} />
+        <MatchList matches={filteredData} rankings={rankings} />
+      </div> */}
+
       <div className="container mt-4">
         <div className="row">
-          <div className="col-12 text-light text-center">
-            <label>
-              <input
-                type="checkbox"
-                name="live"
-                checked={filterLive}
-                onChange={handleFilterChange}
-              />{" "}
-              live events
-            </label>
-            &nbsp;&nbsp;
-            <label>
-              <input
-                type="checkbox"
-                name="atp"
-                checked={filterAtp}
-                onChange={handleFilterChange}
-              />{" "}
-              ATP events
-            </label>
-            &nbsp;&nbsp;
-            <label>
-              <input
-                type="checkbox"
-                name="wta"
-                checked={filterWta}
-                onChange={handleFilterChange}
-              />{" "}
-              WTA events
-            </label>
-            &nbsp;&nbsp;
-            <label>
-              <input
-                type="checkbox"
-                name="preview"
-                checked={filterPreview}
-                onChange={handleFilterChange}
-              />{" "}
-              preview events
-            </label>
-            &nbsp;&nbsp;
-            <label>
-              <input
-                type="checkbox"
-                name="over"
-                checked={filterOver}
-                onChange={handleFilterChange}
-              />{" "}
-              terminés
-            </label>
-            &nbsp;&nbsp;
-            <label>
-              <input
-                type="checkbox"
-                name="demain"
-                checked={filterDemain}
-                onChange={handleFilterChange}   
-              />{" "}
-              demain
-            </label>
-            &nbsp;&nbsp;
-            <label>
-              <input
-                type="checkbox"
-                name="tri"
-                checked={tri}
-                onChange={handleFilterChange}
-              />{" "}
-              tri {tri}
-            </label>
-            &nbsp;&nbsp;
-            <b className="text-danger">
-              {filteredData ? filteredData.length : 0} matchs
-            </b>
-          </div>
+
+        <FilterPanel filters={filters} setFilters={setFilters} />
 
           <div></div>
 

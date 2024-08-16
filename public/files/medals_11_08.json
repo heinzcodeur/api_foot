@@ -1,0 +1,1984 @@
+{
+    "medalsTable": [
+        {
+            "disciplines": [
+                {
+                    "code": "ATH",
+                    "name": "Athlétisme",
+                    "gold": 1,
+                    "silver": 1,
+                    "bronze": 2,
+                    "total": 4,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "ATH",
+                            "eventCode": "ATHW20KMWALK----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "20 km marche - femmes",
+                            "eventOrder": 44,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1919002",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "YANG Jiayu",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-01",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/jiayu-yang_1919002"
+                            }
+                        },
+                        {
+                            "disciplineCode": "ATH",
+                            "eventCode": "ATHWDISCUS------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Lancer de disque - femmes",
+                            "eventOrder": 40,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1919067",
+                            "competitorType": "A",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "FENG Bin",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-05",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/bin-feng_1919067"
+                            }
+                        },
+                        {
+                            "disciplineCode": "ATH",
+                            "eventCode": "ATHWSHOTPUT-----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Lancer de poids - femmes",
+                            "eventOrder": 39,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1919065",
+                            "competitorType": "A",
+                            "competitorOrder": 2,
+                            "competitorDisplayName": "SONG Jiayuan",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-09",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/jiayuan-song_1919065"
+                            }
+                        },
+                        {
+                            "disciplineCode": "ATH",
+                            "eventCode": "ATHWHAMMER------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Lancer de marteau - femmes",
+                            "eventOrder": 41,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1919077",
+                            "competitorType": "A",
+                            "competitorOrder": 3,
+                            "competitorDisplayName": "ZHAO Jie",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-06",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/jie-zhao_1919077"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "BDM",
+                    "name": "Badminton",
+                    "gold": 2,
+                    "silver": 3,
+                    "bronze": 0,
+                    "total": 5,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "BDM",
+                            "eventCode": "BDMWDOUBLES-----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Double femmes",
+                            "eventOrder": 4,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "BDMWDOUBLES-CHN02",
+                            "competitorType": "T",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "CHEN/JIA",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-03",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "BDM",
+                            "eventCode": "BDMXDOUBLES-----------",
+                            "eventCategory": "Mixed",
+                            "eventDescription": "Double mixte",
+                            "eventOrder": 5,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "BDMXDOUBLES-CHN02",
+                            "competitorType": "T",
+                            "competitorOrder": 4,
+                            "competitorDisplayName": "ZHENG/HUANG",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-02",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "BDM",
+                            "eventCode": "BDMWSINGLES-----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Simple femmes",
+                            "eventOrder": 2,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1913436",
+                            "competitorType": "A",
+                            "competitorOrder": 3,
+                            "competitorDisplayName": "HE Bing Jiao",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-05",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/bing-jiao-he_1913436"
+                            }
+                        },
+                        {
+                            "disciplineCode": "BDM",
+                            "eventCode": "BDMMDOUBLES-----------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Double hommes",
+                            "eventOrder": 3,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "BDMMDOUBLES-CHN02",
+                            "competitorType": "T",
+                            "competitorOrder": 2,
+                            "competitorDisplayName": "LIANG/WANG",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-04",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "BDM",
+                            "eventCode": "BDMWDOUBLES-----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Double femmes",
+                            "eventOrder": 4,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "BDMWDOUBLES-CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "LIU/TAN",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-03",
+                            "extraData": {}
+                        }
+                    ]
+                },
+                {
+                    "code": "BOX",
+                    "name": "Boxe",
+                    "gold": 3,
+                    "silver": 2,
+                    "bronze": 0,
+                    "total": 5,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "BOX",
+                            "eventCode": "BOXW50KG--------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "50 kg - femmes",
+                            "eventOrder": 8,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1926833",
+                            "competitorType": "A",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "WU Yu",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-09",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yu-wu_1926833"
+                            }
+                        },
+                        {
+                            "disciplineCode": "BOX",
+                            "eventCode": "BOXW54KG--------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "54 kg - femmes",
+                            "eventOrder": 9,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1926832",
+                            "competitorType": "A",
+                            "competitorOrder": 3,
+                            "competitorDisplayName": "CHANG Yuan",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-08",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yuan-chang_1926832"
+                            }
+                        },
+                        {
+                            "disciplineCode": "BOX",
+                            "eventCode": "BOXW75KG--------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "75 kg - femmes",
+                            "eventOrder": 13,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1926826",
+                            "competitorType": "A",
+                            "competitorOrder": 4,
+                            "competitorDisplayName": "LI Qian",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-10",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/qian-li_1926826"
+                            }
+                        },
+                        {
+                            "disciplineCode": "BOX",
+                            "eventCode": "BOXW60KG--------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "60 kg - femmes",
+                            "eventOrder": 11,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1926828",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "YANG Wenlu",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-06",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/wenlu-yang_1926828"
+                            }
+                        },
+                        {
+                            "disciplineCode": "BOX",
+                            "eventCode": "BOXW66KG--------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "66 kg - femmes",
+                            "eventOrder": 12,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1926827",
+                            "competitorType": "A",
+                            "competitorOrder": 2,
+                            "competitorDisplayName": "YANG Liu",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-09",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/liu-yang_1926827"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "BKG",
+                    "name": "Breaking",
+                    "gold": 0,
+                    "silver": 0,
+                    "bronze": 1,
+                    "total": 1,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "BKG",
+                            "eventCode": "BKGWINDIVID-----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "B-Girls",
+                            "eventOrder": 2,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1909907",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "671",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-09",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/-671_1909907"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "CSP",
+                    "name": "Canoë-kayak sprint",
+                    "gold": 2,
+                    "silver": 0,
+                    "bronze": 0,
+                    "total": 2,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "CSP",
+                            "eventCode": "CSPMC2-500M-----------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Canoë biplace (C2) 500 m - hommes",
+                            "eventOrder": 5,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "CSPMC2-500M-CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "LIU/JI",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-08",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "CSP",
+                            "eventCode": "CSPWC2-500M-----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Canoë biplace (C2) 500 m - femmes",
+                            "eventOrder": 10,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "CSPWC2-500M-CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "XU/SUN",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-09",
+                            "extraData": {}
+                        }
+                    ]
+                },
+                {
+                    "code": "BMF",
+                    "name": "Cyclisme BMX Freestyle",
+                    "gold": 1,
+                    "silver": 0,
+                    "bronze": 0,
+                    "total": 1,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "BMF",
+                            "eventCode": "BMFWINDVFRST----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Park femmes",
+                            "eventOrder": 1,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1920569",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "DENG Yawen",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-31",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yawen-deng_1920569"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "CLB",
+                    "name": "Escalade",
+                    "gold": 0,
+                    "silver": 2,
+                    "bronze": 0,
+                    "total": 2,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "CLB",
+                            "eventCode": "CLBWSPEED-------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Vitesse femmes",
+                            "eventOrder": 2,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1913702",
+                            "competitorType": "A",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "DENG Lijuan",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-07",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/lijuan-deng_1913702"
+                            }
+                        },
+                        {
+                            "disciplineCode": "CLB",
+                            "eventCode": "CLBMSPEED-------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Vitesse hommes",
+                            "eventOrder": 4,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1913699",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "WU Peng",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-08",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/peng-wu_1913699"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "GLF",
+                    "name": "Golf",
+                    "gold": 0,
+                    "silver": 0,
+                    "bronze": 1,
+                    "total": 1,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "GLF",
+                            "eventCode": "GLFWSTROKE------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Stroke play individuel - femmes",
+                            "eventOrder": 2,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1913218",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "LIN Xiyu Janet",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-10",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/xiyu-janet-lin_1913218"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "GAR",
+                    "name": "Gymnastique artistique",
+                    "gold": 2,
+                    "silver": 5,
+                    "bronze": 2,
+                    "total": 9,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "GAR",
+                            "eventCode": "GARM1APSR-------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Anneaux - hommes",
+                            "eventOrder": 5,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1918856",
+                            "competitorType": "A",
+                            "competitorOrder": 2,
+                            "competitorDisplayName": "LIU Yang",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-04",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yang-liu_1918856"
+                            }
+                        },
+                        {
+                            "disciplineCode": "GAR",
+                            "eventCode": "GARM1APPB-------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Barres parallèles - hommes",
+                            "eventOrder": 7,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1918865",
+                            "competitorType": "A",
+                            "competitorOrder": 6,
+                            "competitorDisplayName": "ZOU Jingyuan",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-05",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/jingyuan-zou_1918865"
+                            }
+                        },
+                        {
+                            "disciplineCode": "GAR",
+                            "eventCode": "GARMTEAM--------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Compétition par équipes - hommes",
+                            "eventOrder": 1,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "GARMTEAM----CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 8,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-29",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "GAR",
+                            "eventCode": "GARM1AA---------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Concours général - hommes",
+                            "eventOrder": 2,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1918864",
+                            "competitorType": "A",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "ZHANG Boheng",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-31",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/boheng-zhang_1918864"
+                            }
+                        },
+                        {
+                            "disciplineCode": "GAR",
+                            "eventCode": "GARM1APSR-------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Anneaux - hommes",
+                            "eventOrder": 5,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1918865",
+                            "competitorType": "A",
+                            "competitorOrder": 4,
+                            "competitorDisplayName": "ZOU Jingyuan",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-04",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/jingyuan-zou_1918865"
+                            }
+                        },
+                        {
+                            "disciplineCode": "GAR",
+                            "eventCode": "GARW1APUB-------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Barres asymétriques - femmes",
+                            "eventOrder": 12,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1918872",
+                            "competitorType": "A",
+                            "competitorOrder": 5,
+                            "competitorDisplayName": "QIU Qiyuan",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-04",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/qiyuan-qiu_1918872"
+                            }
+                        },
+                        {
+                            "disciplineCode": "GAR",
+                            "eventCode": "GARW1APBB-------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Poutre - femmes",
+                            "eventOrder": 13,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1918881",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "ZHOU Yaqin",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-05",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yaqin-zhou_1918881"
+                            }
+                        },
+                        {
+                            "disciplineCode": "GAR",
+                            "eventCode": "GARM1AA---------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Concours général - hommes",
+                            "eventOrder": 2,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1918860",
+                            "competitorType": "A",
+                            "competitorOrder": 7,
+                            "competitorDisplayName": "XIAO Ruoteng",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-31",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/ruoteng-xiao_1918860"
+                            }
+                        },
+                        {
+                            "disciplineCode": "GAR",
+                            "eventCode": "GARM1APHB-------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Barre fixe - hommes",
+                            "eventOrder": 8,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1918864",
+                            "competitorType": "A",
+                            "competitorOrder": 3,
+                            "competitorDisplayName": "ZHANG Boheng",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-05",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/boheng-zhang_1918864"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "GRY",
+                    "name": "Gymnastique rythmique",
+                    "gold": 1,
+                    "silver": 0,
+                    "bronze": 0,
+                    "total": 1,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "GRY",
+                            "eventCode": "GRYW5AA---------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Concours général des ensembles",
+                            "eventOrder": 2,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "GRYW5AA-----CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-10",
+                            "extraData": {}
+                        }
+                    ]
+                },
+                {
+                    "code": "WLF",
+                    "name": "Haltérophilie",
+                    "gold": 4,
+                    "silver": 0,
+                    "bronze": 0,
+                    "total": 4,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "WLF",
+                            "eventCode": "WLFW49KG--------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "49 kg - femmes",
+                            "eventOrder": 1,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1918377",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "HOU Zhihui",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-07",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/zhihui-hou_1918377"
+                            }
+                        },
+                        {
+                            "disciplineCode": "WLF",
+                            "eventCode": "WLFW59KG--------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "59 kg - femmes",
+                            "eventOrder": 2,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1918379",
+                            "competitorType": "A",
+                            "competitorOrder": 3,
+                            "competitorDisplayName": "LUO Shifang",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-08",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/shifang-luo_1918379"
+                            }
+                        },
+                        {
+                            "disciplineCode": "WLF",
+                            "eventCode": "WLFM61KG--------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "61 kg - hommes",
+                            "eventOrder": 6,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1918372",
+                            "competitorType": "A",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "LI Fabin",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-07",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/fabin-li_1918372"
+                            }
+                        },
+                        {
+                            "disciplineCode": "WLF",
+                            "eventCode": "WLFM102KG-------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "102 kg - hommes",
+                            "eventOrder": 9,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1918369",
+                            "competitorType": "A",
+                            "competitorOrder": 2,
+                            "competitorDisplayName": "LIU Huanhua",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-10",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/huanhua-liu_1918369"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "HOC",
+                    "name": "Hockey",
+                    "gold": 0,
+                    "silver": 1,
+                    "bronze": 0,
+                    "total": 1,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "HOC",
+                            "eventCode": "HOCWTEAM11------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Femmes",
+                            "eventOrder": 2,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "HOCWTEAM11--CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-09",
+                            "extraData": {}
+                        }
+                    ]
+                },
+                {
+                    "code": "JUD",
+                    "name": "Judo",
+                    "gold": 0,
+                    "silver": 0,
+                    "bronze": 1,
+                    "total": 1,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "JUD",
+                            "eventCode": "JUDW78KG--------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "-78 kg - femmes",
+                            "eventOrder": 6,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1891067",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "MA Zhenzhao",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-01",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/zhenzhao-ma_1891067"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "WRE",
+                    "name": "Lutte",
+                    "gold": 0,
+                    "silver": 1,
+                    "bronze": 4,
+                    "total": 5,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "WRE",
+                            "eventCode": "WREMGR60KG------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Gréco-romaine - hommes 60 kg",
+                            "eventOrder": 1,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1919973",
+                            "competitorType": "A",
+                            "competitorOrder": 3,
+                            "competitorDisplayName": "CAO Liguo",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-06",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/liguo-cao_1919973"
+                            }
+                        },
+                        {
+                            "disciplineCode": "WRE",
+                            "eventCode": "WREMGR130KG-----------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Gréco-romaine - hommes 130 kg",
+                            "eventOrder": 6,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1919983",
+                            "competitorType": "A",
+                            "competitorOrder": 2,
+                            "competitorDisplayName": "MENG Lingzhe",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-06",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/lingzhe-meng_1919983"
+                            }
+                        },
+                        {
+                            "disciplineCode": "WRE",
+                            "eventCode": "WREWFS50KG------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Libre - femmes 50 kg",
+                            "eventOrder": 7,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1920000",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "FENG Ziqi",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-07",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/ziqi-feng_1920000"
+                            }
+                        },
+                        {
+                            "disciplineCode": "WRE",
+                            "eventCode": "WREWFS53KG------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Libre - femmes 53 kg",
+                            "eventOrder": 8,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1920006",
+                            "competitorType": "A",
+                            "competitorOrder": 4,
+                            "competitorDisplayName": "PANG Qianyu",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-08",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/qianyu-pang_1920006"
+                            }
+                        },
+                        {
+                            "disciplineCode": "WRE",
+                            "eventCode": "WREWFS57KG------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Libre - femmes 57 kg",
+                            "eventOrder": 9,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1920010",
+                            "competitorType": "A",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "HONG Kexin",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-09",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/kexin-hong_1920010"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "SWM",
+                    "name": "Natation",
+                    "gold": 2,
+                    "silver": 3,
+                    "bronze": 7,
+                    "total": 12,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMM100MFR------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "100 m nage libre - hommes",
+                            "eventOrder": 19,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1945148",
+                            "competitorType": "A",
+                            "competitorOrder": 5,
+                            "competitorDisplayName": "PAN Zhanle",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-31",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/zhanle-pan_1945148"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMM4X100MMD----------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Relais 4x100 m 4 nages - hommes",
+                            "eventOrder": 34,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "SWMM4X100MMDCHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 8,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-04",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMW100MBR------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "100 m brasse - femmes",
+                            "eventOrder": 9,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1945200",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "TANG Qianting",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-29",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/qianting-tang_1945200"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMM100MBA------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "100 m dos - hommes",
+                            "eventOrder": 24,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1945132",
+                            "competitorType": "A",
+                            "competitorOrder": 10,
+                            "competitorDisplayName": "XU Jiayu",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-29",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/jiayu-xu_1945132"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMX4X100MMD----------",
+                            "eventCategory": "Mixed",
+                            "eventDescription": "Relais mixte 4 x 100 m quatre nages",
+                            "eventOrder": 35,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "SWMX4X100MMDCHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 9,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-03",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMW50MFR-------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "50 m nage libre - femmes",
+                            "eventOrder": 1,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1945125",
+                            "competitorType": "A",
+                            "competitorOrder": 4,
+                            "competitorDisplayName": "ZHANG Yufei",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-04",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yufei-zhang_1945125"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMW100MBF------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "100 m papillon - femmes",
+                            "eventOrder": 11,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1945125",
+                            "competitorType": "A",
+                            "competitorOrder": 3,
+                            "competitorDisplayName": "ZHANG Yufei",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-28",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yufei-zhang_1945125"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMW200MBF------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "200 m papillon - femmes",
+                            "eventOrder": 12,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1945125",
+                            "competitorType": "A",
+                            "competitorOrder": 7,
+                            "competitorDisplayName": "ZHANG Yufei",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-01",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yufei-zhang_1945125"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMW4X100MFR----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Relais 4x100 m nage libre - femmes",
+                            "eventOrder": 15,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "SWMW4X100MFRCHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 6,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-27",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMW4X200MFR----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Relais 4x200 m nage libre - femmes",
+                            "eventOrder": 16,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "SWMW4X200MFRCHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 11,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-01",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMW4X100MMD----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Relais 4x100 m 4 nages - femmes",
+                            "eventOrder": 17,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "SWMW4X100MMDCHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-04",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "SWM",
+                            "eventCode": "SWMM200MIM------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "200 m 4 nages - hommes",
+                            "eventOrder": 30,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1945186",
+                            "competitorType": "A",
+                            "competitorOrder": 2,
+                            "competitorDisplayName": "WANG Shun",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-02",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/shun-wang_1945186"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "SWA",
+                    "name": "Natation artistique",
+                    "gold": 2,
+                    "silver": 0,
+                    "bronze": 0,
+                    "total": 2,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "SWA",
+                            "eventCode": "SWAWTEAM2-------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Épreuve de duo",
+                            "eventOrder": 1,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "SWAWTEAM2---CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "WANG/WANG",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-10",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "SWA",
+                            "eventCode": "SWAOTEAM8-------------",
+                            "eventCategory": "Open",
+                            "eventDescription": "Épreuve d'équipe",
+                            "eventOrder": 2,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "SWAWTEAM8---CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-07",
+                            "extraData": {}
+                        }
+                    ]
+                },
+                {
+                    "code": "DIV",
+                    "name": "Plongeon",
+                    "gold": 8,
+                    "silver": 2,
+                    "bronze": 1,
+                    "total": 11,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "DIV",
+                            "eventCode": "DIVW3M----------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Tremplin 3m - femmes",
+                            "eventOrder": 1,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1901538",
+                            "competitorType": "A",
+                            "competitorOrder": 2,
+                            "competitorDisplayName": "CHEN Yiwen",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-09",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yiwen-chen_1901538"
+                            }
+                        },
+                        {
+                            "disciplineCode": "DIV",
+                            "eventCode": "DIVW10M---------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Haut-vol 10m - femmes",
+                            "eventOrder": 2,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1901545",
+                            "competitorType": "A",
+                            "competitorOrder": 4,
+                            "competitorDisplayName": "QUAN Hongchan",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-06",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/hongchan-quan_1901545"
+                            }
+                        },
+                        {
+                            "disciplineCode": "DIV",
+                            "eventCode": "DIVW3MTEAM2-----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Tremplin 3m synchronisé - femmes",
+                            "eventOrder": 3,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "DIVW3MTEAM2-CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "CHANG/CHEN",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-27",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "DIV",
+                            "eventCode": "DIVW10MTEAM2----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Haut-vol 10m synchronisé - femmes",
+                            "eventOrder": 4,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "DIVW10MTEAM2CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 7,
+                            "competitorDisplayName": "CHEN/QUAN",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-31",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "DIV",
+                            "eventCode": "DIVM3M----------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Tremplin 3m - hommes",
+                            "eventOrder": 5,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1901550",
+                            "competitorType": "A",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "XIE Siyi",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-08",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/siyi-xie_1901550"
+                            }
+                        },
+                        {
+                            "disciplineCode": "DIV",
+                            "eventCode": "DIVM10M---------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Haut-vol 10m - hommes",
+                            "eventOrder": 6,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1901556",
+                            "competitorType": "A",
+                            "competitorOrder": 6,
+                            "competitorDisplayName": "CAO Yuan",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-10",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yuan-cao_1901556"
+                            }
+                        },
+                        {
+                            "disciplineCode": "DIV",
+                            "eventCode": "DIVM3MTEAM2-----------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Tremplin 3m synchronisé - hommes",
+                            "eventOrder": 7,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "DIVM3MTEAM2-CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 8,
+                            "competitorDisplayName": "LONG/WANG",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-02",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "DIV",
+                            "eventCode": "DIVM10MTEAM2----------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Haut-vol 10m synchronisé - hommes",
+                            "eventOrder": 8,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "DIVM10MTEAM2CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 9,
+                            "competitorDisplayName": "LIAN/YANG",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-29",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "DIV",
+                            "eventCode": "DIVW10M---------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Haut-vol 10m - femmes",
+                            "eventOrder": 2,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1901544",
+                            "competitorType": "A",
+                            "competitorOrder": 3,
+                            "competitorDisplayName": "CHEN Yuxi",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-06",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yuxi-chen_1901544"
+                            }
+                        },
+                        {
+                            "disciplineCode": "DIV",
+                            "eventCode": "DIVM3M----------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Tremplin 3m - hommes",
+                            "eventOrder": 5,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1901549",
+                            "competitorType": "A",
+                            "competitorOrder": 10,
+                            "competitorDisplayName": "WANG Zongyuan",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-08",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/zongyuan-wang_1901549"
+                            }
+                        },
+                        {
+                            "disciplineCode": "DIV",
+                            "eventCode": "DIVW3M----------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Tremplin 3m - femmes",
+                            "eventOrder": 1,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1901539",
+                            "competitorType": "A",
+                            "competitorOrder": 5,
+                            "competitorDisplayName": "CHANG Yani",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-09",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yani-chang_1901539"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "TKW",
+                    "name": "Taekwondo",
+                    "gold": 0,
+                    "silver": 1,
+                    "bronze": 1,
+                    "total": 2,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "TKW",
+                            "eventCode": "TKWW49KG--------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "-49 kg - femmes",
+                            "eventOrder": 5,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1910372",
+                            "competitorType": "A",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "GUO Qing",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-07",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/qing-guo_1910372"
+                            }
+                        },
+                        {
+                            "disciplineCode": "TKW",
+                            "eventCode": "TKWM68KG--------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "-68 kg - hommes",
+                            "eventOrder": 2,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1910367",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "LIANG Yushuai",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-08",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yushuai-liang_1910367"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "TEN",
+                    "name": "Tennis",
+                    "gold": 1,
+                    "silver": 1,
+                    "bronze": 0,
+                    "total": 2,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "TEN",
+                            "eventCode": "TENWSINGLES-----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Simple femmes",
+                            "eventOrder": 2,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1927709",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "ZHENG Qinwen",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-03",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/qinwen-zheng_1927709"
+                            }
+                        },
+                        {
+                            "disciplineCode": "TEN",
+                            "eventCode": "TENXDOUBLES-----------",
+                            "eventCategory": "Mixed",
+                            "eventDescription": "Double mixte",
+                            "eventOrder": 5,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "TENXDOUBLES-CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "WANG/ZHANG",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-02",
+                            "extraData": {}
+                        }
+                    ]
+                },
+                {
+                    "code": "TTE",
+                    "name": "Tennis de table",
+                    "gold": 5,
+                    "silver": 1,
+                    "bronze": 0,
+                    "total": 6,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "TTE",
+                            "eventCode": "TTEMSINGLES-----------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Simple hommes",
+                            "eventOrder": 1,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1902295",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "FAN Zhendong",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-04",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/zhendong-fan_1902295"
+                            }
+                        },
+                        {
+                            "disciplineCode": "TTE",
+                            "eventCode": "TTEWSINGLES-----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Simple femmes",
+                            "eventOrder": 2,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1902307",
+                            "competitorType": "A",
+                            "competitorOrder": 2,
+                            "competitorDisplayName": "CHEN Meng",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-03",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/meng-chen_1902307"
+                            }
+                        },
+                        {
+                            "disciplineCode": "TTE",
+                            "eventCode": "TTEXDOUBLES-----------",
+                            "eventCategory": "Mixed",
+                            "eventDescription": "Double mixte",
+                            "eventOrder": 3,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "TTEXDOUBLES-CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 5,
+                            "competitorDisplayName": "WANG/SUN",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-30",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "TTE",
+                            "eventCode": "TTEMTEAM--------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Par équipes hommes",
+                            "eventOrder": 4,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "TTEMTEAM----CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-09",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "TTE",
+                            "eventCode": "TTEWTEAM--------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Par équipes femmes",
+                            "eventOrder": 5,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "TTEWTEAM----CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 3,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-10",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "TTE",
+                            "eventCode": "TTEWSINGLES-----------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Simple femmes",
+                            "eventOrder": 2,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1902313",
+                            "competitorType": "A",
+                            "competitorOrder": 4,
+                            "competitorDisplayName": "SUN Yingsha",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-03",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yingsha-sun_1902313"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "code": "SHO",
+                    "name": "Tir",
+                    "gold": 5,
+                    "silver": 2,
+                    "bronze": 3,
+                    "total": 10,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "SHO",
+                            "eventCode": "SHOMARM---------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Carabine à air comprimé 10 m - hommes",
+                            "eventOrder": 1,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1913899",
+                            "competitorType": "A",
+                            "competitorOrder": 9,
+                            "competitorDisplayName": "SHENG Lihao",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-29",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/lihao-sheng_1913899"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SHO",
+                            "eventCode": "SHOMR3PM--------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Carabine 50 m 3 positions - hommes",
+                            "eventOrder": 2,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1913922",
+                            "competitorType": "A",
+                            "competitorOrder": 3,
+                            "competitorDisplayName": "LIU Yukun",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-01",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yukun-liu_1913922"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SHO",
+                            "eventCode": "SHOMAPM---------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Pistolet à air comprimé 10 m - hommes",
+                            "eventOrder": 3,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1913907",
+                            "competitorType": "A",
+                            "competitorOrder": 7,
+                            "competitorDisplayName": "XIE Yu",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-28",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yu-xie_1913907"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SHO",
+                            "eventCode": "SHOMRFPM--------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Pistolet rapide 25 m - hommes",
+                            "eventOrder": 4,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "1913913",
+                            "competitorType": "A",
+                            "competitorOrder": 8,
+                            "competitorDisplayName": "LI Yuehong",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-05",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yuehong-li_1913913"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SHO",
+                            "eventCode": "SHOXARMT--------------",
+                            "eventCategory": "Mixed",
+                            "eventDescription": "Carabine à air comprimé 10 m par éq mix",
+                            "eventOrder": 13,
+                            "medalType": "ME_GOLD",
+                            "official": true,
+                            "competitorCode": "SHOXARMT----CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 6,
+                            "competitorDisplayName": "China 1",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-27",
+                            "extraData": {}
+                        },
+                        {
+                            "disciplineCode": "SHO",
+                            "eventCode": "SHOMTRM---------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Fosse - hommes",
+                            "eventOrder": 5,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1913928",
+                            "competitorType": "A",
+                            "competitorOrder": 4,
+                            "competitorDisplayName": "QI Ying",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-30",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/ying-qi_1913928"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SHO",
+                            "eventCode": "SHOWARW---------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Carabine à air comprimé 10 m - femmes",
+                            "eventOrder": 7,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1913945",
+                            "competitorType": "A",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "HUANG Yuting",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-29",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/yuting-huang_1913945"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SHO",
+                            "eventCode": "SHOMRFPM--------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Pistolet rapide 25 m - hommes",
+                            "eventOrder": 4,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1913919",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "WANG Xinjie",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-05",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/xinjie-wang_1913919"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SHO",
+                            "eventCode": "SHOWR3PW--------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Carabine 50 m 3 positions - femmes",
+                            "eventOrder": 8,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1913972",
+                            "competitorType": "A",
+                            "competitorOrder": 5,
+                            "competitorDisplayName": "ZHANG Qiongyue",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-02",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/qiongyue-zhang_1913972"
+                            }
+                        },
+                        {
+                            "disciplineCode": "SHO",
+                            "eventCode": "SHOXSKMT--------------",
+                            "eventCategory": "Mixed",
+                            "eventDescription": "Skeet par équipes mixtes",
+                            "eventOrder": 15,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "SHOXSKMT----CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 2,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-05",
+                            "extraData": {}
+                        }
+                    ]
+                },
+                {
+                    "code": "ARC",
+                    "name": "Tir à l'arc",
+                    "gold": 0,
+                    "silver": 1,
+                    "bronze": 0,
+                    "total": 1,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "ARC",
+                            "eventCode": "ARCWTEAM3-------------",
+                            "eventCategory": "Women",
+                            "eventDescription": "Épreuve par équipes - femmes",
+                            "eventOrder": 4,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "ARCWTEAM3---CHN01",
+                            "competitorType": "T",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "China",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-07-28",
+                            "extraData": {}
+                        }
+                    ]
+                },
+                {
+                    "code": "GTR",
+                    "name": "Trampoline",
+                    "gold": 0,
+                    "silver": 1,
+                    "bronze": 1,
+                    "total": 2,
+                    "medalWinners": [
+                        {
+                            "disciplineCode": "GTR",
+                            "eventCode": "GTRM1TRA--------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Hommes",
+                            "eventOrder": 1,
+                            "medalType": "ME_SILVER",
+                            "official": true,
+                            "competitorCode": "1918790",
+                            "competitorType": "A",
+                            "competitorOrder": 1,
+                            "competitorDisplayName": "WANG Zisai",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-02",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/zisai-wang_1918790"
+                            }
+                        },
+                        {
+                            "disciplineCode": "GTR",
+                            "eventCode": "GTRM1TRA--------------",
+                            "eventCategory": "Men",
+                            "eventDescription": "Hommes",
+                            "eventOrder": 1,
+                            "medalType": "ME_BRONZE",
+                            "official": true,
+                            "competitorCode": "1918789",
+                            "competitorType": "A",
+                            "competitorOrder": 0,
+                            "competitorDisplayName": "YAN Langyu",
+                            "competitorDisplayPrintInitialName": "",
+                            "competitorDisplayTvName": "",
+                            "competitorDisplayPrintName": "",
+                            "date": "2024-08-02",
+                            "extraData": {
+                                "detailUrl": "/fr/paris-2024/athlete/langyu-yan_1918789"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -4,10 +4,16 @@ import User from "./User";
 
 
 const Home = () =>{
+
+    const apiKeys = process.env.REACT_APP_API_TENNIS_KEY;
+
+
     return (
-        <div>
-            <User></User>
-        </div>
+        <div className="col-8 mx-auto">
+            <User apiKey={apiKeys}></User>
+            {/* <b>{apiKeys}</b> */}
+            <input type="range" min="1" max="10" step="1" value="5" />
+            </div>
     )
 };
 
