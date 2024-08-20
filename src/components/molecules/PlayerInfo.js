@@ -3,14 +3,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PlayerImg from '../atoms/PlayerImg';
 
-const PlayerInfo = ({ player, playerKey, getRank }) => (
-  <div className="d-flex align-items-center">
-    <Link to={`/athletes/${playerKey}/${getRank()}`}>
+const PlayerInfo = ({ player, playerKey, getRank, position, item }) => {
+  // console.log(item);
+  return(
+    <div >
+    <Link to={`/athletes/${playerKey}/${getRank(position, item)}`}>
       {player.logo ? <PlayerImg src={player.logo} /> : <i className="fas fa-user rounded-circle"></i>}
     </Link>
-    <span className="ms-2 text-primary">{player.name}</span>
-    <span className="ms-2">{getRank()}</span>
+    <span className="ms-2 text-primary">{player.name}</span>&nbsp;
+    <span className="ms-2">{getRank(position, item)}</span>
   </div>
-);
+  );
+};
 
 export default PlayerInfo;

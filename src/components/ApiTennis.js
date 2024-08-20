@@ -49,10 +49,10 @@ const ApiTennis = () => {
     tri: false,
   });
 
-  const urlwta =
-    "https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=d1d5e28f7576f2ba4c75e6ed53ddfd7e01f162f10b6b4b25bad23e0104255a06";
-  const urlAtp =
-    "https://api.api-tennis.com/tennis/?method=get_standings&event_type=ATP&APIkey=d1d5e28f7576f2ba4c75e6ed53ddfd7e01f162f10b6b4b25bad23e0104255a06";
+  const apiKey = process.env.REACT_APP_API_TENNIS_KEY;
+
+  const urlwta = `https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=${apiKey}`;
+  const urlAtp = `https://api.api-tennis.com/tennis/?method=get_standings&event_type=ATP&APIkey=${apiKey}`;
 
   const getWtaRankings = async () => {
     try {
@@ -76,32 +76,35 @@ const ApiTennis = () => {
     }
   };
 
-  const getRank = (position, object, array) => {
-    let string = null;
+  const getRank = (position, object) => {
+
+    
+    let last_string = null;
     let player = null;
     let tournoi = "WTA";
     let ranking = 0;
-
+    
     if (position === 1) {
       player = object.event_first_player;
     }
     else {
       player = object.event_second_player
     }
-
+    
+    // console.log(player)
 
     if (checkAtp(object.event_type_type)) {
       tournoi = 'ATP';
     }
 
     // console.log(tournoi)
-    string = get_lastName(player);
+    last_string = get_lastName(player);
 
-    // console.log(string);
+    // console.log(last_string);
 
-    const regex = new RegExp(string, 'g');
+    const regex = new RegExp(last_string, 'g');
 
-    const foundRankings = array.find((element) => regex.test(element.player));
+    const foundRankings = rankings.find((element) => regex.test(element.player));
 
     if (foundRankings) {  // Vérifie que foundRankings n'est pas undefined
       ranking = foundRankings.place;

@@ -68,7 +68,7 @@ const FilterPanel = ({ data, filters, setFilteredData, setFilters }) => {
   return (
     <div className="col-12 text-light text-center">
       {Object.keys(filters).map((filter) => (
-        <label key={filter}>
+        <label key={filter} className="mr-3">
           <input
             type="checkbox"
             name={filter}
