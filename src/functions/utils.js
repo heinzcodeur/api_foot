@@ -29,7 +29,6 @@ import axios from 'axios';
     }
 
     const get_lastName = string => {
-        console.log(string)
         let first = string.split('.');
         let second = first[first.length-1];
         if(string === "D. Medvedev"){
@@ -94,7 +93,7 @@ import axios from 'axios';
     }
     
     const shortName = chaine => {
-        return chaine.slice(0, 12);
+        return chaine.slice(0, 10);
     }
 
     const createDateFromString = (dateString, timeString) => {

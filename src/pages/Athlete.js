@@ -7,7 +7,8 @@ import { calculateAge } from "../functions/mixins";
 const Athlete = () => {
   const { athleteId } = useParams(); // Assuming you're using react-router-dom
   const { athleteRank } = useParams(); // Assuming you're using react-router-dom
-  const url = `https://api.api-tennis.com/tennis/?method=get_players&player_key=${athleteId}&APIkey=d1d5e28f7576f2ba4c75e6ed53ddfd7e01f162f10b6b4b25bad23e0104255a06`;
+  const apiKey = process.env.REACT_APP_API_TENNIS_KEY;
+  const url = `https://api.api-tennis.com/tennis/?method=get_players&player_key=${athleteId}&APIkey=${apiKey}`;
   const [athlete, setAthlete] = useState(null);
   const [countries, setCountries] = useState([]);
   const [error, setError] = useState(null);
@@ -75,6 +76,7 @@ const Athlete = () => {
                   athlete.player_country
               )
             }</p>
+            <p>{calculateAge(athlete.player_bday)} ans </p>
             <p>Current Rank: {athleteRank}</p>
             <br></br>
             <br></br>
