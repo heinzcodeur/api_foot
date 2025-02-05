@@ -39,9 +39,32 @@ body {
   width: 100%;
   overflow-y: auto;
 }
+
 .opak{
   opacity: 0.6;
 }
+
+.timer-fixed{
+  margin-top: 6.5rem;
+  /* background-color: antiquewhite; */
+}
+
+.p-revert{
+  margin: revert;
+}
+
+.timer{
+  margin:3px;
+}
+
+.mt-12{
+  margin-top: 12rem;
+}
+
+.top-shadow{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Facultatif, ajoute une ombre */
+}
+
 .spinner-container {
           display: flex;
             justify-content: center;

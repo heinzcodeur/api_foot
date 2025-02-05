@@ -4,10 +4,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Countries from "./components/Countries";
 import Test from "./components/Test";
 import Ranking from "./pages/Ranking";
 import Tennis from "./pages/Tennis";
+import LiveTennis from "./components/LiveTennis";
 
 const App = () => {
   return (
@@ -15,29 +15,13 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/pays" element={<Countries />} />
+          <Route path="/live/tennis" element={<LiveTennis />} />
           <Route path="/ranking" element={<Ranking />} />
           <Route path="/tennis" element={<Tennis />} />
           <Route path="/test" element={<Test />} />
           <Route path="*" element={<Home />} />
         </Routes>
     </BrowserRouter>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 };
 

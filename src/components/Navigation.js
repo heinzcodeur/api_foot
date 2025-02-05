@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./navigation.css";
+import Timer from "./Timer";
 
 const Navigation = () => {
   return (
-    <div className="container">
+    <div className="container-fluid bg-dark fixed-top">
       <div className="row">
         <div className="col-10 mx-auto mt-4">
           <h1 className="text-primary text-center">API FOOT (tennis live)</h1>
@@ -15,7 +16,7 @@ const Navigation = () => {
             <NavLink to="/about">
               <li>about</li>
             </NavLink>
-            <NavLink to="/pays">
+            <NavLink to="/live/tennis">
               <li>matchs</li>
             </NavLink>
             <NavLink to="/ranking">
@@ -27,7 +28,12 @@ const Navigation = () => {
             <NavLink to="/test">
               <li>tester</li>
             </NavLink>
+            <NavLink to="">
+              <li>appels</li>
+            </NavLink>
           </ul>
+          {/* <Timer handleButtonClick={handleButtonClick} delay={delay} activeButton={activeButton} limitRequestLeft={limitRequestLeft}></Timer> */}
+
         </div>
       </div>
     </div>
