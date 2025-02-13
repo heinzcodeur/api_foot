@@ -22,14 +22,15 @@ import GenerateApiUrl from "./GenerateApiUrl";
 import { Link } from "react-router-dom";
 import FilterPanel from "./organisms/FilterPanel";
 import MatchList from "./Templates/MatchList";
+import withApiKey from "./context/withApiKey";
 
-const ApiTennis = () => {
+const ApiTennis = ({apiKey}) => {
   const [data, setData] = useState(null);
   const [nombre, setNombre] = useState(null);
   const [duty, setDuty] = useState([]);
   const [wta, setWta] = useState([]); // État pour le filtre 'event_live'
   const [atp, setAtp] = useState([]); // État pour le filtre 'event_live'
-  const [delay, setDelay] = useState(2000); // État pour le filtre 'event_live'
+  const [delay, setDelay] = useState(15000); // État pour le filtre 'event_live'
   const [filteredData, setFilteredData] = useState(null);
   const [activeButton, setActiveButton] = useState(false); // État pour le filtre 'event_live'
   const [tournois, setTournois] = useState([]);
@@ -40,7 +41,7 @@ const ApiTennis = () => {
   const [challenger, setChallenger] = useState(2);
 
   const [filters, setFilters] = useState({
-    live: false,
+    live: true,
     atp: false,
     wta: false,
     preview: false,
@@ -49,10 +50,13 @@ const ApiTennis = () => {
     tri: false,
   });
 
-  const urlwta =
-    "https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=d1d5e28f7576f2ba4c75e6ed53ddfd7e01f162f10b6b4b25bad23e0104255a06";
-  const urlAtp =
-    "https://api.api-tennis.com/tennis/?method=get_standings&event_type=ATP&APIkey=d1d5e28f7576f2ba4c75e6ed53ddfd7e01f162f10b6b4b25bad23e0104255a06";
+  // const apiKey = process.env.REACT_APP_API_TENNIS_KEY;
+
+console.log("API Tennis Key:", apiKey); // Pour vérifier si la clé est bien récupérée
+
+const urlwta = `https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=${apiKey}`;
+const urlAtp = `https://api.api-tennis.com/tennis/?method=get_standings&event_type=ATP&APIkey=${apiKey}`;
+
 
   const getWtaRankings = async () => {
     try {
@@ -144,7 +148,7 @@ const ApiTennis = () => {
     }
 
     // Generate API URL and fetch additional data, if needed.
-    const url = GenerateApiUrl();
+    const url = GenerateApiUrl({apiKey : apiKey});
     axios
       .get(url)
       .then((res) => {
@@ -201,4 +205,4 @@ const ApiTennis = () => {
   );
 };
 
-export default ApiTennis;
+export default withApiKey(ApiTennis);

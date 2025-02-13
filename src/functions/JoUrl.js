@@ -22,7 +22,8 @@ const JoUrl = () => {
 
     // Construction de l'URL avec des backticks pour utiliser l'interpolation de chaîne
     // const url = `https://api.api-tennis.com/tennis/?method=get_fixtures&APIkey=${apiKey}&date_start=${dateStart}&date_stop=${dateStop}`;
-const url = `https://sph-s-api.olympics.com/summer/schedules/api/FRA/schedule/day/${dateStart}`;
+const url = `https://sph-s-api.olympics.com/summer-para/schedules/api/FRA/schedule/day/${dateStart}`;
+
     //console.log(url);
 
     return url;

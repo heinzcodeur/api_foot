@@ -66,9 +66,9 @@ const FilterPanel = ({ data, filters, setFilteredData, setFilters }) => {
   }, [data, filters, setFilteredData]);
 
   return (
-    <div className="col-12 text-light text-center">
+    <div className="col-12 text-light text-center mb-2">
       {Object.keys(filters).map((filter) => (
-        <label key={filter}>
+        <label key={filter} style={{ margin: "0 5px" }}>
           <input
             type="checkbox"
             name={filter}

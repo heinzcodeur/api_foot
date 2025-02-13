@@ -10,6 +10,7 @@ const Ranking = () => {
     "7a3522b864msh458ad29cbfda53dp191cd6jsn8a9ecb8f7113",
     "50736dc75amsh7f9e578a03cb22ap1ea0e4jsn338832cda913",
     "102585ac4fmsh2631463ec6a8969p1ccd25jsn4b73c4307617",
+    "d355eb6cedmsh53cbfbb847bbd9bp1244e9jsn31efc2ffb8f5"
   ];
 
   const rank_wta = "https://tennisapi1.p.rapidapi.com/api/tennis/rankings/wta";

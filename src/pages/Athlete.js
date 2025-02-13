@@ -27,6 +27,7 @@ const Athlete = () => {
 
       // Find and set athlete's flag based on country
       const land = athleteData.player_country;
+      
       const matchingCountry = countriesResponse.data.find(
         (country) => country.name.common === land
       );
@@ -87,13 +88,7 @@ const Athlete = () => {
                 alt={athlete.player_name}
               />
               {flagError === 0 ? (
-                  athlete.player_country === "USA" ? (
-                    <img
-                      className="flag-background"
-                      src="https://media.cnewyork.net/uploads/2021/02/drapeau-americain.jpg"
-                      alt={athlete.player_country}
-                    />
-                  ) : athlete.player_country === "World" ? (
+                   athlete.player_country === "World" ? (
                     <img
                       className="flag-background-russia"
                       src="https://alexandrederussie.com/wp-content/uploads/2020/11/drapeau-russie.jpg"

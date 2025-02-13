@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Score = ({ scores }) => (
-  <span>
+  <b>
     {scores[0].score_first} - {scores[0].score_second}
     {scores.length >= 2 && (
       <b>
@@ -14,7 +14,7 @@ const Score = ({ scores }) => (
         /{scores[2].score_first} - {scores[2].score_second}
       </>
     )}
-  </span>
+  </b>
 );
 
 export default Score;

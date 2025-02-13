@@ -2,16 +2,24 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./navigation.css";
 import axios from "axios";
+import { useApiKey } from "./context/TennisContext";
+import withApiKey from "./context/withApiKey";
+// import { useTennis } from "./context/TennisContext";
 
-const Navigation = () => {
+const Navigation = ({ apiKey }) => {
 
   // const countriesResponse = axios.get('/files/countries.json');
+  // const apiKey = process.env.REACT_APP_API_TENNIS_KEY;
+  // const { apiKey } = useApiKey();
+  // console.log("la clé " + {apiKey})
+
 
   return (
+    
     <div className="container">
       <div className="row">
         <div className="col-10 mx-auto mt-4">
-          <h1 className="text-danger text-center">API FOOT (tennis live)</h1>
+          <h1 className="text-danger text-center">API FOOT (tennis live) </h1>
           <ul className="list-inline text-center">
             <NavLink to="/">
               <li>home</li>
@@ -41,4 +49,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default withApiKey(Navigation);

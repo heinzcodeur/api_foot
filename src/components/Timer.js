@@ -4,6 +4,7 @@ const Timer = ({ activeButton, handleButtonClick }) => {
   const buttons = [
     { label: "stop", value: 360000000 },
     { label: "1h", value: 36000000 },
+    { label: "10 mn", value: 600000 },
     { label: "1 mn", value: 60000 },
     { label: "30 S", value: 30000 },
     { label: "10 s", value: 5000 },
