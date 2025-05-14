@@ -20,7 +20,7 @@ const GenerateApiUrl = () => {
     const dateStop = formatDate(tomorrow);
 
     // const apiKey = '7b2b2c63e9ff413388c8ca25249f24e4efe31b3f38c5cd3e432ea373cd3e710a';
-    const apiKey = process.env.REACT_APP_API_TENNIS_KEY;
+    const apiKey = process.env.REACT_APP_TENNIS_KEY;
 
     // Construction de l'URL avec des backticks pour utiliser l'interpolation de chaîne
     const url = `https://api.api-tennis.com/tennis/?method=get_fixtures&APIkey=${apiKey}&date_start=${dateStart}&date_stop=${dateStop}`;

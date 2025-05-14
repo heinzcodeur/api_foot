@@ -38,9 +38,26 @@ import axios from 'axios';
     }
 
     const calculateAge = (birthdateString) => {
+        // Vérifier si le paramètre est valide
+        if (!birthdateString || typeof birthdateString !== "string" || birthdateString.trim() === "") {
+            return 
+            throw new Error("La date de naissance est invalide.");
+        }
+    
         // Convertir la date de naissance de la chaîne de texte en un objet Date
         const [day, month, year] = birthdateString.split('.').map(Number);
+    
+        // Vérifier que les valeurs sont des nombres valides
+        if (isNaN(day) || isNaN(month) || isNaN(year)) {
+            throw new Error("Format de date invalide. Utilisez JJ.MM.AAAA.");
+        }
+    
         const birthdate = new Date(year, month - 1, day); // Les mois en JavaScript sont indexés à partir de 0
+    
+        // Vérifier que la date est valide
+        if (birthdate.toString() === "Invalid Date") {
+            throw new Error("Date invalide.");
+        }
     
         // Obtenir la date actuelle
         const today = new Date();
@@ -58,13 +75,22 @@ import axios from 'axios';
         }
     
         return age;
-    }
-
-    const checkItf = (inputString) => {
-        const regex = /Itf/; // Expression régulière pour rechercher le symbole "/"
-        //console.log(regex.test(inputString))
-        return regex.test(inputString); // Vérifie si la chaîne contient "/"
     };
+    
+    // Exemple d'utilisation
+    // try {
+    //     console.log(calculateAge("29.02.2000")); // Test avec une date valide
+    //     console.log(calculateAge("")); // Test avec une chaîne vide
+    //     console.log(calculateAge(null)); // Test avec null
+    // } catch (error) {
+    //     console.error(error.message);
+    // }
+
+    // const checkItf = (inputString) => {
+    //     const regex = /Itf/; // Expression régulière pour rechercher le symbole "/"
+    //     //console.log(regex.test(inputString))
+    //     return regex.test(inputString); // Vérifie si la chaîne contient "/"
+    // };
 
     const checkGirlsBoys = string => {
         // Expression régulière pour rechercher "Girls" ou "Boys"
@@ -77,6 +103,16 @@ import axios from 'axios';
         const regex = /Atp/; // Expression régulière pour rechercher le symbole "/"
         return regex.test(inputString); // Vérifie si la chaîne contient "/"
     };
+    const checkItf = (inputString) => {
+        const regex = /Itf/; // Expression régulière pour rechercher le symbole "/"
+        return regex.test(inputString); // Vérifie si la chaîne contient "/"
+    };
+    const checkChallenger = (inputString) => {
+        const regex = /Challenger/; // Expression régulière pour rechercher le symbole "/"
+        return regex.test(inputString); // Vérifie si la chaîne contient "/"
+    };
+
+
 
     const checkWta = (inputString) => {
         const regex = /Wta/; // Expression régulière pour rechercher le symbole "/"
@@ -128,11 +164,8 @@ import axios from 'axios';
     
         return formatter.format(date);
     }
-    
-   
-    
 
-      const handleFilterChange = (e,setFilterLive, setFilterAtp, setFilterWta, setPreview) => {
+    const handleFilterChange = (e,setFilterLive, setFilterAtp, setFilterWta, setPreview) => {
         const { name, checked } = e.target;
 
         switch (name) {
@@ -175,7 +208,34 @@ import axios from 'axios';
         return null;
     }
 
+    const apiKey = process.env.REACT_APP_TENNIS_KEY;
+
+    // Fonction pour récupérer les classements ATP et WTA
+    const fetchRankings = async () => {
+      const urls = [
+        `https://api.api-tennis.com/tennis/?method=get_standings&event_type=WTA&APIkey=${apiKey}`,
+        `https://api.api-tennis.com/tennis/?method=get_standings&event_type=ATP&APIkey=${apiKey}`,
+      ];
+    
+      try {
+        const [wtaResponse, atpResponse] = await Promise.all(urls.map(url => axios.get(url)));
+    
+        const wtaData = wtaResponse.data.error ? { error: wtaResponse.data.error } : wtaResponse.data.result;
+        const atpData = atpResponse.data.error ? { error: atpResponse.data.error } : atpResponse.data.result;
+    
+        if (wtaData.error || atpData.error) {
+          return { error: wtaData.error || atpData.error };
+        }
+    
+        return { rankings: [...wtaData, ...atpData] };
+      } catch (error) {
+        console.error("Erreur lors de la récupération des classements:", error);
+        return { error: error.message || "Une erreur inconnue est survenue" };
+      }
+    };
+
 export {
+    fetchRankings,
     fetchTournois,
     checkBackSlash,
     reverseDate,
@@ -183,6 +243,7 @@ export {
     checkGirlsBoys,
     checkAtp,
     checkWta,
+    checkChallenger,
     checkOlympics,
     today,
     createDateFromString,

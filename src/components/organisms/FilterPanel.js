@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { checkAtp, checkBackSlash, checkGirlsBoys, checkItf, checkWta, createDateFromString } from "../../functions/utils";
+import { checkAtp, checkBackSlash, checkGirlsBoys, checkItf, checkChallenger, checkWta, createDateFromString } from "../../functions/utils";
 
 const FilterPanel = ({ data, filters, setFilteredData, setFilters }) => {
+ 
   const handleFilterChange = (e) => {
     const { name, checked } = e.target;
     setFilters((prevFilters) => ({
@@ -33,6 +34,8 @@ const FilterPanel = ({ data, filters, setFilteredData, setFilters }) => {
       { condition: filters.live, fn: (item) => item.event_live === "1" },
       { condition: filters.atp, fn: (item) => checkAtp(item.event_type_type) },
       { condition: filters.wta, fn: (item) => checkWta(item.event_type_type) },
+      { condition: filters.itf, fn: (item) => checkItf(item.event_type_type) },
+      { condition: filters.challenger, fn: (item) => checkItf(item.event_type_type) },
       { condition: filters.preview, fn: (item) => item.event_live === "0" && item.event_status !== "Finished" },
       { condition: filters.over, fn: (item) => item.event_status === "Finished" },
       { condition: filters.demain, fn: (item) => {
@@ -68,7 +71,7 @@ const FilterPanel = ({ data, filters, setFilteredData, setFilters }) => {
   return (
     <div className="col-12 text-light text-center">
       {Object.keys(filters).map((filter) => (
-        <label key={filter}>
+        <label key={filter} className="mr-2">
           <input
             type="checkbox"
             name={filter}

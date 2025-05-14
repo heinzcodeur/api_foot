@@ -5,7 +5,9 @@ import User from "./User";
 
 const Home = () =>{
 
-    const apiKeys = process.env.REACT_APP_API_TENNIS_KEY;
+    const apiKeys = process.env.REACT_APP_TENNIS_KEY;
+
+    console.log(apiKeys)
 
 
     return (

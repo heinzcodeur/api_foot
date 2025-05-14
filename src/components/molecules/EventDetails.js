@@ -17,7 +17,7 @@ const EventDetails = ({ item, reverseDate, getRank, rankings }) => (
     <li>
       <Score scores={item.scores} />
       <p className="text-primary">{item.event_final_result}</p>
-      <p>match key: {item.event_key}</p>
+      {/* <p>match key: {item.event_key}</p> */}
     </li>
   </ul>
 );

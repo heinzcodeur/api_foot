@@ -7,7 +7,7 @@ import { calculateAge } from "../functions/mixins";
 const Athlete = () => {
   const { athleteId } = useParams(); // Assuming you're using react-router-dom
   const { athleteRank } = useParams(); // Assuming you're using react-router-dom
-  const apiKey = process.env.REACT_APP_API_TENNIS_KEY;
+  const apiKey = process.env.REACT_APP_TENNIS_KEY;
   const url = `https://api.api-tennis.com/tennis/?method=get_players&player_key=${athleteId}&APIkey=${apiKey}`;
   const [athlete, setAthlete] = useState(null);
   const [countries, setCountries] = useState([]);
@@ -23,12 +23,20 @@ const Athlete = () => {
 
       // Then fetch athlete data
       const athleteResponse = await axios.get(url);
+
+      if (athleteResponse.data.error) {
+        console.log(athleteResponse.data.result);  
+        console.log(athleteResponse.data.result[0].msg);  
+              throw new Error(athleteResponse.data.result[0].msg);
+      }
+
       const athleteData = athleteResponse.data.result[0];
 
       // Find and set athlete's flag based on country
       const land = athleteData.player_country;
+      console.log(land)
       const matchingCountry = countriesResponse.data.find(
-        (country) => country.name.common === land
+        (country) => country.name.common == land || country.name.official === land
       );
 
       if (matchingCountry) {
@@ -58,7 +66,7 @@ const Athlete = () => {
   }
 
   if (error) {
-    return <div>Une erreur s'est produite : {error.message}</div>;
+    return <div className="text-center text-danger mt-4 text-uppercase">Une erreur s'est produite : {error.message}</div>;
   }
 
   if (!athlete) {
@@ -70,14 +78,25 @@ const Athlete = () => {
       <div className="container">
         <div className="row">
           <div className="col-8 mx-auto text-center text-light">
-            <h1 className="text-secondary">{athlete.player_full_name}</h1>
-            <p>from {athlete.player_country === "World" ? (
-              'Russia') : (
-                  athlete.player_country
-              )
-            }</p>
-            <p>{calculateAge(athlete.player_bday)} ans </p>
+          <h1 className="text-secondary">
+            {athlete.player_full_name || athlete.player_name || "inconnu"}
+              </h1>            <p>
+              from {athlete.player_country 
+                ? (athlete.player_country === "World" ? "Russia" : athlete.player_country)
+              : "Unknown"}
+              </p>
+            
+            <p>
+            {(() => {
+              try {
+                return `${calculateAge(athlete.player_bday)} ans`;
+              } catch (error) {
+                return "mille ans";
+              }
+            })()}
+          </p>          
             <p>Current Rank: {athleteRank}</p>
+            <p>{athlete.flag}</p>
             <br></br>
             <br></br>
             <div className="player-image-container mt-4">
@@ -86,7 +105,12 @@ const Athlete = () => {
                 src={athlete.player_logo}
                 alt={athlete.player_name}
               />
-              {flagError === 0 ? (
+               {/* <img
+                      className="background-flag"
+                      src={athlete.flag}
+                      alt={athlete.player_country}
+                    /> */}
+               {flagError === 0 ? (
                   athlete.player_country === "USA" ? (
                     <img
                       className="flag-background"
@@ -109,10 +133,10 @@ const Athlete = () => {
                   )
                 ) : (
                 <span>No flag</span>
-              )}
-            </div>
-            {/* Afficher les autres informations de l'athlète
-             */}
+              )} 
+             </div>  
+             Afficher les autres informations de l'athlète
+            
           </div>
         </div>
       </div>
@@ -120,4 +144,4 @@ const Athlete = () => {
   );
 };
 
-export default Athlete;
+export default Athlete; 

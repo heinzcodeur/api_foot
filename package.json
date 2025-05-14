@@ -7,6 +7,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
+    "jquery": "^3.7.1",
+    "jquery-ui": "^1.14.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
@@ -18,7 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "montest": "echo ceci est un test"
+    "montest": "echo ceci est un test",
+    "stop": "kill $(lsof -t -i:3000)"
   },
   "eslintConfig": {
     "extends": [
