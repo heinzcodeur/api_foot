@@ -17,9 +17,18 @@ import { checkInternetConnection } from "./functions/mixins";
 
   const App = () => {
     
-    useEffect(() => {
+   useEffect(() => {
+    // Appelle d'abord la fonction de vérification, avec try/catch si besoin
+    try {
       checkInternetConnection();
-    }, []); // Le tableau vide [] signifie que cet effet s'exécute une seule fois lors du montage du composant
+      // Simulation d'une erreur
+      throw new Error("Erreur déclenchée dans App");
+    } catch (err) {
+      console.error("Erreur capturée dans useEffect :", err);
+      // Tu peux aussi envoyer cette erreur via ton logger custom :
+      // Logger.error("Erreur dans App", err);
+    }
+  }, []);
 
     return (
       <BrowserRouter>

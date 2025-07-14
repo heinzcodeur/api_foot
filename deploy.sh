@@ -1,0 +1,1 @@
+rsync -avz --exclude=".DS_Store" ./build/ a2181947@access-5017179262.webspace-host.com:/homepages/33/d4298787165/htdocs/api_foot/

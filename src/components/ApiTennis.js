@@ -44,6 +44,12 @@ const ApiTennis = () => {
   const [favorite, setFavorite] = useState(1);
   const [challenger, setChallenger] = useState(2);
   const [tournaments, setTournaments] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+
+
+  const handleOpen = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
 
 
   const [filters, setFilters] = useState({
@@ -223,7 +229,6 @@ const ApiTennis = () => {
 
   return (
     <div>
-      {/* <ErrorZone message={"erreur test"} /> */}
       <Timer handleButtonClick={handleButtonClick} activeButton={activeButton}></Timer>
       {error && <ErrorZone />}
       <div className="container mt-4">
