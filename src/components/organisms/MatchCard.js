@@ -1,8 +1,7 @@
-// src/components/organisms/MatchCard.jsx
 import React from 'react';
 import EventDetails from '../molecules/EventDetails';
 
-const MatchCard = ({ item, reverseDate, getRank, rankings }) => (
+const MatchCard = ({ item, reverseDate, getRank, rankings}) => (
   <div
     key={item.id}
     className={`col-12 col-sm-6 col-md-4 d-flex align-items-stretch text-center padding-responsive le-match`}

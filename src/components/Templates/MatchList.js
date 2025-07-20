@@ -2,7 +2,7 @@
 import React from 'react';
 import MatchCard from '../organisms/MatchCard';
 
-const MatchList = ({ matches, reverseDate, getRank, rankings }) => (
+const MatchList = ({ matches, reverseDate, getRank, rankings}) => (
   <div className="row">
   {matches ? (
     matches.map((item) => (

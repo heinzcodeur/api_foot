@@ -1,6 +1,11 @@
 import React from "react";
+import Home from "../../pages/Home";
+import Athlete from "../../pages/Athlete";
+
 
 const FullScreenModal = ({ show, onClose, title, children }) => {
+  if (!show) return null; 
+
   return (
     <div
       className={`modal ${show ? "d-block" : "d-none"}`}
@@ -32,6 +37,7 @@ const FullScreenModal = ({ show, onClose, title, children }) => {
             ></button>
           </div>
           <div className="modal-body">{children}</div>
+          {/* <Athlete athleteId = {1989} /> */}
           <div className="modal-footer">
             <button type="button" className="btn btn-secondary" onClick={onClose}>
               Fermer

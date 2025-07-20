@@ -24,6 +24,8 @@ import FilterPanel from "./organisms/FilterPanel";
 import MatchList from "./Templates/MatchList";
 import Tournaments from "./atoms/Tournaments";
 import ErrorZone from "./atoms/ErrorZone";
+import FullScreenModal from "./atoms/FullScreenModal";
+import { useModal } from "../context/ModalContext";
 // import ErrorZone from "./ErrorZone";
 
 const ApiTennis = () => {
@@ -39,17 +41,22 @@ const ApiTennis = () => {
   const [activeButton, setActiveButton] = useState(false); // État pour le filtre 'event_live'
   const [tournois, setTournois] = useState([]);
   const [rankings, setRankings] = useState([]); // State to hold combined rankings
-  // const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true); // Nouvel état pour gérer le chargement
   const [favorite, setFavorite] = useState(1);
   const [challenger, setChallenger] = useState(2);
   const [tournaments, setTournaments] = useState([]);
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
+  // const [modalData, setModalData] = useState(null);
 
+  // const handleOpen = () => setShowModal(true);
+  // const handleClose = () => setShowModal(false);
 
-  const handleOpen = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
+  const { modalContent, modalTitle, closeModal } = useModal();
 
+  // const openModal = (player) => setModalData(player);
+  // const closeModal = () => setModalData(null);
+
+  // const handleOpenModal = (data) => setModalData(data);
 
 
   const [filters, setFilters] = useState({
@@ -79,7 +86,7 @@ const ApiTennis = () => {
       } catch (error) {
         // console.error("Error fetching WTA rankings:", error);
         // Retourne un objet avec le message d'erreur pour un meilleur traitement
-        console.log("erreur "+error)
+        //console.log("erreur "+error)
         return { error: error.message || "An unknown error occurred" };
       }
     };
@@ -91,7 +98,7 @@ const ApiTennis = () => {
         const response = await axios.get(urlAtp);
         return response.data.result; // Return the fetched ATP rankings data
       } catch (error) {
-        console.error("Error fetching ATP rankings:", error);
+        //console.error("Error fetching ATP rankings:", error);
         // Optionally, handle errors gracefully, e.g., display an error message
         return []; // Return an empty array in case of error
       }
@@ -139,15 +146,15 @@ const ApiTennis = () => {
       const wtaRankings = await getWtaRankings();
       if (wtaRankings.error) {
           setError(true)
-          console.log(error)
-        console.error("Erreur capturée:", wtaRankings.error);
+        //   console.log(error)
+        // console.error("Erreur capturée:", wtaRankings.error);
         return;  // Arrêter l'exécution si une erreur est trouvée
       }
 
     // Récupérer les classements ATP avec gestion des erreurs
         const atpRankings = await getAtpRankings();
         if (atpRankings.error) {
-          console.error("Erreur capturée:", atpRankings.error);
+          // console.error("Erreur capturée:", atpRankings.error);
           return;  // Arrêter l'exécution si une erreur est trouvée
         }
 
@@ -159,9 +166,9 @@ const ApiTennis = () => {
     const combinedRankings = [...validWtaRankings, ...validAtpRankings];
 
     // Afficher la longueur des classements
-    console.log("ATP Rankings length:", validAtpRankings.length);
-    console.log("WTA Rankings length:", validWtaRankings.length);
-    console.log("Combined Rankings length:", combinedRankings.length);
+    // console.log("ATP Rankings length:", validAtpRankings.length);
+    // console.log("WTA Rankings length:", validWtaRankings.length);
+    // console.log("Combined Rankings length:", combinedRankings.length);
 
     // Mettre à jour l'état avec les classements combinés
     setRankings(combinedRankings);
@@ -177,14 +184,14 @@ const ApiTennis = () => {
 
     } catch (error) {
       setError(true)
-      console.error("Error fetching rankings:", error.message || error);
+      // console.error("Error fetching rankings:", error.message || error);
       setDelay(360000000)
       delay === 360000000 ? setActiveButton(delay) : (() => {})();      return;  // Stop further execution if any error occurs
     }
 
     // Generate API URL and fetch additional data, if needed.
     const docPath = `${process.env.PUBLIC_URL}/files/fixtures_21_02_25.json`;
-    console.log(docPath);
+    // console.log(docPath);
         const url = GenerateApiUrl();
         axios.get(url)
             .then((res) => {
@@ -199,41 +206,50 @@ const ApiTennis = () => {
       setTournaments(tournaments);
 
       // Afficher les tournois dans la console
-      console.log('Tournaments:', tournaments);
+      // console.log('Tournaments:', tournaments);
   })
   .catch((error) => {
-    console.warn(error);
+    // console.warn(error);
   });
     };
 
   const handleButtonClick = (delay) => {
-    console.log(delay + today());
+    // console.log(delay + today());
     setDelay(delay); // Mettre à jour le délai
     setActiveButton(delay); // Mettre à jour le bouton actif
   };
 
   useEffect(() => {
-    console.log("Setting up interval with delay:", delay);
-    console.log(error)
+    // window.openGlobalModal = (data) => {
+    // setModalData(data);
+    // };
+    // console.log("Setting up interval with delay:", delay);
+    // console.log(error)
     const intervalId = setInterval(() => {
-      console.log("Fetching data...");
+      // console.log("Fetching data...");
       fetchData();
     }, delay);
   
     return () => {
-      console.log("Clearing interval");
+      // console.log("Clearing interval");
       clearInterval(intervalId);
     };
   }, [delay]);
   
 
   return (
-    <div>
+    <div >
       <Timer handleButtonClick={handleButtonClick} activeButton={activeButton}></Timer>
       {error && <ErrorZone />}
+      <FullScreenModal
+        show={!!modalContent}  
+        onClose={closeModal}   
+        title={modalTitle || "Ma super modal"}     
+      >
+            <p>Voici le contenu de la modal en plein écran.</p>
+      </FullScreenModal>
       <div className="container mt-4">
         <div className="row">
-
           <FilterPanel
             data={data}
             filters={filters}
@@ -243,8 +259,7 @@ const ApiTennis = () => {
 
           {/* liste des tournois */}
           {checkListeTournoi && <Tournaments tournaments={tournaments} />}
-          <MatchList matches={filteredData} reverseDate={reverseDate} getRank={getRank} rankings={rankings} />
-
+          <MatchList matches={filteredData} reverseDate={reverseDate} getRank={getRank} rankings={rankings} /> 
         </div>
       </div>
     </div>

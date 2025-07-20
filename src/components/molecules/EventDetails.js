@@ -3,10 +3,11 @@ import React from 'react';
 import Score from '../atoms/Score';
 import PlayerInfo from './PlayerInfo';
 
-const EventDetails = ({ item, reverseDate, getRank, rankings }) => (
+const EventDetails = ({ item, reverseDate, getRank, rankings}) => (
   <ul className="text-light flex-grow-1 d-flex flex-column justify-content-between list-unstyled">
     <li>
       <PlayerInfo player={{ logo: item.event_first_player_logo, name: item.event_first_player }} playerKey={item.first_player_key} getRank={() => getRank(1, item, rankings)} />
+      
       <span> VS </span>
       <PlayerInfo player={{ logo: item.event_second_player_logo, name: item.event_second_player }} playerKey={item.second_player_key} getRank={() => getRank(2, item, rankings)} />
     </li>
